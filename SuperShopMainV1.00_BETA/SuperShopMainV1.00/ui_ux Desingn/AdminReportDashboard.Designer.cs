@@ -36,9 +36,9 @@
             this.Inventory = new System.Windows.Forms.Button();
             this.clubdashboardpicbox = new System.Windows.Forms.PictureBox();
             this.ReportAdmin = new System.Windows.Forms.Panel();
-            this.Rportinventorybtn = new System.Windows.Forms.Button();
             this.datelabel = new System.Windows.Forms.Label();
             this.SalesData = new System.Windows.Forms.DateTimePicker();
+            this.Rportinventorybtn = new System.Windows.Forms.Button();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ReportAdmin.SuspendLayout();
@@ -70,6 +70,7 @@
             this.Reports.TabIndex = 3;
             this.Reports.Text = "Reports";
             this.Reports.UseVisualStyleBackColor = true;
+            this.Reports.Click += new System.EventHandler(this.Reports_Click);
             // 
             // logoutbutton
             // 
@@ -85,6 +86,7 @@
             this.logoutbutton.TabIndex = 2;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // RemonveProduct
             // 
@@ -99,6 +101,7 @@
             this.RemonveProduct.TabIndex = 1;
             this.RemonveProduct.Text = "Delete Product";
             this.RemonveProduct.UseVisualStyleBackColor = true;
+            this.RemonveProduct.Click += new System.EventHandler(this.RemonveProduct_Click);
             // 
             // Inventory
             // 
@@ -137,19 +140,6 @@
             this.ReportAdmin.Size = new System.Drawing.Size(673, 58);
             this.ReportAdmin.TabIndex = 6;
             // 
-            // Rportinventorybtn
-            // 
-            this.Rportinventorybtn.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.Rportinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Rportinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rportinventorybtn.ForeColor = System.Drawing.Color.Black;
-            this.Rportinventorybtn.Location = new System.Drawing.Point(711, 211);
-            this.Rportinventorybtn.Name = "Rportinventorybtn";
-            this.Rportinventorybtn.Size = new System.Drawing.Size(165, 38);
-            this.Rportinventorybtn.TabIndex = 18;
-            this.Rportinventorybtn.Text = "Show Report\r\n";
-            this.Rportinventorybtn.UseVisualStyleBackColor = false;
-            // 
             // datelabel
             // 
             this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -169,6 +159,19 @@
             this.SalesData.Name = "SalesData";
             this.SalesData.Size = new System.Drawing.Size(121, 21);
             this.SalesData.TabIndex = 1;
+            // 
+            // Rportinventorybtn
+            // 
+            this.Rportinventorybtn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.Rportinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Rportinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rportinventorybtn.ForeColor = System.Drawing.Color.Black;
+            this.Rportinventorybtn.Location = new System.Drawing.Point(711, 211);
+            this.Rportinventorybtn.Name = "Rportinventorybtn";
+            this.Rportinventorybtn.Size = new System.Drawing.Size(165, 38);
+            this.Rportinventorybtn.TabIndex = 18;
+            this.Rportinventorybtn.Text = "Show Report\r\n";
+            this.Rportinventorybtn.UseVisualStyleBackColor = false;
             // 
             // adminReport
             // 

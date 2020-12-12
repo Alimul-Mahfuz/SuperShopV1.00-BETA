@@ -74,6 +74,7 @@
             this.Reports.TabIndex = 3;
             this.Reports.Text = "Reports";
             this.Reports.UseVisualStyleBackColor = true;
+            this.Reports.Click += new System.EventHandler(this.Reports_Click);
             // 
             // logoutbutton
             // 
@@ -89,6 +90,7 @@
             this.logoutbutton.TabIndex = 2;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // RemonveProduct
             // 
@@ -103,6 +105,7 @@
             this.RemonveProduct.TabIndex = 1;
             this.RemonveProduct.Text = "Delete Product";
             this.RemonveProduct.UseVisualStyleBackColor = true;
+            this.RemonveProduct.Click += new System.EventHandler(this.RemonveProduct_Click);
             // 
             // Inventory
             // 
@@ -117,6 +120,7 @@
             this.Inventory.TabIndex = 0;
             this.Inventory.Text = "Add Products";
             this.Inventory.UseVisualStyleBackColor = true;
+            this.Inventory.Click += new System.EventHandler(this.Inventory_Click);
             // 
             // admindashboarlogo
             // 

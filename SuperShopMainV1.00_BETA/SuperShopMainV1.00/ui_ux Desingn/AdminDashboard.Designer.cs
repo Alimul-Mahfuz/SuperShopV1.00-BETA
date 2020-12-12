@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.AdminDashboardPanel = new System.Windows.Forms.Panel();
-            this.Reports = new System.Windows.Forms.Button();
+            this.Reportadd = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
             this.RemonveProduct = new System.Windows.Forms.Button();
             this.Inventory = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             // AdminDashboardPanel
             // 
             this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.AdminDashboardPanel.Controls.Add(this.Reports);
+            this.AdminDashboardPanel.Controls.Add(this.Reportadd);
             this.AdminDashboardPanel.Controls.Add(this.logoutbutton);
             this.AdminDashboardPanel.Controls.Add(this.RemonveProduct);
             this.AdminDashboardPanel.Controls.Add(this.Inventory);
@@ -71,19 +71,20 @@
             this.AdminDashboardPanel.Size = new System.Drawing.Size(177, 697);
             this.AdminDashboardPanel.TabIndex = 2;
             // 
-            // Reports
+            // Reportadd
             // 
-            this.Reports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Reports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reports.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reports.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Reports.Location = new System.Drawing.Point(12, 147);
-            this.Reports.Name = "Reports";
-            this.Reports.Size = new System.Drawing.Size(150, 47);
-            this.Reports.TabIndex = 3;
-            this.Reports.Text = "Reports";
-            this.Reports.UseVisualStyleBackColor = true;
+            this.Reportadd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Reportadd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.Reportadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reportadd.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reportadd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Reportadd.Location = new System.Drawing.Point(12, 147);
+            this.Reportadd.Name = "Reportadd";
+            this.Reportadd.Size = new System.Drawing.Size(150, 47);
+            this.Reportadd.TabIndex = 3;
+            this.Reportadd.Text = "Reports";
+            this.Reportadd.UseVisualStyleBackColor = true;
+            this.Reportadd.Click += new System.EventHandler(this.Reports_Click);
             // 
             // logoutbutton
             // 
@@ -99,6 +100,7 @@
             this.logoutbutton.TabIndex = 2;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // RemonveProduct
             // 
@@ -113,6 +115,7 @@
             this.RemonveProduct.TabIndex = 1;
             this.RemonveProduct.Text = "Delete Product";
             this.RemonveProduct.UseVisualStyleBackColor = true;
+            this.RemonveProduct.Click += new System.EventHandler(this.RemonveProduct_Click);
             // 
             // Inventory
             // 
@@ -370,6 +373,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(868, 736);
             this.Name = "AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Admin Dashboard";
             this.AdminDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
@@ -400,7 +404,7 @@
         private System.Windows.Forms.Label ProductName;
         private System.Windows.Forms.DateTimePicker addproductData;
         private System.Windows.Forms.TextBox CustomerNameTextboxSales;
-        private System.Windows.Forms.Button Reports;
+        private System.Windows.Forms.Button Reportadd;
         private System.Windows.Forms.ComboBox DicountcomboBox;
         private System.Windows.Forms.Label dicount;
         private System.Windows.Forms.Label reatilprice;

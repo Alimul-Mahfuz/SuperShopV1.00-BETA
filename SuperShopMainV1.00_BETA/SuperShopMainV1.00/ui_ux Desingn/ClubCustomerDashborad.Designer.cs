@@ -35,6 +35,7 @@
             this.SalesButton = new System.Windows.Forms.Button();
             this.clubdashboardpicbox = new System.Windows.Forms.PictureBox();
             this.ClubCustomerDashboarplanel1 = new System.Windows.Forms.Panel();
+            this.RemoveButtonclubcustomer = new System.Windows.Forms.Button();
             this.refreshclubmemberbtn = new System.Windows.Forms.Button();
             this.Address = new System.Windows.Forms.Label();
             this.clubcustomeraddress = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.SalesData = new System.Windows.Forms.DateTimePicker();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
             this.clubcustomerdatagrid = new System.Windows.Forms.DataGridView();
-            this.RemoveButtonclubcustomer = new System.Windows.Forms.Button();
             this.ClubDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ClubCustomerDashboarplanel1.SuspendLayout();
@@ -96,6 +96,7 @@
             this.Addcutomerbutton.TabIndex = 1;
             this.Addcutomerbutton.Text = "Add Club Member";
             this.Addcutomerbutton.UseVisualStyleBackColor = true;
+            this.Addcutomerbutton.Click += new System.EventHandler(this.Addcutomerbutton_Click);
             // 
             // SalesButton
             // 
@@ -148,6 +149,20 @@
             this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(657, 168);
             this.ClubCustomerDashboarplanel1.TabIndex = 3;
             this.ClubCustomerDashboarplanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.ClubCustomerDashboarplanel1_Paint);
+            // 
+            // RemoveButtonclubcustomer
+            // 
+            this.RemoveButtonclubcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RemoveButtonclubcustomer.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
+            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 129);
+            this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
+            this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
+            this.RemoveButtonclubcustomer.TabIndex = 24;
+            this.RemoveButtonclubcustomer.Text = "Remove";
+            this.RemoveButtonclubcustomer.UseVisualStyleBackColor = false;
             // 
             // refreshclubmemberbtn
             // 
@@ -293,20 +308,6 @@
             this.clubcustomerdatagrid.RowHeadersWidth = 80;
             this.clubcustomerdatagrid.Size = new System.Drawing.Size(656, 365);
             this.clubcustomerdatagrid.TabIndex = 4;
-            // 
-            // RemoveButtonclubcustomer
-            // 
-            this.RemoveButtonclubcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveButtonclubcustomer.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 129);
-            this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
-            this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
-            this.RemoveButtonclubcustomer.TabIndex = 24;
-            this.RemoveButtonclubcustomer.Text = "Remove";
-            this.RemoveButtonclubcustomer.UseVisualStyleBackColor = false;
             // 
             // ClubCustomerDashborad
             // 
