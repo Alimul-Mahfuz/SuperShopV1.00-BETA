@@ -85,6 +85,11 @@ namespace SuperShopMainV1._00
             this.Show();
         }
 
+        private void Addcutomerbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
         /*private void RemoveBtn_Click(object sender, EventArgs e)  
         {
 

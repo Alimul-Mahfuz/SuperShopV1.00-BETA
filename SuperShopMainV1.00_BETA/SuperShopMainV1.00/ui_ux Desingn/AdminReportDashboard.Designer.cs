@@ -1,6 +1,6 @@
 ﻿namespace SuperShopMainV1._00
 {
-    partial class DeleteProductsFromInventory
+    partial class adminReport
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteProductsFromInventory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminReport));
             this.AdminDashboardPanel = new System.Windows.Forms.Panel();
             this.Reports = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
             this.RemonveProduct = new System.Windows.Forms.Button();
             this.Inventory = new System.Windows.Forms.Button();
-            this.admindashboarlogo = new System.Windows.Forms.PictureBox();
-            this.ClubCustomerDashboarplanel1 = new System.Windows.Forms.Panel();
-            this.Removeinventorybtn = new System.Windows.Forms.Button();
+            this.clubdashboardpicbox = new System.Windows.Forms.PictureBox();
+            this.ReportAdmin = new System.Windows.Forms.Panel();
             this.datelabel = new System.Windows.Forms.Label();
-            this.Barcodelabel = new System.Windows.Forms.Label();
-            this.ProductNametextBox = new System.Windows.Forms.TextBox();
-            this.ProductName = new System.Windows.Forms.Label();
             this.SalesData = new System.Windows.Forms.DateTimePicker();
-            this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
+            this.Rportinventorybtn = new System.Windows.Forms.Button();
             this.AdminDashboardPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).BeginInit();
-            this.ClubCustomerDashboarplanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
+            this.ReportAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdminDashboardPanel
@@ -58,8 +54,8 @@
             this.AdminDashboardPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.AdminDashboardPanel.Location = new System.Drawing.Point(0, 0);
             this.AdminDashboardPanel.Name = "AdminDashboardPanel";
-            this.AdminDashboardPanel.Size = new System.Drawing.Size(177, 547);
-            this.AdminDashboardPanel.TabIndex = 3;
+            this.AdminDashboardPanel.Size = new System.Drawing.Size(177, 749);
+            this.AdminDashboardPanel.TabIndex = 4;
             // 
             // Reports
             // 
@@ -74,6 +70,7 @@
             this.Reports.TabIndex = 3;
             this.Reports.Text = "Reports";
             this.Reports.UseVisualStyleBackColor = true;
+            this.Reports.Click += new System.EventHandler(this.Reports_Click);
             // 
             // logoutbutton
             // 
@@ -83,12 +80,13 @@
             this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.logoutbutton.Location = new System.Drawing.Point(12, 471);
+            this.logoutbutton.Location = new System.Drawing.Point(12, 673);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(150, 40);
             this.logoutbutton.TabIndex = 2;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // RemonveProduct
             // 
@@ -103,6 +101,7 @@
             this.RemonveProduct.TabIndex = 1;
             this.RemonveProduct.Text = "Delete Product";
             this.RemonveProduct.UseVisualStyleBackColor = true;
+            this.RemonveProduct.Click += new System.EventHandler(this.RemonveProduct_Click);
             // 
             // Inventory
             // 
@@ -117,130 +116,84 @@
             this.Inventory.TabIndex = 0;
             this.Inventory.Text = "Add Products";
             this.Inventory.UseVisualStyleBackColor = true;
+            this.Inventory.Click += new System.EventHandler(this.Inventory_Click);
             // 
-            // admindashboarlogo
+            // clubdashboardpicbox
             // 
-            this.admindashboarlogo.BackColor = System.Drawing.Color.Transparent;
-            this.admindashboarlogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.admindashboarlogo.Image = global::SuperShopMainV1._00.Properties.Resources.shoplogo1;
-            this.admindashboarlogo.Location = new System.Drawing.Point(177, 0);
-            this.admindashboarlogo.Name = "admindashboarlogo";
-            this.admindashboarlogo.Size = new System.Drawing.Size(691, 105);
-            this.admindashboarlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.admindashboarlogo.TabIndex = 4;
-            this.admindashboarlogo.TabStop = false;
-            this.admindashboarlogo.UseWaitCursor = true;
+            this.clubdashboardpicbox.BackColor = System.Drawing.Color.Transparent;
+            this.clubdashboardpicbox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.clubdashboardpicbox.Image = global::SuperShopMainV1._00.Properties.Resources.shoplogo1;
+            this.clubdashboardpicbox.Location = new System.Drawing.Point(177, 0);
+            this.clubdashboardpicbox.Name = "clubdashboardpicbox";
+            this.clubdashboardpicbox.Size = new System.Drawing.Size(817, 105);
+            this.clubdashboardpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.clubdashboardpicbox.TabIndex = 5;
+            this.clubdashboardpicbox.TabStop = false;
+            this.clubdashboardpicbox.UseWaitCursor = true;
             // 
-            // ClubCustomerDashboarplanel1
+            // ReportAdmin
             // 
-            this.ClubCustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.Removeinventorybtn);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.datelabel);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.Barcodelabel);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductNametextBox);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductName);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.SalesData);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.CustomerNameTextboxSales);
-            this.ClubCustomerDashboarplanel1.Location = new System.Drawing.Point(183, 136);
-            this.ClubCustomerDashboarplanel1.Name = "ClubCustomerDashboarplanel1";
-            this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(673, 168);
-            this.ClubCustomerDashboarplanel1.TabIndex = 5;
-            // 
-            // Removeinventorybtn
-            // 
-            this.Removeinventorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Removeinventorybtn.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.Removeinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Removeinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Removeinventorybtn.ForeColor = System.Drawing.Color.Black;
-            this.Removeinventorybtn.Location = new System.Drawing.Point(498, 117);
-            this.Removeinventorybtn.Name = "Removeinventorybtn";
-            this.Removeinventorybtn.Size = new System.Drawing.Size(165, 38);
-            this.Removeinventorybtn.TabIndex = 18;
-            this.Removeinventorybtn.Text = "Remove Product";
-            this.Removeinventorybtn.UseVisualStyleBackColor = false;
+            this.ReportAdmin.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ReportAdmin.Controls.Add(this.datelabel);
+            this.ReportAdmin.Controls.Add(this.SalesData);
+            this.ReportAdmin.Location = new System.Drawing.Point(203, 147);
+            this.ReportAdmin.Name = "ReportAdmin";
+            this.ReportAdmin.Size = new System.Drawing.Size(779, 58);
+            this.ReportAdmin.TabIndex = 6;
             // 
             // datelabel
             // 
             this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.datelabel.AutoSize = true;
             this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelabel.Location = new System.Drawing.Point(497, 24);
+            this.datelabel.Location = new System.Drawing.Point(561, 24);
             this.datelabel.Name = "datelabel";
-            this.datelabel.Size = new System.Drawing.Size(40, 17);
+            this.datelabel.Size = new System.Drawing.Size(82, 17);
             this.datelabel.TabIndex = 7;
-            this.datelabel.Text = "Date:";
-            // 
-            // Barcodelabel
-            // 
-            this.Barcodelabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Barcodelabel.AutoSize = true;
-            this.Barcodelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Barcodelabel.Location = new System.Drawing.Point(11, 52);
-            this.Barcodelabel.Name = "Barcodelabel";
-            this.Barcodelabel.Size = new System.Drawing.Size(59, 15);
-            this.Barcodelabel.TabIndex = 4;
-            this.Barcodelabel.Text = "Barcode:";
-            // 
-            // ProductNametextBox
-            // 
-            this.ProductNametextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductNametextBox.Location = new System.Drawing.Point(123, 50);
-            this.ProductNametextBox.Name = "ProductNametextBox";
-            this.ProductNametextBox.Size = new System.Drawing.Size(274, 21);
-            this.ProductNametextBox.TabIndex = 3;
-            // 
-            // ProductName
-            // 
-            this.ProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductName.AutoSize = true;
-            this.ProductName.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName.Location = new System.Drawing.Point(11, 26);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(96, 15);
-            this.ProductName.TabIndex = 2;
-            this.ProductName.Text = "Product Name:";
+            this.datelabel.Text = "Report Date";
             // 
             // SalesData
             // 
             this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalesData.Location = new System.Drawing.Point(542, 21);
+            this.SalesData.Location = new System.Drawing.Point(649, 21);
             this.SalesData.Name = "SalesData";
             this.SalesData.Size = new System.Drawing.Size(121, 21);
             this.SalesData.TabIndex = 1;
             // 
-            // CustomerNameTextboxSales
+            // Rportinventorybtn
             // 
-            this.CustomerNameTextboxSales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.CustomerNameTextboxSales.Location = new System.Drawing.Point(123, 24);
-            this.CustomerNameTextboxSales.Name = "CustomerNameTextboxSales";
-            this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 21);
-            this.CustomerNameTextboxSales.TabIndex = 0;
+            this.Rportinventorybtn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.Rportinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Rportinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rportinventorybtn.ForeColor = System.Drawing.Color.Black;
+            this.Rportinventorybtn.Location = new System.Drawing.Point(817, 245);
+            this.Rportinventorybtn.Name = "Rportinventorybtn";
+            this.Rportinventorybtn.Size = new System.Drawing.Size(165, 38);
+            this.Rportinventorybtn.TabIndex = 18;
+            this.Rportinventorybtn.Text = "Show Report\r\n";
+            this.Rportinventorybtn.UseVisualStyleBackColor = false;
             // 
-            // DeleteProductsFromInventory
+            // adminReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
-            this.ClientSize = new System.Drawing.Size(868, 547);
-            this.Controls.Add(this.ClubCustomerDashboarplanel1);
-            this.Controls.Add(this.admindashboarlogo);
+            this.ClientSize = new System.Drawing.Size(994, 749);
+            this.Controls.Add(this.Rportinventorybtn);
+            this.Controls.Add(this.ReportAdmin);
+            this.Controls.Add(this.clubdashboardpicbox);
             this.Controls.Add(this.AdminDashboardPanel);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DeleteProductsFromInventory";
-            this.Text = "Delete Products";
+            this.MinimumSize = new System.Drawing.Size(1010, 736);
+            this.Name = "adminReport";
+            this.Text = "Report";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.AdminDashboardPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
-            this.ClubCustomerDashboarplanel1.ResumeLayout(false);
-            this.ClubCustomerDashboarplanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).EndInit();
+            this.ReportAdmin.ResumeLayout(false);
+            this.ReportAdmin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -252,14 +205,10 @@
         private System.Windows.Forms.Button logoutbutton;
         private System.Windows.Forms.Button RemonveProduct;
         private System.Windows.Forms.Button Inventory;
-        private System.Windows.Forms.PictureBox admindashboarlogo;
-        private System.Windows.Forms.Panel ClubCustomerDashboarplanel1;
-        private System.Windows.Forms.Button Removeinventorybtn;
+        private System.Windows.Forms.PictureBox clubdashboardpicbox;
+        private System.Windows.Forms.Panel ReportAdmin;
         private System.Windows.Forms.Label datelabel;
-        private System.Windows.Forms.Label Barcodelabel;
-        private System.Windows.Forms.TextBox ProductNametextBox;
-        private System.Windows.Forms.Label ProductName;
         private System.Windows.Forms.DateTimePicker SalesData;
-        private System.Windows.Forms.TextBox CustomerNameTextboxSales;
+        private System.Windows.Forms.Button Rportinventorybtn;
     }
 }

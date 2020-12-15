@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SuperShopMainV1._00
+namespace SuperShopMainV1._00.ui_ux_Desingn
 {
-    public partial class DeleteProductsFromInventory : Form
+    public partial class BillManagementDashboard : Form
     {
-        public DeleteProductsFromInventory()
+        public BillManagementDashboard()
         {
             InitializeComponent();
         }
