@@ -116,6 +116,7 @@
             this.Inventory.TabIndex = 0;
             this.Inventory.Text = "Add Products";
             this.Inventory.UseVisualStyleBackColor = true;
+            this.Inventory.Click += new System.EventHandler(this.Inventory_Click);
             // 
             // clubdashboardpicbox
             // 
@@ -137,7 +138,7 @@
             this.ReportAdmin.Controls.Add(this.SalesData);
             this.ReportAdmin.Location = new System.Drawing.Point(203, 147);
             this.ReportAdmin.Name = "ReportAdmin";
-            this.ReportAdmin.Size = new System.Drawing.Size(673, 58);
+            this.ReportAdmin.Size = new System.Drawing.Size(779, 58);
             this.ReportAdmin.TabIndex = 6;
             // 
             // datelabel
@@ -145,7 +146,7 @@
             this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.datelabel.AutoSize = true;
             this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelabel.Location = new System.Drawing.Point(455, 24);
+            this.datelabel.Location = new System.Drawing.Point(561, 24);
             this.datelabel.Name = "datelabel";
             this.datelabel.Size = new System.Drawing.Size(82, 17);
             this.datelabel.TabIndex = 7;
@@ -155,7 +156,7 @@
             // 
             this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalesData.Location = new System.Drawing.Point(543, 21);
+            this.SalesData.Location = new System.Drawing.Point(649, 21);
             this.SalesData.Name = "SalesData";
             this.SalesData.Size = new System.Drawing.Size(121, 21);
             this.SalesData.TabIndex = 1;
@@ -166,7 +167,7 @@
             this.Rportinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Rportinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rportinventorybtn.ForeColor = System.Drawing.Color.Black;
-            this.Rportinventorybtn.Location = new System.Drawing.Point(711, 211);
+            this.Rportinventorybtn.Location = new System.Drawing.Point(817, 245);
             this.Rportinventorybtn.Name = "Rportinventorybtn";
             this.Rportinventorybtn.Size = new System.Drawing.Size(165, 38);
             this.Rportinventorybtn.TabIndex = 18;
@@ -188,6 +189,7 @@
             this.MinimumSize = new System.Drawing.Size(1010, 736);
             this.Name = "adminReport";
             this.Text = "Report";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.AdminDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).EndInit();
             this.ReportAdmin.ResumeLayout(false);

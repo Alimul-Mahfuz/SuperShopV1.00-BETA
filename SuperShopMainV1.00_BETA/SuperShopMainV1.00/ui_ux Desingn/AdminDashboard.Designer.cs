@@ -373,8 +373,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(868, 736);
             this.Name = "AdminDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Admin Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.AdminDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
             this.AdminAddproductpanel.ResumeLayout(false);

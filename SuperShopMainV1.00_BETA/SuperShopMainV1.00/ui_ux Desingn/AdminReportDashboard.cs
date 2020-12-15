@@ -35,5 +35,12 @@ namespace SuperShopMainV1._00
         {
             this.Show();
         }
+
+        private void Inventory_Click(object sender, EventArgs e)
+        {
+            AdminDashboard add = new AdminDashboard();
+            this.Hide();
+            add.Show();
+        }
     }
 }
