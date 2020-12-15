@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // BillDetailsDashboard
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 697);
-            this.MinimumSize = new System.Drawing.Size(1010, 736);
-            this.Name = "BillDetailsDashboard";
-            this.Text = "Bill Details Dashboard";
-            this.ResumeLayout(false);
-
+            this.Text = "BillDetailsDashboard";
         }
 
         #endregion
