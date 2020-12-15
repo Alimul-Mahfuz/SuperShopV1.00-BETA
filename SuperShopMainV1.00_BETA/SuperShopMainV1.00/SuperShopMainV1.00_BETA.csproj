@@ -56,6 +56,12 @@
     <Compile Include="ui_ux Desingn\AdminReportDashboard.Designer.cs">
       <DependentUpon>AdminReportDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui_ux Desingn\BillManagementDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui_ux Desingn\BillManagementDashboard.Designer.cs">
+      <DependentUpon>BillManagementDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui_ux Desingn\ClubCustomerDashborad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\AdminReportDashboard.resx">
       <DependentUpon>AdminReportDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui_ux Desingn\BillManagementDashboard.resx">
+      <DependentUpon>BillManagementDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\ClubCustomerDashborad.resx">
       <DependentUpon>ClubCustomerDashborad.cs</DependentUpon>

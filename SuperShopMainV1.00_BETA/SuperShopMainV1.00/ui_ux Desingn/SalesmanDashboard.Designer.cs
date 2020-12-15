@@ -35,31 +35,32 @@
             this.SalesButton = new System.Windows.Forms.Button();
             this.dashboardpicbox = new System.Windows.Forms.PictureBox();
             this.CustomerDashboarplanel1 = new System.Windows.Forms.Panel();
+            this.salesdashproductid = new System.Windows.Forms.Label();
+            this.productidtextbox = new System.Windows.Forms.TextBox();
+            this.ProductNameSalesLabel = new System.Windows.Forms.Label();
+            this.ProductNametextBox = new System.Windows.Forms.TextBox();
+            this.RemoveBtn = new System.Windows.Forms.Button();
+            this.addedbutton = new System.Windows.Forms.Button();
             this.memberdropdown = new System.Windows.Forms.ComboBox();
             this.Membershipdropdown = new System.Windows.Forms.Label();
+            this.QtyLabel = new System.Windows.Forms.Label();
+            this.Qtytextbox = new System.Windows.Forms.TextBox();
             this.datelabel = new System.Windows.Forms.Label();
+            this.ProductPricelabel = new System.Windows.Forms.Label();
+            this.pricetxtbox = new System.Windows.Forms.TextBox();
             this.CustomrNameSalesDashboar = new System.Windows.Forms.Label();
             this.SalesData = new System.Windows.Forms.DateTimePicker();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
-            this.ProductPricelabel = new System.Windows.Forms.Label();
-            this.pricetxtbox = new System.Windows.Forms.TextBox();
-            this.QtyLabel = new System.Windows.Forms.Label();
-            this.Qtytextbox = new System.Windows.Forms.TextBox();
-            this.RemoveBtn = new System.Windows.Forms.Button();
-            this.addedbutton = new System.Windows.Forms.Button();
             this.customersalesdatagrid = new System.Windows.Forms.DataGridView();
-            this.proccedtopay = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.TotalLabel = new System.Windows.Forms.Label();
-            this.ProductNameSalesLabel = new System.Windows.Forms.Label();
-            this.ProductNametextBox = new System.Windows.Forms.TextBox();
-            this.salesdashproductid = new System.Windows.Forms.Label();
-            this.productidtextbox = new System.Windows.Forms.TextBox();
             this.idproduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pricecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Totalcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proccedtopay = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TotalLabel = new System.Windows.Forms.Label();
+            this.MngBIll = new System.Windows.Forms.Button();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
             this.CustomerDashboarplanel1.SuspendLayout();
@@ -69,6 +70,7 @@
             // SalesDashboardPanel
             // 
             this.SalesDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.SalesDashboardPanel.Controls.Add(this.MngBIll);
             this.SalesDashboardPanel.Controls.Add(this.logoutbutton);
             this.SalesDashboardPanel.Controls.Add(this.Addcutomerbutton);
             this.SalesDashboardPanel.Controls.Add(this.SalesButton);
@@ -163,109 +165,39 @@
             this.CustomerDashboarplanel1.Size = new System.Drawing.Size(657, 168);
             this.CustomerDashboarplanel1.TabIndex = 2;
             // 
-            // memberdropdown
+            // salesdashproductid
             // 
-            this.memberdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.memberdropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.memberdropdown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.memberdropdown.FormattingEnabled = true;
-            this.memberdropdown.Items.AddRange(new object[] {
-            "Member",
-            "Non Member"});
-            this.memberdropdown.Location = new System.Drawing.Point(526, 50);
-            this.memberdropdown.Name = "memberdropdown";
-            this.memberdropdown.Size = new System.Drawing.Size(121, 21);
-            this.memberdropdown.TabIndex = 12;
+            this.salesdashproductid.AutoSize = true;
+            this.salesdashproductid.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesdashproductid.Location = new System.Drawing.Point(11, 57);
+            this.salesdashproductid.Name = "salesdashproductid";
+            this.salesdashproductid.Size = new System.Drawing.Size(73, 15);
+            this.salesdashproductid.TabIndex = 22;
+            this.salesdashproductid.Text = "Product Id:";
             // 
-            // Membershipdropdown
+            // productidtextbox
             // 
-            this.Membershipdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Membershipdropdown.AutoSize = true;
-            this.Membershipdropdown.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Membershipdropdown.Location = new System.Drawing.Point(420, 55);
-            this.Membershipdropdown.Name = "Membershipdropdown";
-            this.Membershipdropdown.Size = new System.Drawing.Size(101, 15);
-            this.Membershipdropdown.TabIndex = 11;
-            this.Membershipdropdown.Text = "Member Status:";
-            this.Membershipdropdown.Click += new System.EventHandler(this.Membershipdropdown_Click);
+            this.productidtextbox.Location = new System.Drawing.Point(123, 55);
+            this.productidtextbox.Name = "productidtextbox";
+            this.productidtextbox.Size = new System.Drawing.Size(274, 20);
+            this.productidtextbox.TabIndex = 21;
             // 
-            // datelabel
+            // ProductNameSalesLabel
             // 
-            this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datelabel.AutoSize = true;
-            this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelabel.Location = new System.Drawing.Point(481, 24);
-            this.datelabel.Name = "datelabel";
-            this.datelabel.Size = new System.Drawing.Size(40, 17);
-            this.datelabel.TabIndex = 7;
-            this.datelabel.Text = "Date:";
+            this.ProductNameSalesLabel.AutoSize = true;
+            this.ProductNameSalesLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductNameSalesLabel.Location = new System.Drawing.Point(11, 88);
+            this.ProductNameSalesLabel.Name = "ProductNameSalesLabel";
+            this.ProductNameSalesLabel.Size = new System.Drawing.Size(96, 15);
+            this.ProductNameSalesLabel.TabIndex = 20;
+            this.ProductNameSalesLabel.Text = "Product Name:";
             // 
-            // CustomrNameSalesDashboar
+            // ProductNametextBox
             // 
-            this.CustomrNameSalesDashboar.AutoSize = true;
-            this.CustomrNameSalesDashboar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomrNameSalesDashboar.Location = new System.Drawing.Point(11, 26);
-            this.CustomrNameSalesDashboar.Name = "CustomrNameSalesDashboar";
-            this.CustomrNameSalesDashboar.Size = new System.Drawing.Size(106, 15);
-            this.CustomrNameSalesDashboar.TabIndex = 2;
-            this.CustomrNameSalesDashboar.Text = "Customer Name:";
-            // 
-            // SalesData
-            // 
-            this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalesData.Location = new System.Drawing.Point(526, 21);
-            this.SalesData.Name = "SalesData";
-            this.SalesData.Size = new System.Drawing.Size(121, 20);
-            this.SalesData.TabIndex = 1;
-            // 
-            // CustomerNameTextboxSales
-            // 
-            this.CustomerNameTextboxSales.Location = new System.Drawing.Point(123, 24);
-            this.CustomerNameTextboxSales.Name = "CustomerNameTextboxSales";
-            this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 20);
-            this.CustomerNameTextboxSales.TabIndex = 0;
-            // 
-            // ProductPricelabel
-            // 
-            this.ProductPricelabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductPricelabel.AutoSize = true;
-            this.ProductPricelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductPricelabel.Location = new System.Drawing.Point(11, 114);
-            this.ProductPricelabel.Name = "ProductPricelabel";
-            this.ProductPricelabel.Size = new System.Drawing.Size(39, 15);
-            this.ProductPricelabel.TabIndex = 6;
-            this.ProductPricelabel.Text = "Price:";
-            // 
-            // pricetxtbox
-            // 
-            this.pricetxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pricetxtbox.Location = new System.Drawing.Point(123, 112);
-            this.pricetxtbox.Name = "pricetxtbox";
-            this.pricetxtbox.Size = new System.Drawing.Size(164, 20);
-            this.pricetxtbox.TabIndex = 5;
-            // 
-            // QtyLabel
-            // 
-            this.QtyLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.QtyLabel.AutoSize = true;
-            this.QtyLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtyLabel.Location = new System.Drawing.Point(489, 92);
-            this.QtyLabel.Name = "QtyLabel";
-            this.QtyLabel.Size = new System.Drawing.Size(32, 15);
-            this.QtyLabel.TabIndex = 9;
-            this.QtyLabel.Text = "Qty.";
-            // 
-            // Qtytextbox
-            // 
-            this.Qtytextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Qtytextbox.Location = new System.Drawing.Point(526, 87);
-            this.Qtytextbox.Name = "Qtytextbox";
-            this.Qtytextbox.Size = new System.Drawing.Size(121, 20);
-            this.Qtytextbox.TabIndex = 8;
-            this.Qtytextbox.TextChanged += new System.EventHandler(this.Qtytextbox_TextChanged);
+            this.ProductNametextBox.Location = new System.Drawing.Point(123, 86);
+            this.ProductNametextBox.Name = "ProductNametextBox";
+            this.ProductNametextBox.Size = new System.Drawing.Size(274, 20);
+            this.ProductNametextBox.TabIndex = 19;
             // 
             // RemoveBtn
             // 
@@ -297,6 +229,110 @@
             this.addedbutton.UseVisualStyleBackColor = false;
             this.addedbutton.Click += new System.EventHandler(this.addedbutton_Click);
             // 
+            // memberdropdown
+            // 
+            this.memberdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.memberdropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.memberdropdown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.memberdropdown.FormattingEnabled = true;
+            this.memberdropdown.Items.AddRange(new object[] {
+            "Member",
+            "Non Member"});
+            this.memberdropdown.Location = new System.Drawing.Point(526, 50);
+            this.memberdropdown.Name = "memberdropdown";
+            this.memberdropdown.Size = new System.Drawing.Size(121, 21);
+            this.memberdropdown.TabIndex = 12;
+            // 
+            // Membershipdropdown
+            // 
+            this.Membershipdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Membershipdropdown.AutoSize = true;
+            this.Membershipdropdown.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Membershipdropdown.Location = new System.Drawing.Point(420, 55);
+            this.Membershipdropdown.Name = "Membershipdropdown";
+            this.Membershipdropdown.Size = new System.Drawing.Size(101, 15);
+            this.Membershipdropdown.TabIndex = 11;
+            this.Membershipdropdown.Text = "Member Status:";
+            this.Membershipdropdown.Click += new System.EventHandler(this.Membershipdropdown_Click);
+            // 
+            // QtyLabel
+            // 
+            this.QtyLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.QtyLabel.AutoSize = true;
+            this.QtyLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QtyLabel.Location = new System.Drawing.Point(489, 92);
+            this.QtyLabel.Name = "QtyLabel";
+            this.QtyLabel.Size = new System.Drawing.Size(32, 15);
+            this.QtyLabel.TabIndex = 9;
+            this.QtyLabel.Text = "Qty.";
+            // 
+            // Qtytextbox
+            // 
+            this.Qtytextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Qtytextbox.Location = new System.Drawing.Point(526, 87);
+            this.Qtytextbox.Name = "Qtytextbox";
+            this.Qtytextbox.Size = new System.Drawing.Size(121, 20);
+            this.Qtytextbox.TabIndex = 8;
+            this.Qtytextbox.TextChanged += new System.EventHandler(this.Qtytextbox_TextChanged);
+            // 
+            // datelabel
+            // 
+            this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.datelabel.AutoSize = true;
+            this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datelabel.Location = new System.Drawing.Point(481, 24);
+            this.datelabel.Name = "datelabel";
+            this.datelabel.Size = new System.Drawing.Size(40, 17);
+            this.datelabel.TabIndex = 7;
+            this.datelabel.Text = "Date:";
+            // 
+            // ProductPricelabel
+            // 
+            this.ProductPricelabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.ProductPricelabel.AutoSize = true;
+            this.ProductPricelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductPricelabel.Location = new System.Drawing.Point(11, 114);
+            this.ProductPricelabel.Name = "ProductPricelabel";
+            this.ProductPricelabel.Size = new System.Drawing.Size(39, 15);
+            this.ProductPricelabel.TabIndex = 6;
+            this.ProductPricelabel.Text = "Price:";
+            // 
+            // pricetxtbox
+            // 
+            this.pricetxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pricetxtbox.Location = new System.Drawing.Point(123, 112);
+            this.pricetxtbox.Name = "pricetxtbox";
+            this.pricetxtbox.Size = new System.Drawing.Size(164, 20);
+            this.pricetxtbox.TabIndex = 5;
+            // 
+            // CustomrNameSalesDashboar
+            // 
+            this.CustomrNameSalesDashboar.AutoSize = true;
+            this.CustomrNameSalesDashboar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomrNameSalesDashboar.Location = new System.Drawing.Point(11, 26);
+            this.CustomrNameSalesDashboar.Name = "CustomrNameSalesDashboar";
+            this.CustomrNameSalesDashboar.Size = new System.Drawing.Size(106, 15);
+            this.CustomrNameSalesDashboar.TabIndex = 2;
+            this.CustomrNameSalesDashboar.Text = "Customer Name:";
+            // 
+            // SalesData
+            // 
+            this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.SalesData.Location = new System.Drawing.Point(526, 21);
+            this.SalesData.Name = "SalesData";
+            this.SalesData.Size = new System.Drawing.Size(121, 20);
+            this.SalesData.TabIndex = 1;
+            // 
+            // CustomerNameTextboxSales
+            // 
+            this.CustomerNameTextboxSales.Location = new System.Drawing.Point(123, 24);
+            this.CustomerNameTextboxSales.Name = "CustomerNameTextboxSales";
+            this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 20);
+            this.CustomerNameTextboxSales.TabIndex = 0;
+            // 
             // customersalesdatagrid
             // 
             this.customersalesdatagrid.AllowUserToAddRows = false;
@@ -318,6 +354,35 @@
             this.customersalesdatagrid.Name = "customersalesdatagrid";
             this.customersalesdatagrid.Size = new System.Drawing.Size(657, 301);
             this.customersalesdatagrid.TabIndex = 3;
+            // 
+            // idproduct
+            // 
+            this.idproduct.HeaderText = "Product ID";
+            this.idproduct.Name = "idproduct";
+            // 
+            // ItemNameCol
+            // 
+            this.ItemNameCol.HeaderText = "Item Name";
+            this.ItemNameCol.Name = "ItemNameCol";
+            this.ItemNameCol.ReadOnly = true;
+            // 
+            // QuantityCol
+            // 
+            this.QuantityCol.HeaderText = "Oty";
+            this.QuantityCol.Name = "QuantityCol";
+            this.QuantityCol.ReadOnly = true;
+            // 
+            // Pricecol
+            // 
+            this.Pricecol.HeaderText = "Price";
+            this.Pricecol.Name = "Pricecol";
+            this.Pricecol.ReadOnly = true;
+            // 
+            // Totalcol
+            // 
+            this.Totalcol.HeaderText = "Total";
+            this.Totalcol.Name = "Totalcol";
+            this.Totalcol.ReadOnly = true;
             // 
             // proccedtopay
             // 
@@ -356,68 +421,19 @@
             this.TotalLabel.TabIndex = 21;
             this.TotalLabel.Text = "Total:";
             // 
-            // ProductNameSalesLabel
+            // MngBIll
             // 
-            this.ProductNameSalesLabel.AutoSize = true;
-            this.ProductNameSalesLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductNameSalesLabel.Location = new System.Drawing.Point(11, 88);
-            this.ProductNameSalesLabel.Name = "ProductNameSalesLabel";
-            this.ProductNameSalesLabel.Size = new System.Drawing.Size(96, 15);
-            this.ProductNameSalesLabel.TabIndex = 20;
-            this.ProductNameSalesLabel.Text = "Product Name:";
-            // 
-            // ProductNametextBox
-            // 
-            this.ProductNametextBox.Location = new System.Drawing.Point(123, 86);
-            this.ProductNametextBox.Name = "ProductNametextBox";
-            this.ProductNametextBox.Size = new System.Drawing.Size(274, 20);
-            this.ProductNametextBox.TabIndex = 19;
-            // 
-            // salesdashproductid
-            // 
-            this.salesdashproductid.AutoSize = true;
-            this.salesdashproductid.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salesdashproductid.Location = new System.Drawing.Point(11, 57);
-            this.salesdashproductid.Name = "salesdashproductid";
-            this.salesdashproductid.Size = new System.Drawing.Size(73, 15);
-            this.salesdashproductid.TabIndex = 22;
-            this.salesdashproductid.Text = "Product Id:";
-            // 
-            // productidtextbox
-            // 
-            this.productidtextbox.Location = new System.Drawing.Point(123, 55);
-            this.productidtextbox.Name = "productidtextbox";
-            this.productidtextbox.Size = new System.Drawing.Size(274, 20);
-            this.productidtextbox.TabIndex = 21;
-            // 
-            // idproduct
-            // 
-            this.idproduct.HeaderText = "Product ID";
-            this.idproduct.Name = "idproduct";
-            // 
-            // ItemNameCol
-            // 
-            this.ItemNameCol.HeaderText = "Item Name";
-            this.ItemNameCol.Name = "ItemNameCol";
-            this.ItemNameCol.ReadOnly = true;
-            // 
-            // QuantityCol
-            // 
-            this.QuantityCol.HeaderText = "Oty";
-            this.QuantityCol.Name = "QuantityCol";
-            this.QuantityCol.ReadOnly = true;
-            // 
-            // Pricecol
-            // 
-            this.Pricecol.HeaderText = "Price";
-            this.Pricecol.Name = "Pricecol";
-            this.Pricecol.ReadOnly = true;
-            // 
-            // Totalcol
-            // 
-            this.Totalcol.HeaderText = "Total";
-            this.Totalcol.Name = "Totalcol";
-            this.Totalcol.ReadOnly = true;
+            this.MngBIll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.MngBIll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.MngBIll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MngBIll.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MngBIll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.MngBIll.Location = new System.Drawing.Point(12, 162);
+            this.MngBIll.Name = "MngBIll";
+            this.MngBIll.Size = new System.Drawing.Size(150, 47);
+            this.MngBIll.TabIndex = 3;
+            this.MngBIll.Text = "Manage Bill";
+            this.MngBIll.UseVisualStyleBackColor = true;
             // 
             // SalesmanDashboar
             // 
@@ -480,5 +496,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantityCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pricecol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Totalcol;
+        private System.Windows.Forms.Button MngBIll;
     }
 }
