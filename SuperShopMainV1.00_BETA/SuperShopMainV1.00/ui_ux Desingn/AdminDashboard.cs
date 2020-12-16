@@ -47,5 +47,10 @@ namespace SuperShopMainV1._00
             adm.Show();
             this.Hide();
         }
+
+        private void addedbuttoninventory_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
