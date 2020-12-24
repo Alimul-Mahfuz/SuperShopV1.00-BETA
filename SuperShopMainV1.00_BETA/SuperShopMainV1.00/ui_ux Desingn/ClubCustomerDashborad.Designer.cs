@@ -75,7 +75,7 @@
             this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.logoutbutton.Location = new System.Drawing.Point(12, 621);
+            this.logoutbutton.Location = new System.Drawing.Point(12, 631);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(150, 40);
             this.logoutbutton.TabIndex = 2;
