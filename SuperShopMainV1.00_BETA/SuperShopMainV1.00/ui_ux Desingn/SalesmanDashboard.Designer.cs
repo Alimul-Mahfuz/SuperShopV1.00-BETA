@@ -36,7 +36,6 @@
             this.SalesButton = new System.Windows.Forms.Button();
             this.dashboardpicbox = new System.Windows.Forms.PictureBox();
             this.CustomerDashboarplanel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.datetimeviewer = new System.Windows.Forms.TextBox();
             this.salesdashproductid = new System.Windows.Forms.Label();
             this.productidtextbox = new System.Windows.Forms.TextBox();
@@ -59,7 +58,9 @@
             this.proccedtopay = new System.Windows.Forms.Button();
             this.grandtotalcount = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.labeltotal = new System.Windows.Forms.Label();
+            this.totaltextbox = new System.Windows.Forms.TextBox();
+            this.proceedtopay = new System.Windows.Forms.Button();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
             this.CustomerDashboarplanel1.SuspendLayout();
@@ -157,8 +158,6 @@
             this.CustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.CustomerDashboarplanel1.Controls.Add(this.button2);
-            this.CustomerDashboarplanel1.Controls.Add(this.button1);
             this.CustomerDashboarplanel1.Controls.Add(this.datetimeviewer);
             this.CustomerDashboarplanel1.Controls.Add(this.salesdashproductid);
             this.CustomerDashboarplanel1.Controls.Add(this.productidtextbox);
@@ -176,16 +175,6 @@
             this.CustomerDashboarplanel1.Name = "CustomerDashboarplanel1";
             this.CustomerDashboarplanel1.Size = new System.Drawing.Size(657, 168);
             this.CustomerDashboarplanel1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(304, 119);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // datetimeviewer
             // 
@@ -340,7 +329,7 @@
             this.customersalesdatagrid.Location = new System.Drawing.Point(183, 297);
             this.customersalesdatagrid.Name = "customersalesdatagrid";
             this.customersalesdatagrid.RowHeadersWidth = 51;
-            this.customersalesdatagrid.Size = new System.Drawing.Size(657, 320);
+            this.customersalesdatagrid.Size = new System.Drawing.Size(657, 236);
             this.customersalesdatagrid.TabIndex = 3;
             this.customersalesdatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersalesdatagrid_CellContentClick);
             // 
@@ -421,15 +410,39 @@
             this.TotalLabel.TabIndex = 21;
             this.TotalLabel.Text = "Total:";
             // 
-            // button2
+            // labeltotal
             // 
-            this.button2.Location = new System.Drawing.Point(379, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 19);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.labeltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labeltotal.AutoSize = true;
+            this.labeltotal.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltotal.Location = new System.Drawing.Point(183, 550);
+            this.labeltotal.Name = "labeltotal";
+            this.labeltotal.Size = new System.Drawing.Size(109, 35);
+            this.labeltotal.TabIndex = 22;
+            this.labeltotal.Text = "TOTAL:";
+            // 
+            // totaltextbox
+            // 
+            this.totaltextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.totaltextbox.Location = new System.Drawing.Point(306, 549);
+            this.totaltextbox.Multiline = true;
+            this.totaltextbox.Name = "totaltextbox";
+            this.totaltextbox.Size = new System.Drawing.Size(179, 36);
+            this.totaltextbox.TabIndex = 23;
+            // 
+            // proceedtopay
+            // 
+            this.proceedtopay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.proceedtopay.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.proceedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.proceedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceedtopay.ForeColor = System.Drawing.Color.Black;
+            this.proceedtopay.Location = new System.Drawing.Point(665, 549);
+            this.proceedtopay.Name = "proceedtopay";
+            this.proceedtopay.Size = new System.Drawing.Size(175, 36);
+            this.proceedtopay.TabIndex = 24;
+            this.proceedtopay.Text = "Proceed To Pay";
+            this.proceedtopay.UseVisualStyleBackColor = false;
             // 
             // SalesmanDashboar
             // 
@@ -437,6 +450,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
             this.ClientSize = new System.Drawing.Size(852, 609);
+            this.Controls.Add(this.proceedtopay);
+            this.Controls.Add(this.totaltextbox);
+            this.Controls.Add(this.labeltotal);
             this.Controls.Add(this.TotalLabel);
             this.Controls.Add(this.grandtotalcount);
             this.Controls.Add(this.proccedtopay);
@@ -490,7 +506,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantityCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pricecol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Totalcol;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labeltotal;
+        private System.Windows.Forms.TextBox totaltextbox;
+        private System.Windows.Forms.Button proceedtopay;
     }
 }
