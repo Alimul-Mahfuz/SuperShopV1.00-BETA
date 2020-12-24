@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SuperShopMainV1._00.ui_ux_Desingn
+namespace SuperShopMainV1._00
 {
-    public partial class BillManagementDashboard : Form
+    public partial class Form1 : Form
     {
-        public BillManagementDashboard()
+        public Form1()
         {
             InitializeComponent();
         }

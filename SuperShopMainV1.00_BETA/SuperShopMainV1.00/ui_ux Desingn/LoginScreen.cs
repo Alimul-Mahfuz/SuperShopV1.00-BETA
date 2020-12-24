@@ -20,8 +20,8 @@ namespace SuperShopMainV1._00
 
         private void Loginbutton_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon=new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopDB;Integrated Security=True;");
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM LOGIN WHERE USER_ID= '"+UserID_textBox.Text+"'and PASSWORD='"+passwrodbox.Text+"'and ROLE='"+RoleSelect.Text+"'",sqlcon);
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM LOGIN WHERE USER_ID= '" + UserID_textBox.Text + "'and ROLE='" + RoleSelect.Text + "' and PASSWORD='" + passwrodbox.Text + "'", sqlcon);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
             if (dtbl.Rows[0][0].ToString() == "1") 
@@ -52,5 +52,7 @@ namespace SuperShopMainV1._00
         {
             this.Close();
         }
+
+ 
     }
 }

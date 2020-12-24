@@ -1,6 +1,6 @@
-﻿namespace SuperShopMainV1._00.ui_ux_Desingn
+﻿namespace SuperShopMainV1._00
 {
-    partial class BillManagementDashboard
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // BillManagementDashboard
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 697);
-            this.MinimumSize = new System.Drawing.Size(1010, 736);
-            this.Name = "BillManagementDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Bill Management Dashboard";
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion
