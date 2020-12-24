@@ -16,7 +16,7 @@ namespace SuperShopMainV1._00
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoagingScreenFlashCard());
+            Application.Run(new SalesmanDashboar());
         }
     }
 }

@@ -48,10 +48,10 @@
             this.Login_PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Login_PictureBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.Login_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Login_PictureBox.Image")));
-            this.Login_PictureBox.Location = new System.Drawing.Point(148, 12);
+            this.Login_PictureBox.Location = new System.Drawing.Point(151, 12);
             this.Login_PictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Login_PictureBox.Name = "Login_PictureBox";
-            this.Login_PictureBox.Size = new System.Drawing.Size(391, 130);
+            this.Login_PictureBox.Size = new System.Drawing.Size(391, 124);
             this.Login_PictureBox.TabIndex = 0;
             this.Login_PictureBox.TabStop = false;
             // 
