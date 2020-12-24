@@ -35,7 +35,6 @@
             this.loadpanelmain = new System.Windows.Forms.Panel();
             this.loadpanlesecond = new System.Windows.Forms.Panel();
             this.loadtimer = new System.Windows.Forms.Timer(this.components);
-            this.loadscreenwelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // loadscreenpanel
@@ -86,19 +85,6 @@
             this.loadtimer.Interval = 15;
             this.loadtimer.Tick += new System.EventHandler(this.loadtimer_Tick);
             // 
-            // loadscreenwelcome
-            // 
-            this.loadscreenwelcome.AutoSize = true;
-            this.loadscreenwelcome.BackColor = System.Drawing.Color.Transparent;
-            this.loadscreenwelcome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.loadscreenwelcome.Font = new System.Drawing.Font("Microsoft JhengHei UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadscreenwelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadscreenwelcome.Location = new System.Drawing.Point(170, 156);
-            this.loadscreenwelcome.Name = "loadscreenwelcome";
-            this.loadscreenwelcome.Size = new System.Drawing.Size(183, 41);
-            this.loadscreenwelcome.TabIndex = 4;
-            this.loadscreenwelcome.Text = "WELCOME";
-            // 
             // LoagingScreenFlashCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,7 +92,6 @@
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(529, 295);
-            this.Controls.Add(this.loadscreenwelcome);
             this.Controls.Add(this.loadpanlesecond);
             this.Controls.Add(this.loadpanelmain);
             this.Controls.Add(this.label1);
@@ -131,6 +116,5 @@
         private System.Windows.Forms.Panel loadpanelmain;
         private System.Windows.Forms.Panel loadpanlesecond;
         private System.Windows.Forms.Timer loadtimer;
-        private System.Windows.Forms.Label loadscreenwelcome;
     }
 }
