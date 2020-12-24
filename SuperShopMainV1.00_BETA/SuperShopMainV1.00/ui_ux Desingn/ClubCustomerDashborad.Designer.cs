@@ -157,7 +157,7 @@
             this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 181);
+            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 110);
             this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
             this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
             this.RemoveButtonclubcustomer.TabIndex = 24;
@@ -171,9 +171,9 @@
             this.refreshclubmemberbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.refreshclubmemberbtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshclubmemberbtn.ForeColor = System.Drawing.Color.Black;
-            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 128);
+            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 66);
             this.refreshclubmemberbtn.Name = "refreshclubmemberbtn";
-            this.refreshclubmemberbtn.Size = new System.Drawing.Size(163, 38);
+            this.refreshclubmemberbtn.Size = new System.Drawing.Size(163, 30);
             this.refreshclubmemberbtn.TabIndex = 23;
             this.refreshclubmemberbtn.Text = "REFRESH";
             this.refreshclubmemberbtn.UseVisualStyleBackColor = false;
@@ -228,7 +228,7 @@
             this.addedbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbutton.ForeColor = System.Drawing.Color.Black;
-            this.addedbutton.Location = new System.Drawing.Point(484, 181);
+            this.addedbutton.Location = new System.Drawing.Point(484, 110);
             this.addedbutton.Name = "addedbutton";
             this.addedbutton.Size = new System.Drawing.Size(75, 23);
             this.addedbutton.TabIndex = 17;

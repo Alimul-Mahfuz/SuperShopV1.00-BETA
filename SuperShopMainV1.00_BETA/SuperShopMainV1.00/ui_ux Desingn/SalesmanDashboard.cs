@@ -80,7 +80,7 @@ namespace SuperShopMainV1._00
                 float sum=qtyp*fineprice;
                 customersalesdatagrid.Rows.Add(productidtextbox.Text, ProductNametextBox.Text, Qtytextbox.Text, price,sum.ToString());
                 totalcounter = totalcounter + sum;
-                grandtotalcount.Text = totalcounter.ToString();
+                totaltextbox.Text = totalcounter.ToString();
                 sqlcon.Close();
 
 

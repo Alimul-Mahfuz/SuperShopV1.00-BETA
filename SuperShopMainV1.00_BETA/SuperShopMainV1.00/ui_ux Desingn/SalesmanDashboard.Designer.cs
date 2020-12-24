@@ -77,7 +77,7 @@
             this.SalesDashboardPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SalesDashboardPanel.Location = new System.Drawing.Point(0, 0);
             this.SalesDashboardPanel.Name = "SalesDashboardPanel";
-            this.SalesDashboardPanel.Size = new System.Drawing.Size(177, 609);
+            this.SalesDashboardPanel.Size = new System.Drawing.Size(177, 631);
             this.SalesDashboardPanel.TabIndex = 0;
             // 
             // MngBIll
@@ -102,7 +102,7 @@
             this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.logoutbutton.Location = new System.Drawing.Point(12, 543);
+            this.logoutbutton.Location = new System.Drawing.Point(12, 565);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(150, 40);
             this.logoutbutton.TabIndex = 2;
@@ -148,7 +148,7 @@
             this.dashboardpicbox.Image = global::SuperShopMainV1._00.Properties.Resources.shoplogo1;
             this.dashboardpicbox.Location = new System.Drawing.Point(177, 0);
             this.dashboardpicbox.Name = "dashboardpicbox";
-            this.dashboardpicbox.Size = new System.Drawing.Size(675, 105);
+            this.dashboardpicbox.Size = new System.Drawing.Size(708, 105);
             this.dashboardpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.dashboardpicbox.TabIndex = 1;
             this.dashboardpicbox.TabStop = false;
@@ -171,15 +171,15 @@
             this.CustomerDashboarplanel1.Controls.Add(this.Qtytextbox);
             this.CustomerDashboarplanel1.Controls.Add(this.CustomrNameSalesDashboar);
             this.CustomerDashboarplanel1.Controls.Add(this.CustomerNameTextboxSales);
-            this.CustomerDashboarplanel1.Location = new System.Drawing.Point(183, 123);
+            this.CustomerDashboarplanel1.Location = new System.Drawing.Point(183, 111);
             this.CustomerDashboarplanel1.Name = "CustomerDashboarplanel1";
-            this.CustomerDashboarplanel1.Size = new System.Drawing.Size(657, 168);
+            this.CustomerDashboarplanel1.Size = new System.Drawing.Size(690, 168);
             this.CustomerDashboarplanel1.TabIndex = 2;
             // 
             // datetimeviewer
             // 
             this.datetimeviewer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datetimeviewer.Location = new System.Drawing.Point(423, 26);
+            this.datetimeviewer.Location = new System.Drawing.Point(456, 26);
             this.datetimeviewer.Name = "datetimeviewer";
             this.datetimeviewer.Size = new System.Drawing.Size(224, 20);
             this.datetimeviewer.TabIndex = 23;
@@ -221,12 +221,12 @@
             // 
             // RemoveBtn
             // 
-            this.RemoveBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RemoveBtn.BackColor = System.Drawing.Color.PaleTurquoise;
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveBtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveBtn.ForeColor = System.Drawing.Color.Black;
-            this.RemoveBtn.Location = new System.Drawing.Point(572, 132);
+            this.RemoveBtn.Location = new System.Drawing.Point(605, 132);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(75, 23);
             this.RemoveBtn.TabIndex = 18;
@@ -236,12 +236,12 @@
             // 
             // addedbutton
             // 
-            this.addedbutton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.addedbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.addedbutton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.addedbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbutton.ForeColor = System.Drawing.Color.Black;
-            this.addedbutton.Location = new System.Drawing.Point(482, 132);
+            this.addedbutton.Location = new System.Drawing.Point(515, 132);
             this.addedbutton.Name = "addedbutton";
             this.addedbutton.Size = new System.Drawing.Size(75, 23);
             this.addedbutton.TabIndex = 17;
@@ -258,7 +258,7 @@
             this.memberdropdown.Items.AddRange(new object[] {
             "Member",
             "Non Member"});
-            this.memberdropdown.Location = new System.Drawing.Point(526, 59);
+            this.memberdropdown.Location = new System.Drawing.Point(559, 59);
             this.memberdropdown.Name = "memberdropdown";
             this.memberdropdown.Size = new System.Drawing.Size(121, 21);
             this.memberdropdown.TabIndex = 12;
@@ -268,7 +268,7 @@
             this.Membershipdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Membershipdropdown.AutoSize = true;
             this.Membershipdropdown.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Membershipdropdown.Location = new System.Drawing.Point(420, 64);
+            this.Membershipdropdown.Location = new System.Drawing.Point(453, 64);
             this.Membershipdropdown.Name = "Membershipdropdown";
             this.Membershipdropdown.Size = new System.Drawing.Size(101, 15);
             this.Membershipdropdown.TabIndex = 11;
@@ -326,10 +326,10 @@
             this.Pricecol,
             this.Totalcol});
             this.customersalesdatagrid.GridColor = System.Drawing.SystemColors.Control;
-            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 297);
+            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 285);
             this.customersalesdatagrid.Name = "customersalesdatagrid";
             this.customersalesdatagrid.RowHeadersWidth = 51;
-            this.customersalesdatagrid.Size = new System.Drawing.Size(657, 236);
+            this.customersalesdatagrid.Size = new System.Drawing.Size(690, 292);
             this.customersalesdatagrid.TabIndex = 3;
             this.customersalesdatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersalesdatagrid_CellContentClick);
             // 
@@ -379,7 +379,7 @@
             this.proccedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.proccedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proccedtopay.ForeColor = System.Drawing.Color.Black;
-            this.proccedtopay.Location = new System.Drawing.Point(694, 634);
+            this.proccedtopay.Location = new System.Drawing.Point(727, 656);
             this.proccedtopay.Name = "proccedtopay";
             this.proccedtopay.Size = new System.Drawing.Size(146, 35);
             this.proccedtopay.TabIndex = 19;
@@ -391,7 +391,7 @@
             // 
             this.grandtotalcount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.grandtotalcount.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grandtotalcount.Location = new System.Drawing.Point(276, 631);
+            this.grandtotalcount.Location = new System.Drawing.Point(276, 653);
             this.grandtotalcount.Multiline = true;
             this.grandtotalcount.Name = "grandtotalcount";
             this.grandtotalcount.Size = new System.Drawing.Size(202, 38);
@@ -404,7 +404,7 @@
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.BackColor = System.Drawing.Color.AntiqueWhite;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(183, 631);
+            this.TotalLabel.Location = new System.Drawing.Point(183, 653);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(87, 35);
             this.TotalLabel.TabIndex = 21;
@@ -415,7 +415,7 @@
             this.labeltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labeltotal.AutoSize = true;
             this.labeltotal.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltotal.Location = new System.Drawing.Point(183, 550);
+            this.labeltotal.Location = new System.Drawing.Point(183, 584);
             this.labeltotal.Name = "labeltotal";
             this.labeltotal.Size = new System.Drawing.Size(109, 35);
             this.labeltotal.TabIndex = 22;
@@ -424,11 +424,13 @@
             // totaltextbox
             // 
             this.totaltextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.totaltextbox.Location = new System.Drawing.Point(306, 549);
+            this.totaltextbox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totaltextbox.Location = new System.Drawing.Point(306, 583);
             this.totaltextbox.Multiline = true;
             this.totaltextbox.Name = "totaltextbox";
             this.totaltextbox.Size = new System.Drawing.Size(179, 36);
             this.totaltextbox.TabIndex = 23;
+            this.totaltextbox.WordWrap = false;
             // 
             // proceedtopay
             // 
@@ -437,7 +439,7 @@
             this.proceedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.proceedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedtopay.ForeColor = System.Drawing.Color.Black;
-            this.proceedtopay.Location = new System.Drawing.Point(665, 549);
+            this.proceedtopay.Location = new System.Drawing.Point(698, 583);
             this.proceedtopay.Name = "proceedtopay";
             this.proceedtopay.Size = new System.Drawing.Size(175, 36);
             this.proceedtopay.TabIndex = 24;
@@ -449,7 +451,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
-            this.ClientSize = new System.Drawing.Size(852, 609);
+            this.ClientSize = new System.Drawing.Size(885, 631);
             this.Controls.Add(this.proceedtopay);
             this.Controls.Add(this.totaltextbox);
             this.Controls.Add(this.labeltotal);
@@ -464,6 +466,7 @@
             this.MinimumSize = new System.Drawing.Size(867, 605);
             this.Name = "SalesmanDashboar";
             this.Text = "Salesman Dashboar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SalesmanDashboar_Load);
             this.SalesDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).EndInit();
