@@ -133,5 +133,15 @@ namespace SuperShopMainV1._00
 
         }
 
+        private void productidtextbox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void proccedtopay_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

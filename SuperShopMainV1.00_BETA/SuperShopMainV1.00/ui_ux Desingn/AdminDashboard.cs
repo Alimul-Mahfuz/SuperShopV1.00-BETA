@@ -52,5 +52,15 @@ namespace SuperShopMainV1._00
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchinventory_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

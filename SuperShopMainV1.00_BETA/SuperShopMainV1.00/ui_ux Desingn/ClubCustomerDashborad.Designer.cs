@@ -146,7 +146,7 @@
             this.ClubCustomerDashboarplanel1.Controls.Add(this.CustomerNameTextboxSales);
             this.ClubCustomerDashboarplanel1.Location = new System.Drawing.Point(183, 111);
             this.ClubCustomerDashboarplanel1.Name = "ClubCustomerDashboarplanel1";
-            this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(657, 168);
+            this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(657, 220);
             this.ClubCustomerDashboarplanel1.TabIndex = 3;
             this.ClubCustomerDashboarplanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.ClubCustomerDashboarplanel1_Paint);
             // 
@@ -157,7 +157,7 @@
             this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 129);
+            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 181);
             this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
             this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
             this.RemoveButtonclubcustomer.TabIndex = 24;
@@ -171,7 +171,7 @@
             this.refreshclubmemberbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.refreshclubmemberbtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshclubmemberbtn.ForeColor = System.Drawing.Color.Black;
-            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 76);
+            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 128);
             this.refreshclubmemberbtn.Name = "refreshclubmemberbtn";
             this.refreshclubmemberbtn.Size = new System.Drawing.Size(163, 38);
             this.refreshclubmemberbtn.TabIndex = 23;
@@ -228,7 +228,7 @@
             this.addedbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbutton.ForeColor = System.Drawing.Color.Black;
-            this.addedbutton.Location = new System.Drawing.Point(484, 129);
+            this.addedbutton.Location = new System.Drawing.Point(484, 181);
             this.addedbutton.Name = "addedbutton";
             this.addedbutton.Size = new System.Drawing.Size(75, 23);
             this.addedbutton.TabIndex = 17;
@@ -303,10 +303,10 @@
             this.clubcustomerdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clubcustomerdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.clubcustomerdatagrid.Location = new System.Drawing.Point(183, 296);
+            this.clubcustomerdatagrid.Location = new System.Drawing.Point(183, 337);
             this.clubcustomerdatagrid.Name = "clubcustomerdatagrid";
             this.clubcustomerdatagrid.RowHeadersWidth = 80;
-            this.clubcustomerdatagrid.Size = new System.Drawing.Size(656, 365);
+            this.clubcustomerdatagrid.Size = new System.Drawing.Size(657, 348);
             this.clubcustomerdatagrid.TabIndex = 4;
             // 
             // ClubCustomerDashborad

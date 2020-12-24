@@ -44,12 +44,28 @@
             this.purchasepricelabel = new System.Windows.Forms.Label();
             this.Priceadmin = new System.Windows.Forms.TextBox();
             this.ProductCata = new System.Windows.Forms.Label();
-            this.ProductNametextBox = new System.Windows.Forms.TextBox();
             this.ProductName = new System.Windows.Forms.Label();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.searchinventory = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pardname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catagory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.initstorck = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sold = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).BeginInit();
             this.AdminAddproductpanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminDashboardPanel
@@ -144,6 +160,7 @@
             this.AdminAddproductpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AdminAddproductpanel.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.AdminAddproductpanel.Controls.Add(this.comboBox1);
             this.AdminAddproductpanel.Controls.Add(this.reatilprice);
             this.AdminAddproductpanel.Controls.Add(this.RetailPricebox);
             this.AdminAddproductpanel.Controls.Add(this.adqty);
@@ -152,12 +169,11 @@
             this.AdminAddproductpanel.Controls.Add(this.purchasepricelabel);
             this.AdminAddproductpanel.Controls.Add(this.Priceadmin);
             this.AdminAddproductpanel.Controls.Add(this.ProductCata);
-            this.AdminAddproductpanel.Controls.Add(this.ProductNametextBox);
             this.AdminAddproductpanel.Controls.Add(this.ProductName);
             this.AdminAddproductpanel.Controls.Add(this.CustomerNameTextboxSales);
             this.AdminAddproductpanel.Location = new System.Drawing.Point(183, 111);
             this.AdminAddproductpanel.Name = "AdminAddproductpanel";
-            this.AdminAddproductpanel.Size = new System.Drawing.Size(657, 195);
+            this.AdminAddproductpanel.Size = new System.Drawing.Size(657, 173);
             this.AdminAddproductpanel.TabIndex = 4;
             // 
             // reatilprice
@@ -212,7 +228,7 @@
             this.addedbuttoninventory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbuttoninventory.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbuttoninventory.ForeColor = System.Drawing.Color.Black;
-            this.addedbuttoninventory.Location = new System.Drawing.Point(504, 71);
+            this.addedbuttoninventory.Location = new System.Drawing.Point(504, 49);
             this.addedbuttoninventory.Name = "addedbuttoninventory";
             this.addedbuttoninventory.Size = new System.Drawing.Size(130, 48);
             this.addedbuttoninventory.TabIndex = 17;
@@ -228,9 +244,9 @@
             this.purchasepricelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.purchasepricelabel.Location = new System.Drawing.Point(11, 78);
             this.purchasepricelabel.Name = "purchasepricelabel";
-            this.purchasepricelabel.Size = new System.Drawing.Size(97, 15);
+            this.purchasepricelabel.Size = new System.Drawing.Size(81, 15);
             this.purchasepricelabel.TabIndex = 14;
-            this.purchasepricelabel.Text = "Purchase Price:";
+            this.purchasepricelabel.Text = "BuyingPrice:";
             // 
             // Priceadmin
             // 
@@ -253,15 +269,6 @@
             this.ProductCata.TabIndex = 4;
             this.ProductCata.Text = "Catagory:";
             // 
-            // ProductNametextBox
-            // 
-            this.ProductNametextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductNametextBox.Location = new System.Drawing.Point(123, 50);
-            this.ProductNametextBox.Name = "ProductNametextBox";
-            this.ProductNametextBox.Size = new System.Drawing.Size(274, 20);
-            this.ProductNametextBox.TabIndex = 3;
-            // 
             // ProductName
             // 
             this.ProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -283,12 +290,165 @@
             this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 20);
             this.CustomerNameTextboxSales.TabIndex = 0;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "GROCERY",
+            "FRUITS",
+            "COSMETICS",
+            "SPICIES",
+            "DAIRY",
+            "DRINKS",
+            "TOILETRIES"});
+            this.comboBox1.Location = new System.Drawing.Point(123, 50);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(274, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.searchinventory);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Location = new System.Drawing.Point(183, 290);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(657, 115);
+            this.panel1.TabIndex = 5;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "GROCERY",
+            "FRUITS",
+            "COSMETICS",
+            "SPICIES",
+            "DAIRY",
+            "DRINKS",
+            "TOILETRIES"});
+            this.comboBox2.Location = new System.Drawing.Point(123, 52);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(274, 21);
+            this.comboBox2.TabIndex = 25;
+            // 
+            // searchinventory
+            // 
+            this.searchinventory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchinventory.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.searchinventory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.searchinventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.searchinventory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.searchinventory.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchinventory.ForeColor = System.Drawing.Color.Black;
+            this.searchinventory.Location = new System.Drawing.Point(504, 26);
+            this.searchinventory.Name = "searchinventory";
+            this.searchinventory.Size = new System.Drawing.Size(130, 48);
+            this.searchinventory.TabIndex = 17;
+            this.searchinventory.Text = "Search Inventory";
+            this.searchinventory.UseVisualStyleBackColor = false;
+            this.searchinventory.Click += new System.EventHandler(this.searchinventory_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 15);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Catagory:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 15);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Product Name;";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox4.Location = new System.Drawing.Point(123, 24);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(274, 20);
+            this.textBox4.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Productid,
+            this.pardname,
+            this.catagory,
+            this.buyprice,
+            this.sel,
+            this.initstorck,
+            this.sold});
+            this.dataGridView1.Location = new System.Drawing.Point(183, 411);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(657, 272);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // Productid
+            // 
+            this.Productid.HeaderText = "PRODUCT_ID";
+            this.Productid.Name = "Productid";
+            // 
+            // pardname
+            // 
+            this.pardname.HeaderText = "PRODUCT_NAME";
+            this.pardname.Name = "pardname";
+            // 
+            // catagory
+            // 
+            this.catagory.HeaderText = "CATAGORY";
+            this.catagory.Name = "catagory";
+            // 
+            // buyprice
+            // 
+            this.buyprice.HeaderText = "BUYING_PRICE";
+            this.buyprice.Name = "buyprice";
+            // 
+            // sel
+            // 
+            this.sel.HeaderText = "SELLING_PRICE";
+            this.sel.Name = "sel";
+            // 
+            // initstorck
+            // 
+            this.initstorck.HeaderText = "INITIAL_STOCK";
+            this.initstorck.Name = "initstorck";
+            // 
+            // sold
+            // 
+            this.sold.HeaderText = "SOLD";
+            this.sold.Name = "sold";
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
             this.ClientSize = new System.Drawing.Size(852, 697);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.AdminAddproductpanel);
             this.Controls.Add(this.admindashboarlogo);
             this.Controls.Add(this.AdminDashboardPanel);
@@ -302,6 +462,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
             this.AdminAddproductpanel.ResumeLayout(false);
             this.AdminAddproductpanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -320,11 +483,25 @@
         private System.Windows.Forms.Label purchasepricelabel;
         private System.Windows.Forms.TextBox Priceadmin;
         private System.Windows.Forms.Label ProductCata;
-        private System.Windows.Forms.TextBox ProductNametextBox;
         private System.Windows.Forms.Label ProductName;
         private System.Windows.Forms.TextBox CustomerNameTextboxSales;
         private System.Windows.Forms.Button Reportadd;
         private System.Windows.Forms.Label reatilprice;
         private System.Windows.Forms.TextBox RetailPricebox;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button searchinventory;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Productid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pardname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catagory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn buyprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn initstorck;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sold;
     }
 }

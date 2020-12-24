@@ -197,6 +197,7 @@
             this.productidtextbox.Name = "productidtextbox";
             this.productidtextbox.Size = new System.Drawing.Size(274, 20);
             this.productidtextbox.TabIndex = 21;
+            this.productidtextbox.TextChanged += new System.EventHandler(this.productidtextbox_TextChanged);
             // 
             // ProductNameSalesLabel
             // 
@@ -335,21 +336,22 @@
             this.proccedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.proccedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proccedtopay.ForeColor = System.Drawing.Color.Black;
-            this.proccedtopay.Location = new System.Drawing.Point(684, 637);
+            this.proccedtopay.Location = new System.Drawing.Point(694, 634);
             this.proccedtopay.Name = "proccedtopay";
             this.proccedtopay.Size = new System.Drawing.Size(146, 35);
             this.proccedtopay.TabIndex = 19;
             this.proccedtopay.Text = "Proceed To Pay";
             this.proccedtopay.UseVisualStyleBackColor = false;
+            this.proccedtopay.Click += new System.EventHandler(this.proccedtopay_Click);
             // 
             // grandtotalcount
             // 
             this.grandtotalcount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.grandtotalcount.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grandtotalcount.Location = new System.Drawing.Point(277, 637);
+            this.grandtotalcount.Location = new System.Drawing.Point(276, 631);
             this.grandtotalcount.Multiline = true;
             this.grandtotalcount.Name = "grandtotalcount";
-            this.grandtotalcount.Size = new System.Drawing.Size(202, 35);
+            this.grandtotalcount.Size = new System.Drawing.Size(202, 38);
             this.grandtotalcount.TabIndex = 20;
             this.grandtotalcount.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -359,7 +361,7 @@
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.BackColor = System.Drawing.Color.AntiqueWhite;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(183, 636);
+            this.TotalLabel.Location = new System.Drawing.Point(183, 631);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(87, 35);
             this.TotalLabel.TabIndex = 21;
