@@ -60,17 +60,7 @@ namespace SuperShopMainV1._00
         {
             this.Show();
         }
-        private void enterkeyserach()
-        {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
-            sqlcon.Open();
-            string query = "Select PRODUCT_NAME from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-            DataTable dtp = new DataTable();
-            sda.Fill(dtp);
-            ProductNametextBox.Text = dtp.Rows[0][0].ToString();
 
-        }
 
         private void addedbutton_Click(object sender, EventArgs e)
         {
