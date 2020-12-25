@@ -35,7 +35,8 @@
             this.Addcutomerbutton = new System.Windows.Forms.Button();
             this.SalesButton = new System.Windows.Forms.Button();
             this.dashboardpicbox = new System.Windows.Forms.PictureBox();
-            this.CustomerDashboarplanel1 = new System.Windows.Forms.Panel();
+            this.searchicon = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.datetimeviewer = new System.Windows.Forms.TextBox();
             this.salesdashproductid = new System.Windows.Forms.Label();
             this.productidtextbox = new System.Windows.Forms.TextBox();
@@ -61,9 +62,11 @@
             this.labeltotal = new System.Windows.Forms.Label();
             this.totaltextbox = new System.Windows.Forms.TextBox();
             this.proceedtopay = new System.Windows.Forms.Button();
+            this.datatimelabel = new System.Windows.Forms.Label();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
-            this.CustomerDashboarplanel1.SuspendLayout();
+            this.searchicon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,36 +156,51 @@
             this.dashboardpicbox.TabIndex = 1;
             this.dashboardpicbox.TabStop = false;
             // 
-            // CustomerDashboarplanel1
+            // searchicon
             // 
-            this.CustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.searchicon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.CustomerDashboarplanel1.Controls.Add(this.datetimeviewer);
-            this.CustomerDashboarplanel1.Controls.Add(this.salesdashproductid);
-            this.CustomerDashboarplanel1.Controls.Add(this.productidtextbox);
-            this.CustomerDashboarplanel1.Controls.Add(this.ProductNameSalesLabel);
-            this.CustomerDashboarplanel1.Controls.Add(this.ProductNametextBox);
-            this.CustomerDashboarplanel1.Controls.Add(this.RemoveBtn);
-            this.CustomerDashboarplanel1.Controls.Add(this.addedbutton);
-            this.CustomerDashboarplanel1.Controls.Add(this.memberdropdown);
-            this.CustomerDashboarplanel1.Controls.Add(this.Membershipdropdown);
-            this.CustomerDashboarplanel1.Controls.Add(this.QtyLabel);
-            this.CustomerDashboarplanel1.Controls.Add(this.Qtytextbox);
-            this.CustomerDashboarplanel1.Controls.Add(this.CustomrNameSalesDashboar);
-            this.CustomerDashboarplanel1.Controls.Add(this.CustomerNameTextboxSales);
-            this.CustomerDashboarplanel1.Location = new System.Drawing.Point(183, 111);
-            this.CustomerDashboarplanel1.Name = "CustomerDashboarplanel1";
-            this.CustomerDashboarplanel1.Size = new System.Drawing.Size(690, 168);
-            this.CustomerDashboarplanel1.TabIndex = 2;
+            this.searchicon.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.searchicon.Controls.Add(this.datatimelabel);
+            this.searchicon.Controls.Add(this.pictureBox1);
+            this.searchicon.Controls.Add(this.datetimeviewer);
+            this.searchicon.Controls.Add(this.salesdashproductid);
+            this.searchicon.Controls.Add(this.productidtextbox);
+            this.searchicon.Controls.Add(this.ProductNameSalesLabel);
+            this.searchicon.Controls.Add(this.ProductNametextBox);
+            this.searchicon.Controls.Add(this.RemoveBtn);
+            this.searchicon.Controls.Add(this.addedbutton);
+            this.searchicon.Controls.Add(this.memberdropdown);
+            this.searchicon.Controls.Add(this.Membershipdropdown);
+            this.searchicon.Controls.Add(this.QtyLabel);
+            this.searchicon.Controls.Add(this.Qtytextbox);
+            this.searchicon.Controls.Add(this.CustomrNameSalesDashboar);
+            this.searchicon.Controls.Add(this.CustomerNameTextboxSales);
+            this.searchicon.Location = new System.Drawing.Point(183, 111);
+            this.searchicon.Name = "searchicon";
+            this.searchicon.Size = new System.Drawing.Size(690, 168);
+            this.searchicon.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources.magnifying_glass;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(375, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // datetimeviewer
             // 
             this.datetimeviewer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datetimeviewer.Location = new System.Drawing.Point(456, 26);
+            this.datetimeviewer.Location = new System.Drawing.Point(559, 26);
             this.datetimeviewer.Name = "datetimeviewer";
-            this.datetimeviewer.Size = new System.Drawing.Size(224, 20);
+            this.datetimeviewer.Size = new System.Drawing.Size(121, 20);
             this.datetimeviewer.TabIndex = 23;
+            this.datetimeviewer.TextChanged += new System.EventHandler(this.datetimeviewer_TextChanged);
             // 
             // salesdashproductid
             // 
@@ -198,7 +216,7 @@
             // 
             this.productidtextbox.Location = new System.Drawing.Point(123, 55);
             this.productidtextbox.Name = "productidtextbox";
-            this.productidtextbox.Size = new System.Drawing.Size(274, 20);
+            this.productidtextbox.Size = new System.Drawing.Size(246, 20);
             this.productidtextbox.TabIndex = 21;
             this.productidtextbox.TextChanged += new System.EventHandler(this.productidtextbox_TextChanged);
             // 
@@ -446,6 +464,17 @@
             this.proceedtopay.Text = "Proceed To Pay";
             this.proceedtopay.UseVisualStyleBackColor = false;
             // 
+            // datatimelabel
+            // 
+            this.datatimelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.datatimelabel.AutoSize = true;
+            this.datatimelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datatimelabel.Location = new System.Drawing.Point(452, 28);
+            this.datatimelabel.Name = "datatimelabel";
+            this.datatimelabel.Size = new System.Drawing.Size(44, 15);
+            this.datatimelabel.TabIndex = 25;
+            this.datatimelabel.Text = "Today";
+            // 
             // SalesmanDashboar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,7 +488,7 @@
             this.Controls.Add(this.grandtotalcount);
             this.Controls.Add(this.proccedtopay);
             this.Controls.Add(this.customersalesdatagrid);
-            this.Controls.Add(this.CustomerDashboarplanel1);
+            this.Controls.Add(this.searchicon);
             this.Controls.Add(this.dashboardpicbox);
             this.Controls.Add(this.SalesDashboardPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -470,8 +499,9 @@
             this.Load += new System.EventHandler(this.SalesmanDashboar_Load);
             this.SalesDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).EndInit();
-            this.CustomerDashboarplanel1.ResumeLayout(false);
-            this.CustomerDashboarplanel1.PerformLayout();
+            this.searchicon.ResumeLayout(false);
+            this.searchicon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -485,7 +515,7 @@
         private System.Windows.Forms.Button logoutbutton;
         private System.Windows.Forms.Button Addcutomerbutton;
         private System.Windows.Forms.PictureBox dashboardpicbox;
-        private System.Windows.Forms.Panel CustomerDashboarplanel1;
+        private System.Windows.Forms.Panel searchicon;
         private System.Windows.Forms.TextBox CustomerNameTextboxSales;
         private System.Windows.Forms.Label CustomrNameSalesDashboar;
         private System.Windows.Forms.ComboBox memberdropdown;
@@ -512,5 +542,7 @@
         private System.Windows.Forms.Label labeltotal;
         private System.Windows.Forms.TextBox totaltextbox;
         private System.Windows.Forms.Button proceedtopay;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label datatimelabel;
     }
 }

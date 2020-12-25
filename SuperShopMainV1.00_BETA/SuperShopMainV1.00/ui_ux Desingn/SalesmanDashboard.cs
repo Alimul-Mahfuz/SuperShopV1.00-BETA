@@ -19,6 +19,8 @@ namespace SuperShopMainV1._00
             InitializeComponent();
             Qtytextbox.Text = "1";
             grandtotalcount.Text = "0.00";
+            DateTime dateTime = DateTime.UtcNow.Date;
+            datetimeviewer.Text = dateTime.ToString("dd-MM-yyyy");
         }
 
         private void SalesmanDashboar_Load(object sender, EventArgs e)
@@ -132,6 +134,32 @@ namespace SuperShopMainV1._00
         {
 
         }
+        private void datetimeviewer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
+                sqlcon.Open();
+                string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
+                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+                DataTable dtb = new DataTable();
+                sda.Fill(dtb);
+                ProductNametextBox.Text = dtb.Rows[0][0].ToString();
+
+
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("PRODUCT NOT FOUND");
+            }
+        }
+
+
 
     }
 }
