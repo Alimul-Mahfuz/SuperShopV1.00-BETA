@@ -49,6 +49,7 @@
             this.SalesData = new System.Windows.Forms.DateTimePicker();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
             this.clubcustomerdatagrid = new System.Windows.Forms.DataGridView();
+            this.MngBIll = new System.Windows.Forms.Button();
             this.ClubDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ClubCustomerDashboarplanel1.SuspendLayout();
@@ -58,6 +59,7 @@
             // ClubDashboardPanel
             // 
             this.ClubDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.ClubDashboardPanel.Controls.Add(this.MngBIll);
             this.ClubDashboardPanel.Controls.Add(this.logoutbutton);
             this.ClubDashboardPanel.Controls.Add(this.Addcutomerbutton);
             this.ClubDashboardPanel.Controls.Add(this.SalesButton);
@@ -157,7 +159,7 @@
             this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 181);
+            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 110);
             this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
             this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
             this.RemoveButtonclubcustomer.TabIndex = 24;
@@ -171,9 +173,9 @@
             this.refreshclubmemberbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.refreshclubmemberbtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshclubmemberbtn.ForeColor = System.Drawing.Color.Black;
-            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 128);
+            this.refreshclubmemberbtn.Location = new System.Drawing.Point(484, 66);
             this.refreshclubmemberbtn.Name = "refreshclubmemberbtn";
-            this.refreshclubmemberbtn.Size = new System.Drawing.Size(163, 38);
+            this.refreshclubmemberbtn.Size = new System.Drawing.Size(163, 30);
             this.refreshclubmemberbtn.TabIndex = 23;
             this.refreshclubmemberbtn.Text = "REFRESH";
             this.refreshclubmemberbtn.UseVisualStyleBackColor = false;
@@ -228,7 +230,7 @@
             this.addedbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbutton.ForeColor = System.Drawing.Color.Black;
-            this.addedbutton.Location = new System.Drawing.Point(484, 181);
+            this.addedbutton.Location = new System.Drawing.Point(484, 110);
             this.addedbutton.Name = "addedbutton";
             this.addedbutton.Size = new System.Drawing.Size(75, 23);
             this.addedbutton.TabIndex = 17;
@@ -309,6 +311,20 @@
             this.clubcustomerdatagrid.Size = new System.Drawing.Size(657, 348);
             this.clubcustomerdatagrid.TabIndex = 4;
             // 
+            // MngBIll
+            // 
+            this.MngBIll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.MngBIll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.MngBIll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MngBIll.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MngBIll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.MngBIll.Location = new System.Drawing.Point(12, 161);
+            this.MngBIll.Name = "MngBIll";
+            this.MngBIll.Size = new System.Drawing.Size(150, 47);
+            this.MngBIll.TabIndex = 4;
+            this.MngBIll.Text = "Manage Bill";
+            this.MngBIll.UseVisualStyleBackColor = true;
+            // 
             // ClubCustomerDashborad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,5 +370,6 @@
         private System.Windows.Forms.DataGridView clubcustomerdatagrid;
         private System.Windows.Forms.Button refreshclubmemberbtn;
         private System.Windows.Forms.Button RemoveButtonclubcustomer;
+        private System.Windows.Forms.Button MngBIll;
     }
 }

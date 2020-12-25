@@ -13,12 +13,12 @@ namespace SuperShopMainV1._00
 {
     public partial class ClubCustomerDashborad : Form
     {
-        SqlConnection son = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopDB;Integrated Security=True;");
+        SqlConnection son = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
         public ClubCustomerDashborad()
         {
             InitializeComponent();
             son.Open();
-            SqlDataAdapter sdpt = new SqlDataAdapter("SELECT * FROM CUSTOMER ORDER BY CUSTOMER_ID ", son);
+            SqlDataAdapter sdpt = new SqlDataAdapter("select MEMBER.MEMBER_ID, CONTACT.CONTACT_ID, CONTACT.NAME, CONTACT.EMAIL, CONTACT.ADDRESS FROM MEMBER,CONTACT WHERE MEMBER.CONTACT_ID=CONTACT.CONTACT_ID;", son);
             son.Close();
             SqlCommandBuilder cb = new SqlCommandBuilder(sdpt);
             DataTable dt = new DataTable();
