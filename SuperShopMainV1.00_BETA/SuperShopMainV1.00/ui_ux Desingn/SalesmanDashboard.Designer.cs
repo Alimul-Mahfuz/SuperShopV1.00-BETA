@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesmanDashboar));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SalesDashboardPanel = new System.Windows.Forms.Panel();
             this.MngBIll = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
@@ -36,6 +38,7 @@
             this.SalesButton = new System.Windows.Forms.Button();
             this.dashboardpicbox = new System.Windows.Forms.PictureBox();
             this.searchicon = new System.Windows.Forms.Panel();
+            this.datatimelabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.datetimeviewer = new System.Windows.Forms.TextBox();
             this.salesdashproductid = new System.Windows.Forms.Label();
@@ -62,7 +65,6 @@
             this.labeltotal = new System.Windows.Forms.Label();
             this.totaltextbox = new System.Windows.Forms.TextBox();
             this.proceedtopay = new System.Windows.Forms.Button();
-            this.datatimelabel = new System.Windows.Forms.Label();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
             this.searchicon.SuspendLayout();
@@ -181,6 +183,17 @@
             this.searchicon.Size = new System.Drawing.Size(690, 168);
             this.searchicon.TabIndex = 2;
             // 
+            // datatimelabel
+            // 
+            this.datatimelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.datatimelabel.AutoSize = true;
+            this.datatimelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datatimelabel.Location = new System.Drawing.Point(452, 28);
+            this.datatimelabel.Name = "datatimelabel";
+            this.datatimelabel.Size = new System.Drawing.Size(44, 15);
+            this.datatimelabel.TabIndex = 25;
+            this.datatimelabel.Text = "Today";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources.magnifying_glass;
@@ -195,9 +208,16 @@
             // 
             // datetimeviewer
             // 
+            this.datetimeviewer.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.datetimeviewer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.datetimeviewer.BackColor = System.Drawing.SystemColors.Info;
+            this.datetimeviewer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datetimeviewer.Cursor = System.Windows.Forms.Cursors.No;
+            this.datetimeviewer.Enabled = false;
+            this.datetimeviewer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimeviewer.Location = new System.Drawing.Point(559, 26);
             this.datetimeviewer.Name = "datetimeviewer";
+            this.datetimeviewer.ReadOnly = true;
             this.datetimeviewer.Size = new System.Drawing.Size(121, 20);
             this.datetimeviewer.TabIndex = 23;
             this.datetimeviewer.TextChanged += new System.EventHandler(this.datetimeviewer_TextChanged);
@@ -333,20 +353,32 @@
             this.customersalesdatagrid.AllowUserToAddRows = false;
             this.customersalesdatagrid.AllowUserToResizeColumns = false;
             this.customersalesdatagrid.AllowUserToResizeRows = false;
-            this.customersalesdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customersalesdatagrid.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
-            this.customersalesdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customersalesdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.customersalesdatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customersalesdatagrid.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.customersalesdatagrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.customersalesdatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.customersalesdatagrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.customersalesdatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.product_id_data,
             this.ItemNameCol,
             this.QuantityCol,
             this.Pricecol,
             this.Totalcol});
-            this.customersalesdatagrid.GridColor = System.Drawing.SystemColors.Control;
+            this.customersalesdatagrid.GridColor = System.Drawing.Color.LightCoral;
             this.customersalesdatagrid.Location = new System.Drawing.Point(183, 285);
             this.customersalesdatagrid.Name = "customersalesdatagrid";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customersalesdatagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.customersalesdatagrid.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.customersalesdatagrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.customersalesdatagrid.Size = new System.Drawing.Size(690, 292);
             this.customersalesdatagrid.TabIndex = 3;
             this.customersalesdatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersalesdatagrid_CellContentClick);
@@ -356,7 +388,6 @@
             this.product_id_data.HeaderText = "Product_ID";
             this.product_id_data.MinimumWidth = 6;
             this.product_id_data.Name = "product_id_data";
-            this.product_id_data.Width = 125;
             // 
             // ItemNameCol
             // 
@@ -364,7 +395,6 @@
             this.ItemNameCol.MinimumWidth = 6;
             this.ItemNameCol.Name = "ItemNameCol";
             this.ItemNameCol.ReadOnly = true;
-            this.ItemNameCol.Width = 125;
             // 
             // QuantityCol
             // 
@@ -372,7 +402,6 @@
             this.QuantityCol.MinimumWidth = 6;
             this.QuantityCol.Name = "QuantityCol";
             this.QuantityCol.ReadOnly = true;
-            this.QuantityCol.Width = 125;
             // 
             // Pricecol
             // 
@@ -380,7 +409,6 @@
             this.Pricecol.MinimumWidth = 6;
             this.Pricecol.Name = "Pricecol";
             this.Pricecol.ReadOnly = true;
-            this.Pricecol.Width = 125;
             // 
             // Totalcol
             // 
@@ -388,7 +416,6 @@
             this.Totalcol.MinimumWidth = 6;
             this.Totalcol.Name = "Totalcol";
             this.Totalcol.ReadOnly = true;
-            this.Totalcol.Width = 125;
             // 
             // proccedtopay
             // 
@@ -463,17 +490,7 @@
             this.proceedtopay.TabIndex = 24;
             this.proceedtopay.Text = "Proceed To Pay";
             this.proceedtopay.UseVisualStyleBackColor = false;
-            // 
-            // datatimelabel
-            // 
-            this.datatimelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datatimelabel.AutoSize = true;
-            this.datatimelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datatimelabel.Location = new System.Drawing.Point(452, 28);
-            this.datatimelabel.Name = "datatimelabel";
-            this.datatimelabel.Size = new System.Drawing.Size(44, 15);
-            this.datatimelabel.TabIndex = 25;
-            this.datatimelabel.Text = "Today";
+            this.proceedtopay.Click += new System.EventHandler(this.proceedtopay_Click);
             // 
             // SalesmanDashboar
             // 

@@ -21,6 +21,7 @@ namespace SuperShopMainV1._00
             grandtotalcount.Text = "0.00";
             DateTime dateTime = DateTime.UtcNow.Date;
             datetimeviewer.Text = dateTime.ToString("dd-MM-yyyy");
+           
         }
 
         private void SalesmanDashboar_Load(object sender, EventArgs e)
@@ -66,34 +67,35 @@ namespace SuperShopMainV1._00
 
         private void addedbutton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string price;
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
-                sqlcon.Open();
-                string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
-                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-                DataTable dtb = new DataTable();
-                sda.Fill(dtb);
-                ProductNametextBox.Text = dtb.Rows[0][0].ToString();
-                price = dtb.Rows[0][1].ToString();
-                float fineprice = float.Parse(price);
-                int qtyp=int.Parse(Qtytextbox.Text);
-                float sum=qtyp*fineprice;
-                customersalesdatagrid.Rows.Add(productidtextbox.Text, ProductNametextBox.Text, Qtytextbox.Text, price,sum.ToString());
-                totalcounter = totalcounter + sum;
-                totaltextbox.Text = totalcounter.ToString();
-                sqlcon.Close();
+
+                try
+                {
+                    string price;
+                    SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
+                    sqlcon.Open();
+                    string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
+                    SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+                    DataTable dtb = new DataTable();
+                    sda.Fill(dtb);
+                    ProductNametextBox.Text = dtb.Rows[0][0].ToString();
+                    price = dtb.Rows[0][1].ToString();
+                    float fineprice = float.Parse(price);
+                    int qtyp = int.Parse(Qtytextbox.Text);
+                    float sum = qtyp * fineprice;
+                    customersalesdatagrid.Rows.Add(productidtextbox.Text, ProductNametextBox.Text, Qtytextbox.Text, price, sum.ToString());
+                    totalcounter = totalcounter + sum;
+                    totaltextbox.Text = totalcounter.ToString();
+                    sqlcon.Close();
 
 
-            }
-            catch (Exception exd)
-            {
-                
-                MessageBox.Show("FAILD");
-            }
+                }
+                catch (Exception exd)
+                {
+
+                    MessageBox.Show("FAILD");
+                }
     
-
+           
         }
 
 
@@ -136,7 +138,7 @@ namespace SuperShopMainV1._00
         }
         private void datetimeviewer_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -156,8 +158,17 @@ namespace SuperShopMainV1._00
             catch(Exception)
             {
                 MessageBox.Show("PRODUCT NOT FOUND");
+                productidtextbox.Text = " ";
             }
         }
+
+        private void proceedtopay_Click(object sender, EventArgs e)
+        {
+            Confirmpay ccf = new Confirmpay();
+            ccf.Show();
+        }
+
+
 
 
 
