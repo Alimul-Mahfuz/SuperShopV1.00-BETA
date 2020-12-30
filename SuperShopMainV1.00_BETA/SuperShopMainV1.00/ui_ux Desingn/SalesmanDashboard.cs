@@ -140,6 +140,33 @@ namespace SuperShopMainV1._00
         {
             
         }
+        public void payconfig(Confirmpay psd)
+        {
+            string[,] Datavalue = new string[customersalesdatagrid.Rows.Count, customersalesdatagrid.Columns.Count];
+            foreach (DataGridViewRow row in customersalesdatagrid.Rows)
+            {
+                foreach (DataGridViewColumn col in customersalesdatagrid.Columns)
+                {
+                    Datavalue[row.Index, col.Index] = customersalesdatagrid.Rows[row.Index].Cells[col.Index].Value.ToString();
+
+                }
+            }
+            int i = 1;
+            string strval = "";
+            foreach(string ss in Datavalue)
+            {
+                strval += ss+" "+" ";
+                if (i == 5)
+                {
+                    psd.listBoxitem.Items.Add(strval);
+                    strval = " "+" ";
+                    i = 0;
+
+                }
+                i++;
+
+            }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -165,6 +192,7 @@ namespace SuperShopMainV1._00
         private void proceedtopay_Click(object sender, EventArgs e)
         {
             Confirmpay ccf = new Confirmpay();
+            payconfig(ccf);
             ccf.Show();
         }
 

@@ -151,7 +151,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxitem;
+        public System.Windows.Forms.ListBox listBoxitem;
         private System.Windows.Forms.PictureBox Login_PictureBox;
         private System.Windows.Forms.Panel payconfirmpanel;
         private System.Windows.Forms.Label totalpayconfirmlable;
