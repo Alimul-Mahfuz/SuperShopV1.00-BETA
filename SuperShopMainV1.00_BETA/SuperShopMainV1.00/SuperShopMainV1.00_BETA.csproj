@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Confirmpay.cs">
+    <Compile Include="ui_ux Desingn\Confirmpay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Confirmpay.Designer.cs">
+    <Compile Include="ui_ux Desingn\Confirmpay.Designer.cs">
       <DependentUpon>Confirmpay.cs</DependentUpon>
     </Compile>
     <Compile Include="SuperShopMSDBDataSet.Designer.cs">
@@ -110,7 +110,7 @@
     <Compile Include="ui_ux Desingn\SalesmanDashboard.Designer.cs">
       <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Confirmpay.resx">
+    <EmbeddedResource Include="ui_ux Desingn\Confirmpay.resx">
       <DependentUpon>Confirmpay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\BillDetailsDashboard.resx">

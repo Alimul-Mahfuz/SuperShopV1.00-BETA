@@ -32,21 +32,21 @@
             this.listBoxitem = new System.Windows.Forms.ListBox();
             this.Login_PictureBox = new System.Windows.Forms.PictureBox();
             this.payconfirmpanel = new System.Windows.Forms.Panel();
-            this.totalpayconfirmlable = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.recieved = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.paymentmethodselector = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.RoleSelect = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.RoleSelect = new System.Windows.Forms.ComboBox();
+            this.paymentmethodselector = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.recieved = new System.Windows.Forms.Label();
+            this.payconfigtotalpay = new System.Windows.Forms.TextBox();
+            this.totalpayconfirmlable = new System.Windows.Forms.Label();
+            this.payconfcnametext = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Login_PictureBox)).BeginInit();
             this.payconfirmpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBoxitem
             // 
-            this.listBoxitem.BackColor = System.Drawing.Color.DimGray;
+            this.listBoxitem.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.listBoxitem, "listBoxitem");
             this.listBoxitem.FormattingEnabled = true;
             this.listBoxitem.Name = "listBoxitem";
@@ -67,42 +67,20 @@
             this.payconfirmpanel.Controls.Add(this.paymentmethodselector);
             this.payconfirmpanel.Controls.Add(this.textBox2);
             this.payconfirmpanel.Controls.Add(this.recieved);
-            this.payconfirmpanel.Controls.Add(this.textBox1);
+            this.payconfirmpanel.Controls.Add(this.payconfigtotalpay);
             this.payconfirmpanel.Controls.Add(this.totalpayconfirmlable);
             resources.ApplyResources(this.payconfirmpanel, "payconfirmpanel");
             this.payconfirmpanel.Name = "payconfirmpanel";
             this.payconfirmpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // totalpayconfirmlable
+            // button1
             // 
-            resources.ApplyResources(this.totalpayconfirmlable, "totalpayconfirmlable");
-            this.totalpayconfirmlable.Name = "totalpayconfirmlable";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // recieved
-            // 
-            resources.ApplyResources(this.recieved, "recieved");
-            this.recieved.Name = "recieved";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // paymentmethodselector
-            // 
-            resources.ApplyResources(this.paymentmethodselector, "paymentmethodselector");
-            this.paymentmethodselector.Name = "paymentmethodselector";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // RoleSelect
             // 
@@ -119,21 +97,43 @@
             this.RoleSelect.Name = "RoleSelect";
             this.RoleSelect.SelectedIndexChanged += new System.EventHandler(this.RoleSelect_SelectedIndexChanged);
             // 
-            // button1
+            // paymentmethodselector
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.paymentmethodselector, "paymentmethodselector");
+            this.paymentmethodselector.Name = "paymentmethodselector";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // recieved
+            // 
+            resources.ApplyResources(this.recieved, "recieved");
+            this.recieved.Name = "recieved";
+            // 
+            // payconfigtotalpay
+            // 
+            resources.ApplyResources(this.payconfigtotalpay, "payconfigtotalpay");
+            this.payconfigtotalpay.Name = "payconfigtotalpay";
+            this.payconfigtotalpay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // totalpayconfirmlable
+            // 
+            resources.ApplyResources(this.totalpayconfirmlable, "totalpayconfirmlable");
+            this.totalpayconfirmlable.Name = "totalpayconfirmlable";
+            // 
+            // payconfcnametext
+            // 
+            resources.ApplyResources(this.payconfcnametext, "payconfcnametext");
+            this.payconfcnametext.Name = "payconfcnametext";
             // 
             // Confirmpay
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.payconfcnametext);
             this.Controls.Add(this.payconfirmpanel);
             this.Controls.Add(this.Login_PictureBox);
             this.Controls.Add(this.listBoxitem);
@@ -156,10 +156,10 @@
         private System.Windows.Forms.Panel payconfirmpanel;
         private System.Windows.Forms.Label totalpayconfirmlable;
         private System.Windows.Forms.Label recieved;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox payconfigtotalpay;
         private System.Windows.Forms.Label paymentmethodselector;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox payconfcnametext;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox RoleSelect;
     }

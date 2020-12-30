@@ -12,8 +12,10 @@ namespace SuperShopMainV1._00
 {
     public partial class Confirmpay : Form
     {
-        public Confirmpay()
+        public Confirmpay(string a,string b)
         {
+            payconfigtotalpay.Text = b;
+            payconfcnametext.Text = a;
             InitializeComponent();
         }
 

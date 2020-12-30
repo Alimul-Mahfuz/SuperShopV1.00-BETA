@@ -52,7 +52,7 @@
             this.QtyLabel = new System.Windows.Forms.Label();
             this.Qtytextbox = new System.Windows.Forms.TextBox();
             this.CustomrNameSalesDashboar = new System.Windows.Forms.Label();
-            this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
+            this.cnametextbox = new System.Windows.Forms.TextBox();
             this.customersalesdatagrid = new System.Windows.Forms.DataGridView();
             this.product_id_data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -177,7 +177,7 @@
             this.searchicon.Controls.Add(this.QtyLabel);
             this.searchicon.Controls.Add(this.Qtytextbox);
             this.searchicon.Controls.Add(this.CustomrNameSalesDashboar);
-            this.searchicon.Controls.Add(this.CustomerNameTextboxSales);
+            this.searchicon.Controls.Add(this.cnametextbox);
             this.searchicon.Location = new System.Drawing.Point(183, 111);
             this.searchicon.Name = "searchicon";
             this.searchicon.Size = new System.Drawing.Size(690, 168);
@@ -341,12 +341,12 @@
             this.CustomrNameSalesDashboar.TabIndex = 2;
             this.CustomrNameSalesDashboar.Text = "Customer Name:";
             // 
-            // CustomerNameTextboxSales
+            // cnametextbox
             // 
-            this.CustomerNameTextboxSales.Location = new System.Drawing.Point(123, 24);
-            this.CustomerNameTextboxSales.Name = "CustomerNameTextboxSales";
-            this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 20);
-            this.CustomerNameTextboxSales.TabIndex = 0;
+            this.cnametextbox.Location = new System.Drawing.Point(123, 24);
+            this.cnametextbox.Name = "cnametextbox";
+            this.cnametextbox.Size = new System.Drawing.Size(274, 20);
+            this.cnametextbox.TabIndex = 0;
             // 
             // customersalesdatagrid
             // 
@@ -533,7 +533,7 @@
         private System.Windows.Forms.Button Addcutomerbutton;
         private System.Windows.Forms.PictureBox dashboardpicbox;
         private System.Windows.Forms.Panel searchicon;
-        private System.Windows.Forms.TextBox CustomerNameTextboxSales;
+        private System.Windows.Forms.TextBox cnametextbox;
         private System.Windows.Forms.Label CustomrNameSalesDashboar;
         private System.Windows.Forms.ComboBox memberdropdown;
         private System.Windows.Forms.Label Membershipdropdown;

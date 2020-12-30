@@ -191,7 +191,8 @@ namespace SuperShopMainV1._00
 
         private void proceedtopay_Click(object sender, EventArgs e)
         {
-            Confirmpay ccf = new Confirmpay();
+
+            Confirmpay ccf = new Confirmpay(cnametextbox.Text,totalcounter.ToString());
             payconfig(ccf);
             ccf.Show();
         }

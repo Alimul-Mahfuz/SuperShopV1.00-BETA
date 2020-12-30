@@ -122,13 +122,19 @@
     <value>Left</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listBoxitem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 14.25pt, style=Bold</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBoxitem.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
   <data name="listBoxitem.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="listBoxitem.Size" type="System.Drawing.Size, System.Drawing">
     <value>369, 508</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listBoxitem.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -571,28 +577,28 @@
   <data name="&gt;&gt;recieved.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="payconfigtotalpay.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 26</value>
   </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+  <data name="payconfigtotalpay.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="payconfigtotalpay.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 24</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="payconfigtotalpay.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;payconfigtotalpay.Name" xml:space="preserve">
+    <value>payconfigtotalpay</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;payconfigtotalpay.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;payconfigtotalpay.Parent" xml:space="preserve">
     <value>payconfirmpanel</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;payconfigtotalpay.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="totalpayconfirmlable.AutoSize" type="System.Boolean, mscorlib">
@@ -646,28 +652,25 @@
   <data name="&gt;&gt;payconfirmpanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 71</value>
+  <data name="payconfcnametext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 90</value>
   </data>
-  <data name="textBox3.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="payconfcnametext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 20</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>472, 39</value>
-  </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="payconfcnametext.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;payconfcnametext.Name" xml:space="preserve">
+    <value>payconfcnametext</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;payconfcnametext.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;payconfcnametext.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;payconfcnametext.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
