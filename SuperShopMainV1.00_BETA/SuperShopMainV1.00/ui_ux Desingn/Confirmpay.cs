@@ -14,9 +14,9 @@ namespace SuperShopMainV1._00
     {
         public Confirmpay(string a,string b)
         {
-            payconfigtotalpay.Text = b;
-            payconfcnametext.Text = a;
             InitializeComponent();
+            payconfcnametext.Text = a;
+            payconfigtotalpay.Text = b;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
