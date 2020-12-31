@@ -13,9 +13,11 @@ namespace SuperShopMainV1._00
 {
     public partial class SalesmanDashboar : Form
     {
+        SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
         public static double totalcounter = 0.00;
         public SalesmanDashboar()
         {
+           
             InitializeComponent();
             Qtytextbox.Text = "1";
             grandtotalcount.Text = "0.00";
@@ -72,7 +74,6 @@ namespace SuperShopMainV1._00
                   try
                 {
                     string price;
-                    SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
                     sqlcon.Open();
                     string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
                     SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
@@ -93,7 +94,7 @@ namespace SuperShopMainV1._00
                 catch (Exception exd)
                 {
 
-                    MessageBox.Show("FAILD");
+                    MessageBox.Show(exd.Message);
                 }
             }
             else
@@ -169,7 +170,6 @@ namespace SuperShopMainV1._00
                     psd.listBoxitem.Items.Add(strval);
                     strval = " "+" ";
                     i = 0;
-
                 }
                 i++;
 
@@ -189,7 +189,6 @@ namespace SuperShopMainV1._00
                     DataTable dtb = new DataTable();
                     sda.Fill(dtb);
                     ProductNametextBox.Text = dtb.Rows[0][0].ToString();
-
 
                 }
                 catch (Exception)
