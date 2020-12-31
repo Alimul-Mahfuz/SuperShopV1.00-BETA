@@ -156,10 +156,10 @@
         private System.Windows.Forms.Panel payconfirmpanel;
         private System.Windows.Forms.Label totalpayconfirmlable;
         private System.Windows.Forms.Label recieved;
-        private System.Windows.Forms.TextBox payconfigtotalpay;
+        public System.Windows.Forms.TextBox payconfigtotalpay;
         private System.Windows.Forms.Label paymentmethodselector;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox payconfcnametext;
+        public System.Windows.Forms.TextBox payconfcnametext;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox RoleSelect;
     }

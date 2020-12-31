@@ -123,11 +123,11 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBoxitem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 14.25pt, style=Bold</value>
+    <value>Microsoft JhengHei UI, 9.75pt, style=Bold</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listBoxitem.ItemHeight" type="System.Int32, mscorlib">
-    <value>24</value>
+    <value>17</value>
   </data>
   <data name="listBoxitem.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -451,6 +451,9 @@
   <data name="RoleSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="RoleSelect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11.25pt, style=Bold</value>
+  </data>
   <data name="RoleSelect.Items" xml:space="preserve">
     <value>BKASH</value>
   </data>
@@ -470,7 +473,7 @@
     <value>202, 125</value>
   </data>
   <data name="RoleSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 21</value>
+    <value>247, 27</value>
   </data>
   <data name="RoleSelect.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -519,6 +522,9 @@
   </data>
   <data name="&gt;&gt;paymentmethodselector.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 12pt, style=Bold</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 74</value>
@@ -576,6 +582,9 @@
   </data>
   <data name="&gt;&gt;recieved.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="payconfigtotalpay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 12pt, style=Bold</value>
   </data>
   <data name="payconfigtotalpay.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 26</value>
@@ -652,11 +661,14 @@
   <data name="&gt;&gt;payconfirmpanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="payconfcnametext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11.25pt, style=Bold, Italic</value>
+  </data>
   <data name="payconfcnametext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 90</value>
+    <value>378, 83</value>
   </data>
   <data name="payconfcnametext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>472, 20</value>
+    <value>472, 27</value>
   </data>
   <data name="payconfcnametext.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

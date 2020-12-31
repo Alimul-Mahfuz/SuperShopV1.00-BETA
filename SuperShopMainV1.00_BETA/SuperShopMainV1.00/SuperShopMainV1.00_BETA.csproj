@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="memconfirmation.cs">
+    <Compile Include="ui_ux Desingn\memconfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="memconfirmation.Designer.cs">
+    <Compile Include="ui_ux Desingn\memconfirmation.Designer.cs">
       <DependentUpon>memconfirmation.cs</DependentUpon>
     </Compile>
     <Compile Include="ui_ux Desingn\Confirmpay.cs">
@@ -116,7 +116,7 @@
     <Compile Include="ui_ux Desingn\SalesmanDashboard.Designer.cs">
       <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="memconfirmation.resx">
+    <EmbeddedResource Include="ui_ux Desingn\memconfirmation.resx">
       <DependentUpon>memconfirmation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\Confirmpay.resx">

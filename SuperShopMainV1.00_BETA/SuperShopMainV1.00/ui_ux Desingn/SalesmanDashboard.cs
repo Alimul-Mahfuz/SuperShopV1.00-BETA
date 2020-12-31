@@ -174,6 +174,7 @@ namespace SuperShopMainV1._00
                 i++;
 
             }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -207,10 +208,23 @@ namespace SuperShopMainV1._00
 
         private void proceedtopay_Click(object sender, EventArgs e)
         {
+            if (memberdropdown.Text == "Member")
+            {
+                memconfirmation meconfig = new memconfirmation();
+                meconfig.Show();
+            }
+            if(memberdropdown.Text=="Non Member")
+            {
+                Confirmpay cfp = new Confirmpay(cnametextbox.Text, totalcounter.ToString());
+                payconfig(cfp);
+                cfp.Show();
 
-            Confirmpay ccf = new Confirmpay(cnametextbox.Text,totalcounter.ToString());
-            payconfig(ccf);
-            ccf.Show();
+            }
+            if(memberdropdown.Text=="")
+            {
+                MessageBox.Show("Enter Membership Status");
+            }
+
         }
 
 
