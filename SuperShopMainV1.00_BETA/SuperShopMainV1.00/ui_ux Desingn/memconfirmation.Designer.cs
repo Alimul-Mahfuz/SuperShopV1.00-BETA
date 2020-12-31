@@ -37,10 +37,9 @@
             // memidcheckbox
             // 
             this.memidcheckbox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memidcheckbox.Location = new System.Drawing.Point(147, 119);
-            this.memidcheckbox.Multiline = true;
+            this.memidcheckbox.Location = new System.Drawing.Point(72, 119);
             this.memidcheckbox.Name = "memidcheckbox";
-            this.memidcheckbox.Size = new System.Drawing.Size(286, 38);
+            this.memidcheckbox.Size = new System.Drawing.Size(445, 32);
             this.memidcheckbox.TabIndex = 0;
             // 
             // memconflebel
@@ -49,7 +48,7 @@
             this.memconflebel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.memconflebel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memconflebel.ForeColor = System.Drawing.Color.Black;
-            this.memconflebel.Location = new System.Drawing.Point(182, 37);
+            this.memconflebel.Location = new System.Drawing.Point(177, 72);
             this.memconflebel.Name = "memconflebel";
             this.memconflebel.Size = new System.Drawing.Size(207, 24);
             this.memconflebel.TabIndex = 1;
@@ -60,7 +59,7 @@
             this.memcheckbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.memcheckbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.memcheckbtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memcheckbtn.Location = new System.Drawing.Point(229, 176);
+            this.memcheckbtn.Location = new System.Drawing.Point(235, 171);
             this.memcheckbtn.Name = "memcheckbtn";
             this.memcheckbtn.Size = new System.Drawing.Size(107, 39);
             this.memcheckbtn.TabIndex = 2;
