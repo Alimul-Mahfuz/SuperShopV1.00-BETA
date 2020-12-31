@@ -65,7 +65,7 @@
             this.SelectRole.Location = new System.Drawing.Point(148, 161);
             this.SelectRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SelectRole.Name = "SelectRole";
-            this.SelectRole.Size = new System.Drawing.Size(83, 17);
+            this.SelectRole.Size = new System.Drawing.Size(110, 22);
             this.SelectRole.TabIndex = 2;
             this.SelectRole.Text = "Select Role: ";
             // 
@@ -79,7 +79,7 @@
             this.UserID.Location = new System.Drawing.Point(148, 196);
             this.UserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserID.Name = "UserID";
-            this.UserID.Size = new System.Drawing.Size(53, 15);
+            this.UserID.Size = new System.Drawing.Size(67, 19);
             this.UserID.TabIndex = 3;
             this.UserID.Text = "User ID:";
             // 
@@ -91,7 +91,7 @@
             this.UserID_textBox.Location = new System.Drawing.Point(238, 194);
             this.UserID_textBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UserID_textBox.Name = "UserID_textBox";
-            this.UserID_textBox.Size = new System.Drawing.Size(301, 21);
+            this.UserID_textBox.Size = new System.Drawing.Size(301, 25);
             this.UserID_textBox.TabIndex = 4;
             // 
             // Password
@@ -104,7 +104,7 @@
             this.Password.Location = new System.Drawing.Point(148, 230);
             this.Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(70, 17);
+            this.Password.Size = new System.Drawing.Size(94, 22);
             this.Password.TabIndex = 5;
             this.Password.Text = "Password:";
             // 
@@ -117,11 +117,12 @@
             this.passwrodbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.passwrodbox.Name = "passwrodbox";
             this.passwrodbox.PasswordChar = '*';
-            this.passwrodbox.Size = new System.Drawing.Size(301, 21);
+            this.passwrodbox.Size = new System.Drawing.Size(301, 25);
             this.passwrodbox.TabIndex = 6;
             // 
             // Loginbutton
             // 
+            this.Loginbutton.AccessibleName = "";
             this.Loginbutton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Loginbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -149,7 +150,7 @@
             "Salesman"});
             this.RoleSelect.Location = new System.Drawing.Point(238, 161);
             this.RoleSelect.Name = "RoleSelect";
-            this.RoleSelect.Size = new System.Drawing.Size(301, 22);
+            this.RoleSelect.Size = new System.Drawing.Size(301, 26);
             this.RoleSelect.TabIndex = 8;
             // 
             // Exitbtn
@@ -171,10 +172,10 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(672, 329);
+            this.ClientSize = new System.Drawing.Size(670, 321);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.RoleSelect);
             this.Controls.Add(this.Loginbutton);
