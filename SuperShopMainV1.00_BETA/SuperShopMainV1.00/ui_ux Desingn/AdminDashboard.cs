@@ -62,5 +62,14 @@ namespace SuperShopMainV1._00
         {
 
         }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'superShopMSDBDataSet1.PRODUCT' table. You can move, or remove it, as needed.
+            this.pRODUCTTableAdapter1.Fill(this.superShopMSDBDataSet1.PRODUCT);
+            // TODO: This line of code loads data into the 'superShopMSDBDataSet.PRODUCT' table. You can move, or remove it, as needed.
+            this.pRODUCTTableAdapter.Fill(this.superShopMSDBDataSet.PRODUCT);
+
+        }
     }
 }
