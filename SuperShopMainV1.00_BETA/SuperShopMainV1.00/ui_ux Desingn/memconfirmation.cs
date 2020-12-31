@@ -29,9 +29,12 @@ namespace SuperShopMainV1._00
                     SqlDataAdapter aqd = new SqlDataAdapter(ipql, sqlcon);
                     DataTable dtl = new DataTable();
                     aqd.Fill(dtl);
-                    if (dtl.Rows[0][0].ToString() != "")
+                    if (dtl.Rows[0][0].ToString() == memidcheckbox.Text.Trim())
                     {
-                        MessageBox.Show("HELLO");
+                        SalesmanDashboar ssl = new SalesmanDashboar();
+                        Confirmpay cof = new Confirmpay(ssl.cnametextbox.Text,SalesmanDashboar.totalcounter.ToString());
+                        ssl.payconfig(cof);
+                        cof.Show();
 
                     }
                     else

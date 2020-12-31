@@ -533,7 +533,7 @@
         private System.Windows.Forms.Button Addcutomerbutton;
         private System.Windows.Forms.PictureBox dashboardpicbox;
         private System.Windows.Forms.Panel searchicon;
-        private System.Windows.Forms.TextBox cnametextbox;
+        public System.Windows.Forms.TextBox cnametextbox;
         private System.Windows.Forms.Label CustomrNameSalesDashboar;
         private System.Windows.Forms.ComboBox memberdropdown;
         private System.Windows.Forms.Label Membershipdropdown;
@@ -541,7 +541,7 @@
         private System.Windows.Forms.Button addedbutton;
         private System.Windows.Forms.Label QtyLabel;
         private System.Windows.Forms.TextBox Qtytextbox;
-        private System.Windows.Forms.DataGridView customersalesdatagrid;
+        public System.Windows.Forms.DataGridView customersalesdatagrid;
         private System.Windows.Forms.Button proccedtopay;
         private System.Windows.Forms.TextBox grandtotalcount;
         private System.Windows.Forms.Label TotalLabel;
