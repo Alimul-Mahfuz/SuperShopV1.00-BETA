@@ -67,8 +67,9 @@ namespace SuperShopMainV1._00
 
         private void addedbutton_Click(object sender, EventArgs e)
         {
-
-                try
+            if(productidtextbox.Text!=""&&cnametextbox.Text!="")
+            {
+                  try
                 {
                     string price;
                     SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
@@ -94,6 +95,13 @@ namespace SuperShopMainV1._00
 
                     MessageBox.Show("FAILD");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Customer Name field or Product ID field is Empty");
+            }
+
+              
     
            
         }
@@ -170,23 +178,32 @@ namespace SuperShopMainV1._00
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            try
+            if (productidtextbox.Text!="")
             {
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
-                sqlcon.Open();
-                string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
-                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-                DataTable dtb = new DataTable();
-                sda.Fill(dtb);
-                ProductNametextBox.Text = dtb.Rows[0][0].ToString();
+                try
+                {
+                    SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
+                    sqlcon.Open();
+                    string query = "Select PRODUCT_NAME,SELLING_PRICE from PRODUCT WHERE PRODUCT_ID =" + int.Parse(productidtextbox.Text);
+                    SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+                    DataTable dtb = new DataTable();
+                    sda.Fill(dtb);
+                    ProductNametextBox.Text = dtb.Rows[0][0].ToString();
 
 
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("PRODUCT NOT FOUND");
+                    productidtextbox.Text = " ";
+                }
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("PRODUCT NOT FOUND");
-                productidtextbox.Text = " ";
+                MessageBox.Show("Product ID Is Empty ");
             }
+            
+       
         }
 
         private void proceedtopay_Click(object sender, EventArgs e)
