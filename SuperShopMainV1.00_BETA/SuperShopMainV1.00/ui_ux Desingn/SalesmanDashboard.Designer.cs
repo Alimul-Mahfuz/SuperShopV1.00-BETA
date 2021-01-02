@@ -470,7 +470,7 @@
             // 
             this.totaltextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.totaltextbox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totaltextbox.Location = new System.Drawing.Point(306, 583);
+            this.totaltextbox.Location = new System.Drawing.Point(298, 584);
             this.totaltextbox.Multiline = true;
             this.totaltextbox.Name = "totaltextbox";
             this.totaltextbox.Size = new System.Drawing.Size(179, 36);

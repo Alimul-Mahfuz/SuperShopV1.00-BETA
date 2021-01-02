@@ -35,16 +35,21 @@
             this.RemonveProduct = new System.Windows.Forms.Button();
             this.Inventory = new System.Windows.Forms.Button();
             this.admindashboarlogo = new System.Windows.Forms.PictureBox();
+            this.dgvRemoveProduct = new System.Windows.Forms.DataGridView();
+            this.PRODUCT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CATEGORY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BUYING_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SELLING_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STOCK_COUNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClubCustomerDashboarplanel1 = new System.Windows.Forms.Panel();
             this.Removeinventorybtn = new System.Windows.Forms.Button();
-            this.datelabel = new System.Windows.Forms.Label();
-            this.Barcodelabel = new System.Windows.Forms.Label();
-            this.ProductNametextBox = new System.Windows.Forms.TextBox();
-            this.ProductName = new System.Windows.Forms.Label();
-            this.SalesData = new System.Windows.Forms.DateTimePicker();
-            this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
+            this.ProductID = new System.Windows.Forms.Label();
+            this.Product_ID_Textbox = new System.Windows.Forms.TextBox();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRemoveProduct)).BeginInit();
             this.ClubCustomerDashboarplanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,22 +140,90 @@
             this.admindashboarlogo.TabStop = false;
             this.admindashboarlogo.UseWaitCursor = true;
             // 
+            // dgvRemoveProduct
+            // 
+            this.dgvRemoveProduct.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+            this.dgvRemoveProduct.AllowUserToAddRows = false;
+            this.dgvRemoveProduct.AllowUserToDeleteRows = false;
+            this.dgvRemoveProduct.AllowUserToResizeColumns = false;
+            this.dgvRemoveProduct.AllowUserToResizeRows = false;
+            this.dgvRemoveProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvRemoveProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRemoveProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvRemoveProduct.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvRemoveProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRemoveProduct.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvRemoveProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRemoveProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PRODUCT_ID,
+            this.PRODUCT_NAME,
+            this.CATEGORY,
+            this.BUYING_PRICE,
+            this.SELLING_PRICE,
+            this.STOCK_COUNT,
+            this.SOLD});
+            this.dgvRemoveProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvRemoveProduct.Location = new System.Drawing.Point(183, 302);
+            this.dgvRemoveProduct.Name = "dgvRemoveProduct";
+            this.dgvRemoveProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRemoveProduct.Size = new System.Drawing.Size(673, 233);
+            this.dgvRemoveProduct.TabIndex = 7;
+            // 
+            // PRODUCT_ID
+            // 
+            this.PRODUCT_ID.DataPropertyName = "PRODUCT_ID";
+            this.PRODUCT_ID.HeaderText = "PRODUCT_ID";
+            this.PRODUCT_ID.Name = "PRODUCT_ID";
+            // 
+            // PRODUCT_NAME
+            // 
+            this.PRODUCT_NAME.DataPropertyName = "PRODUCT_NAME";
+            this.PRODUCT_NAME.HeaderText = "PRODUCT_NAME";
+            this.PRODUCT_NAME.Name = "PRODUCT_NAME";
+            // 
+            // CATEGORY
+            // 
+            this.CATEGORY.DataPropertyName = "CATAGORY";
+            this.CATEGORY.HeaderText = "CATAGORY";
+            this.CATEGORY.Name = "CATEGORY";
+            // 
+            // BUYING_PRICE
+            // 
+            this.BUYING_PRICE.DataPropertyName = "BUYING_PRICE";
+            this.BUYING_PRICE.HeaderText = "BUYING_PRICE";
+            this.BUYING_PRICE.Name = "BUYING_PRICE";
+            // 
+            // SELLING_PRICE
+            // 
+            this.SELLING_PRICE.DataPropertyName = "SELLING_PRICE";
+            this.SELLING_PRICE.HeaderText = "SELLING_PRICE";
+            this.SELLING_PRICE.Name = "SELLING_PRICE";
+            // 
+            // STOCK_COUNT
+            // 
+            this.STOCK_COUNT.DataPropertyName = "INITIAL_STOCK";
+            this.STOCK_COUNT.HeaderText = "INITIAL_STOCK";
+            this.STOCK_COUNT.Name = "STOCK_COUNT";
+            // 
+            // SOLD
+            // 
+            this.SOLD.DataPropertyName = "SOLD";
+            this.SOLD.HeaderText = "SOLD";
+            this.SOLD.Name = "SOLD";
+            // 
             // ClubCustomerDashboarplanel1
             // 
             this.ClubCustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClubCustomerDashboarplanel1.Controls.Add(this.Removeinventorybtn);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.datelabel);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.Barcodelabel);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductNametextBox);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductName);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.SalesData);
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.CustomerNameTextboxSales);
-            this.ClubCustomerDashboarplanel1.Location = new System.Drawing.Point(183, 136);
+            this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductID);
+            this.ClubCustomerDashboarplanel1.Controls.Add(this.Product_ID_Textbox);
+            this.ClubCustomerDashboarplanel1.Location = new System.Drawing.Point(183, 111);
             this.ClubCustomerDashboarplanel1.Name = "ClubCustomerDashboarplanel1";
             this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(673, 168);
-            this.ClubCustomerDashboarplanel1.TabIndex = 5;
+            this.ClubCustomerDashboarplanel1.TabIndex = 8;
             // 
             // Removeinventorybtn
             // 
@@ -165,68 +238,28 @@
             this.Removeinventorybtn.TabIndex = 18;
             this.Removeinventorybtn.Text = "Remove Product";
             this.Removeinventorybtn.UseVisualStyleBackColor = false;
+            this.Removeinventorybtn.Click += new System.EventHandler(this.Removeinventorybtn_Click);
             // 
-            // datelabel
+            // ProductID
             // 
-            this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.datelabel.AutoSize = true;
-            this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelabel.Location = new System.Drawing.Point(497, 24);
-            this.datelabel.Name = "datelabel";
-            this.datelabel.Size = new System.Drawing.Size(40, 17);
-            this.datelabel.TabIndex = 7;
-            this.datelabel.Text = "Date:";
-            // 
-            // Barcodelabel
-            // 
-            this.Barcodelabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.Barcodelabel.AutoSize = true;
-            this.Barcodelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Barcodelabel.Location = new System.Drawing.Point(11, 52);
-            this.Barcodelabel.Name = "Barcodelabel";
-            this.Barcodelabel.Size = new System.Drawing.Size(59, 15);
-            this.Barcodelabel.TabIndex = 4;
-            this.Barcodelabel.Text = "Barcode:";
+            this.ProductID.AutoSize = true;
+            this.ProductID.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductID.Location = new System.Drawing.Point(11, 26);
+            this.ProductID.Name = "ProductID";
+            this.ProductID.Size = new System.Drawing.Size(74, 15);
+            this.ProductID.TabIndex = 2;
+            this.ProductID.Text = "Product ID:";
             // 
-            // ProductNametextBox
+            // Product_ID_Textbox
             // 
-            this.ProductNametextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Product_ID_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductNametextBox.Location = new System.Drawing.Point(123, 50);
-            this.ProductNametextBox.Name = "ProductNametextBox";
-            this.ProductNametextBox.Size = new System.Drawing.Size(274, 21);
-            this.ProductNametextBox.TabIndex = 3;
-            // 
-            // ProductName
-            // 
-            this.ProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.ProductName.AutoSize = true;
-            this.ProductName.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName.Location = new System.Drawing.Point(11, 26);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(96, 15);
-            this.ProductName.TabIndex = 2;
-            this.ProductName.Text = "Product Name:";
-            // 
-            // SalesData
-            // 
-            this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalesData.Location = new System.Drawing.Point(542, 21);
-            this.SalesData.Name = "SalesData";
-            this.SalesData.Size = new System.Drawing.Size(121, 21);
-            this.SalesData.TabIndex = 1;
-            // 
-            // CustomerNameTextboxSales
-            // 
-            this.CustomerNameTextboxSales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.CustomerNameTextboxSales.Location = new System.Drawing.Point(123, 24);
-            this.CustomerNameTextboxSales.Name = "CustomerNameTextboxSales";
-            this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 21);
-            this.CustomerNameTextboxSales.TabIndex = 0;
+            this.Product_ID_Textbox.Location = new System.Drawing.Point(123, 24);
+            this.Product_ID_Textbox.Name = "Product_ID_Textbox";
+            this.Product_ID_Textbox.Size = new System.Drawing.Size(540, 21);
+            this.Product_ID_Textbox.TabIndex = 0;
             // 
             // DeleteProductsFromInventory
             // 
@@ -235,14 +268,19 @@
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
             this.ClientSize = new System.Drawing.Size(868, 547);
             this.Controls.Add(this.ClubCustomerDashboarplanel1);
+            this.Controls.Add(this.dgvRemoveProduct);
             this.Controls.Add(this.admindashboarlogo);
             this.Controls.Add(this.AdminDashboardPanel);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "DeleteProductsFromInventory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete Products";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.AdminDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRemoveProduct)).EndInit();
             this.ClubCustomerDashboarplanel1.ResumeLayout(false);
             this.ClubCustomerDashboarplanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -257,13 +295,17 @@
         private System.Windows.Forms.Button RemonveProduct;
         private System.Windows.Forms.Button Inventory;
         private System.Windows.Forms.PictureBox admindashboarlogo;
+        private System.Windows.Forms.DataGridView dgvRemoveProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCT_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCT_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CATEGORY;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BUYING_PRICE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SELLING_PRICE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STOCK_COUNT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SOLD;
         private System.Windows.Forms.Panel ClubCustomerDashboarplanel1;
         private System.Windows.Forms.Button Removeinventorybtn;
-        private System.Windows.Forms.Label datelabel;
-        private System.Windows.Forms.Label Barcodelabel;
-        private System.Windows.Forms.TextBox ProductNametextBox;
-        private System.Windows.Forms.Label ProductName;
-        private System.Windows.Forms.DateTimePicker SalesData;
-        private System.Windows.Forms.TextBox CustomerNameTextboxSales;
+        private System.Windows.Forms.Label ProductID;
+        private System.Windows.Forms.TextBox Product_ID_Textbox;
     }
 }

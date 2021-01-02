@@ -102,8 +102,7 @@ namespace SuperShopMainV1._00
                 MessageBox.Show("Customer Name field or Product ID field is Empty");
             }
 
-              
-    
+         
            
         }
 

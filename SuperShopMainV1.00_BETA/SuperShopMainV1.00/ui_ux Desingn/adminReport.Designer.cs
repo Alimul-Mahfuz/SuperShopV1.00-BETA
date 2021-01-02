@@ -37,11 +37,19 @@
             this.clubdashboardpicbox = new System.Windows.Forms.PictureBox();
             this.ReportAdmin = new System.Windows.Forms.Panel();
             this.datelabel = new System.Windows.Forms.Label();
-            this.SalesData = new System.Windows.Forms.DateTimePicker();
+            this.SalesReport = new System.Windows.Forms.DateTimePicker();
             this.Rportinventorybtn = new System.Windows.Forms.Button();
+            this.dgvReport = new System.Windows.Forms.DataGridView();
+            this.REPORT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MONTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COST = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NET_INCOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NET_LOSS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROFIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ReportAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminDashboardPanel
@@ -135,7 +143,7 @@
             // 
             this.ReportAdmin.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ReportAdmin.Controls.Add(this.datelabel);
-            this.ReportAdmin.Controls.Add(this.SalesData);
+            this.ReportAdmin.Controls.Add(this.SalesReport);
             this.ReportAdmin.Location = new System.Drawing.Point(203, 147);
             this.ReportAdmin.Name = "ReportAdmin";
             this.ReportAdmin.Size = new System.Drawing.Size(779, 58);
@@ -146,20 +154,23 @@
             this.datelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.datelabel.AutoSize = true;
             this.datelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelabel.Location = new System.Drawing.Point(561, 24);
+            this.datelabel.Location = new System.Drawing.Point(536, 15);
             this.datelabel.Name = "datelabel";
-            this.datelabel.Size = new System.Drawing.Size(82, 17);
-            this.datelabel.TabIndex = 7;
-            this.datelabel.Text = "Report Date";
+            this.datelabel.Size = new System.Drawing.Size(101, 17);
+            this.datelabel.TabIndex = 9;
+            this.datelabel.Text = "Report Month :";
             // 
-            // SalesData
+            // SalesReport
             // 
-            this.SalesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SalesData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.SalesData.Location = new System.Drawing.Point(649, 21);
-            this.SalesData.Name = "SalesData";
-            this.SalesData.Size = new System.Drawing.Size(121, 21);
-            this.SalesData.TabIndex = 1;
+            this.SalesReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SalesReport.CustomFormat = "MMMM";
+            this.SalesReport.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesReport.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.SalesReport.Location = new System.Drawing.Point(637, 12);
+            this.SalesReport.Name = "SalesReport";
+            this.SalesReport.ShowUpDown = true;
+            this.SalesReport.Size = new System.Drawing.Size(121, 21);
+            this.SalesReport.TabIndex = 8;
             // 
             // Rportinventorybtn
             // 
@@ -167,12 +178,63 @@
             this.Rportinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Rportinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rportinventorybtn.ForeColor = System.Drawing.Color.Black;
-            this.Rportinventorybtn.Location = new System.Drawing.Point(817, 245);
+            this.Rportinventorybtn.Location = new System.Drawing.Point(817, 223);
             this.Rportinventorybtn.Name = "Rportinventorybtn";
             this.Rportinventorybtn.Size = new System.Drawing.Size(165, 38);
             this.Rportinventorybtn.TabIndex = 18;
             this.Rportinventorybtn.Text = "Show Report\r\n";
             this.Rportinventorybtn.UseVisualStyleBackColor = false;
+            // 
+            // dgvReport
+            // 
+            this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.REPORT_ID,
+            this.MONTH,
+            this.COST,
+            this.NET_INCOME,
+            this.NET_LOSS,
+            this.PROFIT});
+            this.dgvReport.Location = new System.Drawing.Point(203, 282);
+            this.dgvReport.Name = "dgvReport";
+            this.dgvReport.Size = new System.Drawing.Size(779, 431);
+            this.dgvReport.TabIndex = 20;
+            // 
+            // REPORT_ID
+            // 
+            this.REPORT_ID.DataPropertyName = "REPORT_ID";
+            this.REPORT_ID.HeaderText = "REPORT_ID";
+            this.REPORT_ID.Name = "REPORT_ID";
+            // 
+            // MONTH
+            // 
+            this.MONTH.DataPropertyName = "MONTH";
+            this.MONTH.HeaderText = "MONTH";
+            this.MONTH.Name = "MONTH";
+            // 
+            // COST
+            // 
+            this.COST.DataPropertyName = "COST";
+            this.COST.HeaderText = "COST";
+            this.COST.Name = "COST";
+            // 
+            // NET_INCOME
+            // 
+            this.NET_INCOME.DataPropertyName = "NET_INCOME";
+            this.NET_INCOME.HeaderText = "NET_INCOME";
+            this.NET_INCOME.Name = "NET_INCOME";
+            // 
+            // NET_LOSS
+            // 
+            this.NET_LOSS.DataPropertyName = "NET_LOSS";
+            this.NET_LOSS.HeaderText = "NET_LOSS";
+            this.NET_LOSS.Name = "NET_LOSS";
+            // 
+            // PROFIT
+            // 
+            this.PROFIT.DataPropertyName = "PROFIT";
+            this.PROFIT.HeaderText = "PROFIT";
+            this.PROFIT.Name = "PROFIT";
             // 
             // adminReport
             // 
@@ -180,6 +242,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
             this.ClientSize = new System.Drawing.Size(994, 749);
+            this.Controls.Add(this.dgvReport);
             this.Controls.Add(this.Rportinventorybtn);
             this.Controls.Add(this.ReportAdmin);
             this.Controls.Add(this.clubdashboardpicbox);
@@ -194,6 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).EndInit();
             this.ReportAdmin.ResumeLayout(false);
             this.ReportAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,8 +271,15 @@
         private System.Windows.Forms.Button Inventory;
         private System.Windows.Forms.PictureBox clubdashboardpicbox;
         private System.Windows.Forms.Panel ReportAdmin;
-        private System.Windows.Forms.Label datelabel;
-        private System.Windows.Forms.DateTimePicker SalesData;
         private System.Windows.Forms.Button Rportinventorybtn;
+        private System.Windows.Forms.Label datelabel;
+        private System.Windows.Forms.DateTimePicker SalesReport;
+        private System.Windows.Forms.DataGridView dgvReport;
+        private System.Windows.Forms.DataGridViewTextBoxColumn REPORT_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MONTH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COST;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NET_INCOME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NET_LOSS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PROFIT;
     }
 }

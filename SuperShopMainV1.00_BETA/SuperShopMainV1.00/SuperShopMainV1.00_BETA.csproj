@@ -78,11 +78,11 @@
     <Compile Include="ui_ux Desingn\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui_ux Desingn\AdminReportDashboard.cs">
+    <Compile Include="ui_ux Desingn\adminReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui_ux Desingn\AdminReportDashboard.Designer.cs">
-      <DependentUpon>AdminReportDashboard.cs</DependentUpon>
+    <Compile Include="ui_ux Desingn\adminReport.Designer.cs">
+      <DependentUpon>adminReport.cs</DependentUpon>
     </Compile>
     <Compile Include="ui_ux Desingn\ClubCustomerDashborad.cs">
       <SubType>Form</SubType>
@@ -128,8 +128,8 @@
     <EmbeddedResource Include="ui_ux Desingn\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui_ux Desingn\AdminReportDashboard.resx">
-      <DependentUpon>AdminReportDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="ui_ux Desingn\adminReport.resx">
+      <DependentUpon>adminReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\ClubCustomerDashborad.resx">
       <DependentUpon>ClubCustomerDashborad.cs</DependentUpon>
