@@ -100,5 +100,10 @@ namespace SuperShopMainV1._00
         {
 
         }
+
+        private void Rportinventorybtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,13 +41,11 @@
             this.SalesReport = new System.Windows.Forms.DateTimePicker();
             this.dgvReport = new System.Windows.Forms.DataGridView();
             this.Rportinventorybtn = new System.Windows.Forms.Button();
-            this.REPORT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MONTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nitinc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PROFIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.superShopMSDBDataSet2 = new SuperShopMainV1._00.SuperShopMSDBDataSet2();
             this.superShopMSDBDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.REPORT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MONTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROFIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ReportAdmin.SuspendLayout();
@@ -181,17 +179,13 @@
             // 
             this.dgvReport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvReport.AutoGenerateColumns = false;
             this.dgvReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReport.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.REPORT_ID,
             this.MONTH,
-            this.nitinc,
-            this.PROFIT,
-            this.loss});
-            this.dgvReport.DataSource = this.superShopMSDBDataSet2BindingSource;
+            this.PROFIT});
             this.dgvReport.Location = new System.Drawing.Point(203, 284);
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.Size = new System.Drawing.Size(779, 313);
@@ -210,6 +204,17 @@
             this.Rportinventorybtn.TabIndex = 23;
             this.Rportinventorybtn.Text = "Show Report\r\n";
             this.Rportinventorybtn.UseVisualStyleBackColor = false;
+            this.Rportinventorybtn.Click += new System.EventHandler(this.Rportinventorybtn_Click_1);
+            // 
+            // superShopMSDBDataSet2
+            // 
+            this.superShopMSDBDataSet2.DataSetName = "SuperShopMSDBDataSet2";
+            this.superShopMSDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superShopMSDBDataSet2BindingSource
+            // 
+            this.superShopMSDBDataSet2BindingSource.DataSource = this.superShopMSDBDataSet2;
+            this.superShopMSDBDataSet2BindingSource.Position = 0;
             // 
             // REPORT_ID
             // 
@@ -223,31 +228,11 @@
             this.MONTH.HeaderText = "MONTH";
             this.MONTH.Name = "MONTH";
             // 
-            // nitinc
-            // 
-            this.nitinc.HeaderText = "NET_INCOME";
-            this.nitinc.Name = "nitinc";
-            // 
             // PROFIT
             // 
             this.PROFIT.DataPropertyName = "PROFIT";
             this.PROFIT.HeaderText = "PROFIT";
             this.PROFIT.Name = "PROFIT";
-            // 
-            // loss
-            // 
-            this.loss.HeaderText = "LOSS";
-            this.loss.Name = "loss";
-            // 
-            // superShopMSDBDataSet2
-            // 
-            this.superShopMSDBDataSet2.DataSetName = "SuperShopMSDBDataSet2";
-            this.superShopMSDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // superShopMSDBDataSet2BindingSource
-            // 
-            this.superShopMSDBDataSet2BindingSource.DataSource = this.superShopMSDBDataSet2;
-            this.superShopMSDBDataSet2BindingSource.Position = 0;
             // 
             // adminReport
             // 
@@ -290,12 +275,10 @@
         private System.Windows.Forms.DateTimePicker SalesReport;
         private System.Windows.Forms.DataGridView dgvReport;
         private System.Windows.Forms.Button Rportinventorybtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn REPORT_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MONTH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nitinc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PROFIT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loss;
         private System.Windows.Forms.BindingSource superShopMSDBDataSet2BindingSource;
         private SuperShopMSDBDataSet2 superShopMSDBDataSet2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn REPORT_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MONTH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PROFIT;
     }
 }
