@@ -190,8 +190,8 @@
             // comboBox1
             // 
             this.comboBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "GROCERY",
@@ -214,9 +214,9 @@
             this.reatilprice.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reatilprice.Location = new System.Drawing.Point(11, 130);
             this.reatilprice.Name = "reatilprice";
-            this.reatilprice.Size = new System.Drawing.Size(75, 15);
+            this.reatilprice.Size = new System.Drawing.Size(81, 15);
             this.reatilprice.TabIndex = 24;
-            this.reatilprice.Text = "Retail Price:";
+            this.reatilprice.Text = "Selling Price:";
             // 
             // RetailPricebox
             // 
@@ -235,9 +235,9 @@
             this.adqty.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adqty.Location = new System.Drawing.Point(11, 104);
             this.adqty.Name = "adqty";
-            this.adqty.Size = new System.Drawing.Size(32, 15);
+            this.adqty.Size = new System.Drawing.Size(75, 15);
             this.adqty.TabIndex = 20;
-            this.adqty.Text = "Qyt:";
+            this.adqty.Text = "Initial Price:";
             this.adqty.Click += new System.EventHandler(this.Phone_Click);
             // 
             // addproductqtybox
@@ -309,7 +309,7 @@
             this.ProductName.Name = "ProductName";
             this.ProductName.Size = new System.Drawing.Size(96, 15);
             this.ProductName.TabIndex = 2;
-            this.ProductName.Text = "Product Name;";
+            this.ProductName.Text = "Product Name:";
             // 
             // CustomerNameTextboxSales
             // 

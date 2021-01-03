@@ -17,19 +17,33 @@ namespace SuperShopMainV1._00
         public adminReport()
         {
             InitializeComponent();
-            sqlConnection.Open();
-            SqlCommand cmd = sqlConnection.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from REPORT";
-            cmd.ExecuteNonQuery();// executing the CommandText
+            display();
+        }
 
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd); //here the sql datadapter is catching the data  using sql language
-            da.Fill(dt); //here the sql datadapter is filling the data into the datatable
-            dgvReport.DataSource = dt; //the datatable is showing into the data grid view
+        void display()
+        {
+            try
+            {
+                sqlConnection.Open();
+                SqlCommand cmd = sqlConnection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from REPORT";
+                cmd.ExecuteNonQuery();// executing the CommandText
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd); //here the sql datadapter is catching the data  using sql language
+                da.Fill(dt); //here the sql datadapter is filling the data into the datatable
+                dgvReport.DataSource = dt; //the datatable is showing into the data grid view
 
 
-            sqlConnection.Close();
+                sqlConnection.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+
+
         }
 
         private void logoutbutton_Click(object sender, EventArgs e)
@@ -56,6 +70,35 @@ namespace SuperShopMainV1._00
             AdminDashboard add = new AdminDashboard();
             this.Hide();
             add.Show();
+        }
+
+        private void adminReport_Load(object sender, EventArgs e)
+        {
+            display();
+        }
+
+        private void Rportinventorybtn_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * from REPORT where MONTH = '" + SalesReport.Text + "'";
+
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd); //here the sql datadapter is catching the data using sql language
+            da.Fill(dt); //here the sql datadapter is filling the data into the datatable
+            dgvReport.DataSource = dt; //the datatable is showing into the data grid view
+
+            sqlConnection.Close();
+
+
+        }
+
+        private void SalesReport_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

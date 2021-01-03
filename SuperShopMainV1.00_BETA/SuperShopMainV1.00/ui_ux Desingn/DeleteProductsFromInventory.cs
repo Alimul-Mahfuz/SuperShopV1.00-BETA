@@ -70,7 +70,9 @@ namespace SuperShopMainV1._00
 
         private void Inventory_Click(object sender, EventArgs e)
         {
+            AdminDashboard adm = new AdminDashboard();
             this.Hide();
+            adm.Show();
 
         }
 
@@ -111,6 +113,7 @@ namespace SuperShopMainV1._00
                 MessageBox.Show("Product Id is not found!", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 display();
             }
+            Product_ID_Textbox.Text = "";
             
         }
     }

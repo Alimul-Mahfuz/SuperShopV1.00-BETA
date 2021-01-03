@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SuperShopMSDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ui_ux Desingn\memconfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +191,17 @@
     </None>
     <None Include="SuperShopMSDBDataSet1.xss">
       <DependentUpon>SuperShopMSDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SuperShopMSDBDataSet2.xsc">
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SuperShopMSDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SuperShopMSDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SuperShopMSDBDataSet2.xss">
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

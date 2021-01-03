@@ -15,13 +15,13 @@ namespace SuperShopMainV1._00
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
         public static double totalcounter = 0.00;
+        public string cnt = "";
+        DateTime dateTime = DateTime.UtcNow.Date;
         public SalesmanDashboar()
-        {
-           
+        {   
             InitializeComponent();
             Qtytextbox.Text = "1";
             grandtotalcount.Text = "0.00";
-            DateTime dateTime = DateTime.UtcNow.Date;
             datetimeviewer.Text = dateTime.ToString("dd-MM-yyyy");
            
         }
@@ -163,7 +163,7 @@ namespace SuperShopMainV1._00
             string strval = "";
             foreach(string ss in Datavalue)
             {
-                strval += ss+" "+" ";
+                strval += ss;
                 if (i == 5)
                 {
                     psd.listBoxitem.Items.Add(strval);
@@ -174,6 +174,46 @@ namespace SuperShopMainV1._00
 
             }
             
+        }
+        public void insbdetails()
+        {
+            string[,] Datavalue = new string[customersalesdatagrid.Rows.Count, customersalesdatagrid.Columns.Count];
+            foreach (DataGridViewRow row in customersalesdatagrid.Rows)
+            {
+                foreach (DataGridViewColumn col in customersalesdatagrid.Columns)
+                {
+                    Datavalue[row.Index, col.Index] = customersalesdatagrid.Rows[row.Index].Cells[col.Index].Value.ToString();
+
+                }
+            }
+            string query = "Select BILL_ID from BILLDETAIL WHERE CUSTOMER_ID  =" + int.Parse(cnt);
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb = new DataTable();
+            sda.Fill(dtb);
+            string bid = dtb.Rows[0][0].ToString();
+
+            int i = 1;
+            string strval = "";
+            foreach (string ss in Datavalue)
+            {
+                strval = ss ;
+                if (i == 1)
+                {
+                    sqlcon.Open();
+                    SqlCommand cmd = new SqlCommand("insert into BILL_DETAILS values(@BILL_ID,@PRODUCT_ID)", sqlcon);
+                    cmd.Parameters.AddWithValue("@BILL_ID", bid);
+                    cmd.Parameters.AddWithValue("@PRODUCT_ID", ss);
+                    int j = cmd.ExecuteNonQuery();
+                    if (j == 1)
+                    {
+                        MessageBox.Show("Data Saved");
+                    }
+                    
+                    i = 0;
+                }
+                i++;
+
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -201,10 +241,60 @@ namespace SuperShopMainV1._00
             {
                 MessageBox.Show("Product ID Is Empty ");
             }
-            
-       
+        }
+        public void inscnt()
+        {
+            sqlcon.Open();
+            SqlCommand cmd = new SqlCommand("insert into CONTACT values(@CONTACT_ID,@NAME,@EMAIL,@PHONE,@ADDRESS,@CATAGORY)", sqlcon);
+            cmd.Parameters.AddWithValue("@NAME",cnametextbox.Text);
+            cmd.Parameters.AddWithValue("@EMAIL",null);
+            cmd.Parameters.AddWithValue("@PHONE",custphonetextbox.Text);
+            cmd.Parameters.AddWithValue("@ADDRESS",null);
+            cmd.Parameters.AddWithValue("@CATAGORY","CUSTOMER");
+            int i = cmd.ExecuteNonQuery();
+            if (i == 1)
+            {
+                MessageBox.Show("Data Saved");
+            }
+        }
+        public void insbill(Confirmpay isl)
+        {
+            string query = "Select CONTACT_ID from PRODUCT WHERE PHONE =" + int.Parse(custphonetextbox.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb = new DataTable();
+            sda.Fill(dtb);
+            string cntid = dtb.Rows[0][0].ToString();
+            cnt = cntid;
+            SqlCommand cmd = new SqlCommand("insert into BILL values(@CUSTOMER_ID,@PAYMENT_METHOD,@VAT,@DISCOUNT,@TOTAL_PAYABLE,@RECIEVED_CASH,@CHANGE,@ISSUE_DATE)", sqlcon);
+            cmd.Parameters.AddWithValue("@CUSTOMER_ID", cntid);
+            cmd.Parameters.AddWithValue("@MAYMENT_METHOD",isl.paymentmethodselector.Text);
+            cmd.Parameters.AddWithValue("@VAT",null);
+            cmd.Parameters.AddWithValue("@DISCOUNT", null);
+            cmd.Parameters.AddWithValue("@TOTAL_PAYABLE",totalcounter.ToString());
+            cmd.Parameters.AddWithValue("@RECIEVED_CASH", isl.recievedcashbox.Text);
+            cmd.Parameters.AddWithValue("@CHANGE", (totalcounter-int.Parse(isl.recievedcashbox.Text)).ToString());
+            cmd.Parameters.AddWithValue("@ISSUE_DATE", dateTime.ToString("dd-MM-yyyy"));
+            int i = cmd.ExecuteNonQuery();
         }
 
+        public void inscust()
+        {
+            string query = "Select CONTACT_ID from PRODUCT WHERE PHONE =" + int.Parse(custphonetextbox.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb = new DataTable();
+            sda.Fill(dtb);
+            string cntid = dtb.Rows[0][0].ToString();
+            SqlCommand smd = new SqlCommand("insert into CUSTOMER values(@CONTACT_ID,@MEMBER_ID)", sqlcon);
+            smd.Parameters.AddWithValue("@NAME",cntid);
+            int i = smd.ExecuteNonQuery();
+            {
+                MessageBox.Show("Data Saved");
+            }
+
+        }
+
+
+   
         private void proceedtopay_Click(object sender, EventArgs e)
         {
             if (memberdropdown.Text == "Member")
@@ -225,9 +315,6 @@ namespace SuperShopMainV1._00
             }
 
         }
-
-
-
 
 
     }

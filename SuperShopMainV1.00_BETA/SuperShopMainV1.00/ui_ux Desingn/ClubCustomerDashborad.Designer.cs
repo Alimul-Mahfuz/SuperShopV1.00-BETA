@@ -316,12 +316,19 @@
             // 
             // clubcustomerdatagrid
             // 
+            this.clubcustomerdatagrid.AllowUserToAddRows = false;
+            this.clubcustomerdatagrid.AllowUserToDeleteRows = false;
             this.clubcustomerdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.clubcustomerdatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.clubcustomerdatagrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.clubcustomerdatagrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.clubcustomerdatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.clubcustomerdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.clubcustomerdatagrid.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.clubcustomerdatagrid.Location = new System.Drawing.Point(183, 299);
             this.clubcustomerdatagrid.Name = "clubcustomerdatagrid";
-            this.clubcustomerdatagrid.RowHeadersWidth = 80;
+            this.clubcustomerdatagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.clubcustomerdatagrid.Size = new System.Drawing.Size(657, 369);
             this.clubcustomerdatagrid.TabIndex = 4;
             // 
@@ -339,6 +346,7 @@
             this.MinimumSize = new System.Drawing.Size(868, 736);
             this.Name = "ClubCustomerDashborad";
             this.Text = "Club Customer Dashborad";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ClubDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).EndInit();
             this.ClubCustomerDashboarplanel1.ResumeLayout(false);

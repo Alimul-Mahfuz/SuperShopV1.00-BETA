@@ -65,6 +65,8 @@
             this.labeltotal = new System.Windows.Forms.Label();
             this.totaltextbox = new System.Windows.Forms.TextBox();
             this.proceedtopay = new System.Windows.Forms.Button();
+            this.custphonelabel = new System.Windows.Forms.Label();
+            this.custphonetextbox = new System.Windows.Forms.TextBox();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
             this.searchicon.SuspendLayout();
@@ -163,6 +165,8 @@
             this.searchicon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.searchicon.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.searchicon.Controls.Add(this.custphonelabel);
+            this.searchicon.Controls.Add(this.custphonetextbox);
             this.searchicon.Controls.Add(this.datatimelabel);
             this.searchicon.Controls.Add(this.pictureBox1);
             this.searchicon.Controls.Add(this.datetimeviewer);
@@ -180,7 +184,7 @@
             this.searchicon.Controls.Add(this.cnametextbox);
             this.searchicon.Location = new System.Drawing.Point(183, 111);
             this.searchicon.Name = "searchicon";
-            this.searchicon.Size = new System.Drawing.Size(690, 168);
+            this.searchicon.Size = new System.Drawing.Size(690, 196);
             this.searchicon.TabIndex = 2;
             // 
             // datatimelabel
@@ -198,7 +202,7 @@
             // 
             this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources.magnifying_glass;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(375, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(375, 98);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(22, 18);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -226,7 +230,7 @@
             // 
             this.salesdashproductid.AutoSize = true;
             this.salesdashproductid.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salesdashproductid.Location = new System.Drawing.Point(11, 57);
+            this.salesdashproductid.Location = new System.Drawing.Point(11, 100);
             this.salesdashproductid.Name = "salesdashproductid";
             this.salesdashproductid.Size = new System.Drawing.Size(73, 15);
             this.salesdashproductid.TabIndex = 22;
@@ -234,7 +238,7 @@
             // 
             // productidtextbox
             // 
-            this.productidtextbox.Location = new System.Drawing.Point(123, 55);
+            this.productidtextbox.Location = new System.Drawing.Point(123, 98);
             this.productidtextbox.Name = "productidtextbox";
             this.productidtextbox.Size = new System.Drawing.Size(246, 20);
             this.productidtextbox.TabIndex = 21;
@@ -244,7 +248,7 @@
             // 
             this.ProductNameSalesLabel.AutoSize = true;
             this.ProductNameSalesLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductNameSalesLabel.Location = new System.Drawing.Point(11, 88);
+            this.ProductNameSalesLabel.Location = new System.Drawing.Point(11, 131);
             this.ProductNameSalesLabel.Name = "ProductNameSalesLabel";
             this.ProductNameSalesLabel.Size = new System.Drawing.Size(96, 15);
             this.ProductNameSalesLabel.TabIndex = 20;
@@ -252,7 +256,7 @@
             // 
             // ProductNametextBox
             // 
-            this.ProductNametextBox.Location = new System.Drawing.Point(123, 86);
+            this.ProductNametextBox.Location = new System.Drawing.Point(123, 129);
             this.ProductNametextBox.Name = "ProductNametextBox";
             this.ProductNametextBox.Size = new System.Drawing.Size(274, 20);
             this.ProductNametextBox.TabIndex = 19;
@@ -317,7 +321,7 @@
             // 
             this.QtyLabel.AutoSize = true;
             this.QtyLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtyLabel.Location = new System.Drawing.Point(11, 121);
+            this.QtyLabel.Location = new System.Drawing.Point(11, 164);
             this.QtyLabel.Name = "QtyLabel";
             this.QtyLabel.Size = new System.Drawing.Size(32, 15);
             this.QtyLabel.TabIndex = 9;
@@ -325,7 +329,7 @@
             // 
             // Qtytextbox
             // 
-            this.Qtytextbox.Location = new System.Drawing.Point(123, 121);
+            this.Qtytextbox.Location = new System.Drawing.Point(123, 164);
             this.Qtytextbox.Name = "Qtytextbox";
             this.Qtytextbox.Size = new System.Drawing.Size(121, 20);
             this.Qtytextbox.TabIndex = 8;
@@ -366,7 +370,7 @@
             this.Pricecol,
             this.Totalcol});
             this.customersalesdatagrid.GridColor = System.Drawing.Color.LightCoral;
-            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 285);
+            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 329);
             this.customersalesdatagrid.Name = "customersalesdatagrid";
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -379,7 +383,7 @@
             this.customersalesdatagrid.RowHeadersWidth = 51;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.customersalesdatagrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.customersalesdatagrid.Size = new System.Drawing.Size(690, 292);
+            this.customersalesdatagrid.Size = new System.Drawing.Size(690, 248);
             this.customersalesdatagrid.TabIndex = 3;
             this.customersalesdatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersalesdatagrid_CellContentClick);
             // 
@@ -492,6 +496,23 @@
             this.proceedtopay.UseVisualStyleBackColor = false;
             this.proceedtopay.Click += new System.EventHandler(this.proceedtopay_Click);
             // 
+            // custphonelabel
+            // 
+            this.custphonelabel.AutoSize = true;
+            this.custphonelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custphonelabel.Location = new System.Drawing.Point(11, 64);
+            this.custphonelabel.Name = "custphonelabel";
+            this.custphonelabel.Size = new System.Drawing.Size(49, 15);
+            this.custphonelabel.TabIndex = 27;
+            this.custphonelabel.Text = "Phone:";
+            // 
+            // custphonetextbox
+            // 
+            this.custphonetextbox.Location = new System.Drawing.Point(123, 62);
+            this.custphonetextbox.Name = "custphonetextbox";
+            this.custphonetextbox.Size = new System.Drawing.Size(274, 20);
+            this.custphonetextbox.TabIndex = 26;
+            // 
             // SalesmanDashboar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,5 +582,7 @@
         private System.Windows.Forms.Button proceedtopay;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label datatimelabel;
+        private System.Windows.Forms.Label custphonelabel;
+        public System.Windows.Forms.TextBox custphonetextbox;
     }
 }

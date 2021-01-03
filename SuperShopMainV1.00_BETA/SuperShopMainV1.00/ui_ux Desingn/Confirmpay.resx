@@ -448,46 +448,46 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="RoleSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="paymethodselector.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="RoleSelect.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="paymethodselector.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 11.25pt, style=Bold</value>
   </data>
-  <data name="RoleSelect.Items" xml:space="preserve">
+  <data name="paymethodselector.Items" xml:space="preserve">
     <value>BKASH</value>
   </data>
-  <data name="RoleSelect.Items1" xml:space="preserve">
+  <data name="paymethodselector.Items1" xml:space="preserve">
     <value>CASH</value>
   </data>
-  <data name="RoleSelect.Items2" xml:space="preserve">
+  <data name="paymethodselector.Items2" xml:space="preserve">
     <value>DBBL</value>
   </data>
-  <data name="RoleSelect.Items3" xml:space="preserve">
+  <data name="paymethodselector.Items3" xml:space="preserve">
     <value>VISA</value>
   </data>
-  <data name="RoleSelect.Items4" xml:space="preserve">
+  <data name="paymethodselector.Items4" xml:space="preserve">
     <value>MASTER</value>
   </data>
-  <data name="RoleSelect.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="paymethodselector.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 125</value>
   </data>
-  <data name="RoleSelect.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="paymethodselector.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 27</value>
   </data>
-  <data name="RoleSelect.TabIndex" type="System.Int32, mscorlib">
+  <data name="paymethodselector.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;RoleSelect.Name" xml:space="preserve">
-    <value>RoleSelect</value>
+  <data name="&gt;&gt;paymethodselector.Name" xml:space="preserve">
+    <value>paymethodselector</value>
   </data>
-  <data name="&gt;&gt;RoleSelect.Type" xml:space="preserve">
+  <data name="&gt;&gt;paymethodselector.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RoleSelect.Parent" xml:space="preserve">
+  <data name="&gt;&gt;paymethodselector.Parent" xml:space="preserve">
     <value>payconfirmpanel</value>
   </data>
-  <data name="&gt;&gt;RoleSelect.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;paymethodselector.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="paymentmethodselector.AutoSize" type="System.Boolean, mscorlib">
@@ -523,31 +523,31 @@
   <data name="&gt;&gt;paymentmethodselector.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="recievedcashbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 12pt, style=Bold</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="recievedcashbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 74</value>
   </data>
-  <data name="textBox2.Multiline" type="System.Boolean, mscorlib">
+  <data name="recievedcashbox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="recievedcashbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 24</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="recievedcashbox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;recievedcashbox.Name" xml:space="preserve">
+    <value>recievedcashbox</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;recievedcashbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;recievedcashbox.Parent" xml:space="preserve">
     <value>payconfirmpanel</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;recievedcashbox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="recieved.AutoSize" type="System.Boolean, mscorlib">
