@@ -12,11 +12,15 @@ namespace SuperShopMainV1._00
 {
     public partial class Confirmpay : Form
     {
-        public Confirmpay(string a,string b)
+        public  Confirmpay(string a,string b)
         {
             InitializeComponent();
             payconfcnametext.Text = a;
             payconfigtotalpay.Text = b;
+        }
+        public void datagrinddbinsert(SalesmanDashboar irs)
+        {
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -31,6 +35,7 @@ namespace SuperShopMainV1._00
 
         private void button1_Click(object sender, EventArgs e)
         {
+
 
         }
 

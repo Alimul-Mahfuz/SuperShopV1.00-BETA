@@ -44,6 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SuperShopMSDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ui_ux Desingn\finalizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui_ux Desingn\finalizer.Designer.cs">
+      <DependentUpon>finalizer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui_ux Desingn\memconfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +89,11 @@
     <Compile Include="ui_ux Desingn\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui_ux Desingn\AdminReportDashboard.cs">
+    <Compile Include="ui_ux Desingn\adminReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui_ux Desingn\AdminReportDashboard.Designer.cs">
-      <DependentUpon>AdminReportDashboard.cs</DependentUpon>
+    <Compile Include="ui_ux Desingn\adminReport.Designer.cs">
+      <DependentUpon>adminReport.cs</DependentUpon>
     </Compile>
     <Compile Include="ui_ux Desingn\ClubCustomerDashborad.cs">
       <SubType>Form</SubType>
@@ -116,6 +127,9 @@
     <Compile Include="ui_ux Desingn\SalesmanDashboard.Designer.cs">
       <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ui_ux Desingn\finalizer.resx">
+      <DependentUpon>finalizer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\memconfirmation.resx">
       <DependentUpon>memconfirmation.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,8 +142,8 @@
     <EmbeddedResource Include="ui_ux Desingn\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui_ux Desingn\AdminReportDashboard.resx">
-      <DependentUpon>AdminReportDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="ui_ux Desingn\adminReport.resx">
+      <DependentUpon>adminReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui_ux Desingn\ClubCustomerDashborad.resx">
       <DependentUpon>ClubCustomerDashborad.cs</DependentUpon>
@@ -187,6 +201,17 @@
     <None Include="SuperShopMSDBDataSet1.xss">
       <DependentUpon>SuperShopMSDBDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="SuperShopMSDBDataSet2.xsc">
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SuperShopMSDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SuperShopMSDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SuperShopMSDBDataSet2.xss">
+      <DependentUpon>SuperShopMSDBDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -202,6 +227,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1624860.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

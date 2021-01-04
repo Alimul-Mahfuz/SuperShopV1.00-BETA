@@ -40,8 +40,6 @@
             this.billdetailtlabel = new System.Windows.Forms.Label();
             this.billdetailsidtexbox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bdtable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bdtablet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.billdetailsDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.billdetailsadmindashboarlogo)).BeginInit();
             this.billdetailsiid.SuspendLayout();
@@ -50,7 +48,7 @@
             // 
             // billdetailsDashboardPanel
             // 
-            this.billdetailsDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.billdetailsDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
             this.billdetailsDashboardPanel.Controls.Add(this.MngBIll);
             this.billdetailsDashboardPanel.Controls.Add(this.logoutbutton);
             this.billdetailsDashboardPanel.Controls.Add(this.Addcutomerbutton);
@@ -68,12 +66,13 @@
             this.MngBIll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MngBIll.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MngBIll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.MngBIll.Location = new System.Drawing.Point(12, 209);
+            this.MngBIll.Location = new System.Drawing.Point(12, 176);
             this.MngBIll.Name = "MngBIll";
             this.MngBIll.Size = new System.Drawing.Size(150, 47);
             this.MngBIll.TabIndex = 3;
             this.MngBIll.Text = "Manage Bill";
             this.MngBIll.UseVisualStyleBackColor = true;
+            this.MngBIll.Click += new System.EventHandler(this.MngBIll_Click);
             // 
             // logoutbutton
             // 
@@ -89,6 +88,7 @@
             this.logoutbutton.TabIndex = 2;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // Addcutomerbutton
             // 
@@ -97,12 +97,13 @@
             this.Addcutomerbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addcutomerbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addcutomerbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Addcutomerbutton.Location = new System.Drawing.Point(12, 133);
+            this.Addcutomerbutton.Location = new System.Drawing.Point(12, 107);
             this.Addcutomerbutton.Name = "Addcutomerbutton";
             this.Addcutomerbutton.Size = new System.Drawing.Size(150, 47);
             this.Addcutomerbutton.TabIndex = 1;
             this.Addcutomerbutton.Text = "Add Club Member";
             this.Addcutomerbutton.UseVisualStyleBackColor = true;
+            this.Addcutomerbutton.Click += new System.EventHandler(this.Addcutomerbutton_Click);
             // 
             // SalesButton
             // 
@@ -111,12 +112,13 @@
             this.SalesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SalesButton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SalesButton.Location = new System.Drawing.Point(12, 58);
+            this.SalesButton.Location = new System.Drawing.Point(12, 36);
             this.SalesButton.Name = "SalesButton";
             this.SalesButton.Size = new System.Drawing.Size(150, 47);
             this.SalesButton.TabIndex = 0;
             this.SalesButton.Text = "Sale Products";
             this.SalesButton.UseVisualStyleBackColor = true;
+            this.SalesButton.Click += new System.EventHandler(this.SalesButton_Click);
             // 
             // billdetailsadmindashboarlogo
             // 
@@ -135,7 +137,7 @@
             // 
             this.billdetailsiid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.billdetailsiid.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.billdetailsiid.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.billdetailsiid.Controls.Add(this.searchbill);
             this.billdetailsiid.Controls.Add(this.billdetailtlabel);
             this.billdetailsiid.Controls.Add(this.billdetailsidtexbox);
@@ -159,10 +161,10 @@
             this.searchbill.TabIndex = 17;
             this.searchbill.Text = "Search Bill";
             this.searchbill.UseVisualStyleBackColor = false;
+            this.searchbill.Click += new System.EventHandler(this.searchbill_Click);
             // 
             // billdetailtlabel
             // 
-            this.billdetailtlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.billdetailtlabel.AutoSize = true;
             this.billdetailtlabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billdetailtlabel.Location = new System.Drawing.Point(11, 26);
@@ -173,7 +175,6 @@
             // 
             // billdetailsidtexbox
             // 
-            this.billdetailsidtexbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.billdetailsidtexbox.Location = new System.Drawing.Point(123, 24);
             this.billdetailsidtexbox.Name = "billdetailsidtexbox";
             this.billdetailsidtexbox.Size = new System.Drawing.Size(274, 20);
@@ -183,24 +184,13 @@
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.bdtable,
-            this.bdtablet});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.No;
             this.dataGridView1.Location = new System.Drawing.Point(183, 245);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(657, 426);
             this.dataGridView1.TabIndex = 6;
-            // 
-            // bdtable
-            // 
-            this.bdtable.HeaderText = "Product_ID";
-            this.bdtable.Name = "bdtable";
-            // 
-            // bdtablet
-            // 
-            this.bdtablet.HeaderText = "Product_Name";
-            this.bdtablet.Name = "bdtablet";
             // 
             // BillDetailsDashboard
             // 
@@ -216,6 +206,7 @@
             this.MinimumSize = new System.Drawing.Size(868, 736);
             this.Name = "BillDetailsDashboard";
             this.Text = "Bill Details Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.billdetailsDashboardPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.billdetailsadmindashboarlogo)).EndInit();
             this.billdetailsiid.ResumeLayout(false);
@@ -238,7 +229,5 @@
         private System.Windows.Forms.Label billdetailtlabel;
         private System.Windows.Forms.TextBox billdetailsidtexbox;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bdtable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bdtablet;
     }
 }

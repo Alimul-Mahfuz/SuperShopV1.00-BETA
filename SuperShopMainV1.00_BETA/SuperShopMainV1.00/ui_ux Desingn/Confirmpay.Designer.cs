@@ -33,9 +33,9 @@
             this.Login_PictureBox = new System.Windows.Forms.PictureBox();
             this.payconfirmpanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.RoleSelect = new System.Windows.Forms.ComboBox();
+            this.paymethodselector = new System.Windows.Forms.ComboBox();
             this.paymentmethodselector = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.recievedcashbox = new System.Windows.Forms.TextBox();
             this.recieved = new System.Windows.Forms.Label();
             this.payconfigtotalpay = new System.Windows.Forms.TextBox();
             this.totalpayconfirmlable = new System.Windows.Forms.Label();
@@ -63,9 +63,9 @@
             // 
             this.payconfirmpanel.BackColor = System.Drawing.SystemColors.Info;
             this.payconfirmpanel.Controls.Add(this.button1);
-            this.payconfirmpanel.Controls.Add(this.RoleSelect);
+            this.payconfirmpanel.Controls.Add(this.paymethodselector);
             this.payconfirmpanel.Controls.Add(this.paymentmethodselector);
-            this.payconfirmpanel.Controls.Add(this.textBox2);
+            this.payconfirmpanel.Controls.Add(this.recievedcashbox);
             this.payconfirmpanel.Controls.Add(this.recieved);
             this.payconfirmpanel.Controls.Add(this.payconfigtotalpay);
             this.payconfirmpanel.Controls.Add(this.totalpayconfirmlable);
@@ -82,30 +82,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // RoleSelect
+            // paymethodselector
             // 
-            resources.ApplyResources(this.RoleSelect, "RoleSelect");
-            this.RoleSelect.Cursor = System.Windows.Forms.Cursors.Default;
-            this.RoleSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RoleSelect.FormattingEnabled = true;
-            this.RoleSelect.Items.AddRange(new object[] {
-            resources.GetString("RoleSelect.Items"),
-            resources.GetString("RoleSelect.Items1"),
-            resources.GetString("RoleSelect.Items2"),
-            resources.GetString("RoleSelect.Items3"),
-            resources.GetString("RoleSelect.Items4")});
-            this.RoleSelect.Name = "RoleSelect";
-            this.RoleSelect.SelectedIndexChanged += new System.EventHandler(this.RoleSelect_SelectedIndexChanged);
+            resources.ApplyResources(this.paymethodselector, "paymethodselector");
+            this.paymethodselector.Cursor = System.Windows.Forms.Cursors.Default;
+            this.paymethodselector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.paymethodselector.FormattingEnabled = true;
+            this.paymethodselector.Items.AddRange(new object[] {
+            resources.GetString("paymethodselector.Items"),
+            resources.GetString("paymethodselector.Items1"),
+            resources.GetString("paymethodselector.Items2"),
+            resources.GetString("paymethodselector.Items3"),
+            resources.GetString("paymethodselector.Items4")});
+            this.paymethodselector.Name = "paymethodselector";
+            this.paymethodselector.SelectedIndexChanged += new System.EventHandler(this.RoleSelect_SelectedIndexChanged);
             // 
             // paymentmethodselector
             // 
             resources.ApplyResources(this.paymentmethodselector, "paymentmethodselector");
             this.paymentmethodselector.Name = "paymentmethodselector";
             // 
-            // textBox2
+            // recievedcashbox
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.recievedcashbox, "recievedcashbox");
+            this.recievedcashbox.Name = "recievedcashbox";
             // 
             // recieved
             // 
@@ -157,10 +157,10 @@
         private System.Windows.Forms.Label totalpayconfirmlable;
         private System.Windows.Forms.Label recieved;
         public System.Windows.Forms.TextBox payconfigtotalpay;
-        private System.Windows.Forms.Label paymentmethodselector;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label paymentmethodselector;
+        public System.Windows.Forms.TextBox recievedcashbox;
         public System.Windows.Forms.TextBox payconfcnametext;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox RoleSelect;
+        private System.Windows.Forms.ComboBox paymethodselector;
     }
 }

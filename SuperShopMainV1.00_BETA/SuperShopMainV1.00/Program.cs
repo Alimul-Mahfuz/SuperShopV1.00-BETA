@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* Contributor Name: Alimul Mahfuz Tushar
+ * ID:19-39831-1*/
 namespace SuperShopMainV1._00
 {
     static class Program
@@ -16,7 +17,7 @@ namespace SuperShopMainV1._00
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalesmanDashboar());
+            Application.Run(new LoagingScreenFlashCard());
         }
     }
 }
