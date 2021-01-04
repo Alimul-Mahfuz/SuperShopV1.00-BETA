@@ -9,6 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+/*Contributoer(Form): Alimul Mahfuz Tushar
+ * ID: 19-39831-1
+ * Contributor(Form):Abdul Wazed
+ * ID:19-39806-1
+ * Contributor(code):Md Khayeruzzaman 
+   ID:18-38715-3
+ */
+
 namespace SuperShopMainV1._00
 {
     public partial class adminReport : Form
@@ -77,7 +85,12 @@ namespace SuperShopMainV1._00
             display();
         }
 
-        private void Rportinventorybtn_Click(object sender, EventArgs e)
+        private void SalesReport_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rportinventorybtn_Click_1(object sender, EventArgs e)
         {
             sqlConnection.Open();
             SqlCommand cmd = sqlConnection.CreateCommand();
@@ -92,17 +105,6 @@ namespace SuperShopMainV1._00
             dgvReport.DataSource = dt; //the datatable is showing into the data grid view
 
             sqlConnection.Close();
-
-
-        }
-
-        private void SalesReport_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Rportinventorybtn_Click_1(object sender, EventArgs e)
-        {
 
         }
     }

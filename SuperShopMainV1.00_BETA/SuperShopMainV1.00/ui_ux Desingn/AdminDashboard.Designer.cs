@@ -49,10 +49,10 @@
             this.ProductName = new System.Windows.Forms.Label();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.searchpidcombo = new System.Windows.Forms.ComboBox();
             this.searchinventory = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.productid = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pRODUCTIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,7 +81,7 @@
             // 
             // AdminDashboardPanel
             // 
-            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.AdminDashboardPanel.Controls.Add(this.Reportadd);
             this.AdminDashboardPanel.Controls.Add(this.logoutbutton);
             this.AdminDashboardPanel.Controls.Add(this.RemonveProduct);
@@ -110,7 +110,7 @@
             // logoutbutton
             // 
             this.logoutbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.logoutbutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.logoutbutton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.logoutbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +125,7 @@
             // 
             // RemonveProduct
             // 
-            this.RemonveProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.RemonveProduct.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.RemonveProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.RemonveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemonveProduct.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,7 +170,7 @@
             // 
             this.AdminAddproductpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdminAddproductpanel.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.AdminAddproductpanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AdminAddproductpanel.Controls.Add(this.comboBox1);
             this.AdminAddproductpanel.Controls.Add(this.reatilprice);
             this.AdminAddproductpanel.Controls.Add(this.RetailPricebox);
@@ -186,6 +186,7 @@
             this.AdminAddproductpanel.Name = "AdminAddproductpanel";
             this.AdminAddproductpanel.Size = new System.Drawing.Size(657, 173);
             this.AdminAddproductpanel.TabIndex = 4;
+            this.AdminAddproductpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminAddproductpanel_Paint);
             // 
             // comboBox1
             // 
@@ -211,10 +212,11 @@
             this.reatilprice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.reatilprice.AutoSize = true;
-            this.reatilprice.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reatilprice.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reatilprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.reatilprice.Location = new System.Drawing.Point(11, 130);
             this.reatilprice.Name = "reatilprice";
-            this.reatilprice.Size = new System.Drawing.Size(81, 15);
+            this.reatilprice.Size = new System.Drawing.Size(88, 17);
             this.reatilprice.TabIndex = 24;
             this.reatilprice.Text = "Selling Price:";
             // 
@@ -232,12 +234,13 @@
             this.adqty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.adqty.AutoSize = true;
-            this.adqty.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adqty.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adqty.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.adqty.Location = new System.Drawing.Point(11, 104);
             this.adqty.Name = "adqty";
-            this.adqty.Size = new System.Drawing.Size(75, 15);
+            this.adqty.Size = new System.Drawing.Size(85, 17);
             this.adqty.TabIndex = 20;
-            this.adqty.Text = "Initial Price:";
+            this.adqty.Text = "Initial Stock:";
             this.adqty.Click += new System.EventHandler(this.Phone_Click);
             // 
             // addproductqtybox
@@ -252,11 +255,12 @@
             // addedbuttoninventory
             // 
             this.addedbuttoninventory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addedbuttoninventory.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.addedbuttoninventory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.addedbuttoninventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.addedbuttoninventory.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.addedbuttoninventory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.addedbuttoninventory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.addedbuttoninventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.addedbuttoninventory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addedbuttoninventory.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedbuttoninventory.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbuttoninventory.ForeColor = System.Drawing.Color.Black;
             this.addedbuttoninventory.Location = new System.Drawing.Point(504, 49);
             this.addedbuttoninventory.Name = "addedbuttoninventory";
@@ -271,10 +275,11 @@
             this.purchasepricelabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.purchasepricelabel.AutoSize = true;
-            this.purchasepricelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchasepricelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchasepricelabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.purchasepricelabel.Location = new System.Drawing.Point(11, 78);
             this.purchasepricelabel.Name = "purchasepricelabel";
-            this.purchasepricelabel.Size = new System.Drawing.Size(81, 15);
+            this.purchasepricelabel.Size = new System.Drawing.Size(85, 17);
             this.purchasepricelabel.TabIndex = 14;
             this.purchasepricelabel.Text = "BuyingPrice:";
             // 
@@ -292,10 +297,11 @@
             this.ProductCata.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ProductCata.AutoSize = true;
-            this.ProductCata.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductCata.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductCata.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProductCata.Location = new System.Drawing.Point(11, 52);
             this.ProductCata.Name = "ProductCata";
-            this.ProductCata.Size = new System.Drawing.Size(65, 15);
+            this.ProductCata.Size = new System.Drawing.Size(67, 17);
             this.ProductCata.TabIndex = 4;
             this.ProductCata.Text = "Catagory:";
             // 
@@ -304,10 +310,11 @@
             this.ProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ProductName.AutoSize = true;
-            this.ProductName.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductName.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProductName.Location = new System.Drawing.Point(11, 26);
             this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(96, 15);
+            this.ProductName.Size = new System.Drawing.Size(100, 17);
             this.ProductName.TabIndex = 2;
             this.ProductName.Text = "Product Name:";
             // 
@@ -324,22 +331,22 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.searchpidcombo);
             this.panel1.Controls.Add(this.searchinventory);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.productid);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Location = new System.Drawing.Point(183, 290);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 115);
             this.panel1.TabIndex = 5;
             // 
-            // comboBox2
+            // searchpidcombo
             // 
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.searchpidcombo.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.searchpidcombo.FormattingEnabled = true;
+            this.searchpidcombo.Items.AddRange(new object[] {
             "GROCERY",
             "FRUITS",
             "COSMETICS",
@@ -347,10 +354,10 @@
             "DAIRY",
             "DRINKS",
             "TOILETRIES"});
-            this.comboBox2.Location = new System.Drawing.Point(123, 52);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(274, 21);
-            this.comboBox2.TabIndex = 25;
+            this.searchpidcombo.Location = new System.Drawing.Point(123, 52);
+            this.searchpidcombo.Name = "searchpidcombo";
+            this.searchpidcombo.Size = new System.Drawing.Size(274, 21);
+            this.searchpidcombo.TabIndex = 25;
             // 
             // searchinventory
             // 
@@ -382,17 +389,17 @@
             this.label4.Text = "Catagory:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // productid
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.productid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 15);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Product Name;";
+            this.productid.AutoSize = true;
+            this.productid.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productid.Location = new System.Drawing.Point(11, 26);
+            this.productid.Name = "productid";
+            this.productid.Size = new System.Drawing.Size(96, 15);
+            this.productid.TabIndex = 2;
+            this.productid.Text = "Product Name:";
             // 
             // textBox4
             // 
@@ -511,7 +518,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
+            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources._1624860;
             this.ClientSize = new System.Drawing.Size(852, 697);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
@@ -561,10 +568,10 @@
         private System.Windows.Forms.TextBox RetailPricebox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox searchpidcombo;
         private System.Windows.Forms.Button searchinventory;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label productid;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private SuperShopMSDBDataSet superShopMSDBDataSet;

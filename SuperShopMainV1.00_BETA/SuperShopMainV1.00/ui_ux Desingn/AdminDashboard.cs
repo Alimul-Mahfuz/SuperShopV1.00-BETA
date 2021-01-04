@@ -8,18 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+/*Contributor(Form): ABDUL WAZED
+ * Contributor(Code): ABDUL WAZED
+ * ID:19-39806-1
+ * */
 
 namespace SuperShopMainV1._00
 {
     public partial class AdminDashboard : Form
     {
         SqlConnection sqlcon = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True");
+
+
+        public object Command { get; private set; }
+
+
+        public DataTable DataTable { get; private set; }
+
         public AdminDashboard()
         {
             InitializeComponent();
             binddatagrid();
+            AdminDashboardPanel.BackColor = Color.FromArgb(100, Color.Black);
+            AdminAddproductpanel.BackColor = Color.FromArgb(150, Color.BurlyWood);
+            
         }
-
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(Pens.Yellow, 0, 0, 150, 150);
+        }
         private void binddatagrid()
         {
 
@@ -90,6 +107,15 @@ namespace SuperShopMainV1._00
         private void searchinventory_Click(object sender, EventArgs e)
         {
 
+            string query = "SELECT *FROM PRODUCT WHERE PRODUCT_NAME like '%" + textBox4.Text + "%'";
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb = new DataTable();
+            sda.Fill(dtb);
+            dataGridView1.DataSource = dtb;
+
+
+
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -98,6 +124,7 @@ namespace SuperShopMainV1._00
             //this.pRODUCTTableAdapter1.Fill(this.superShopMSDBDataSet1.PRODUCT);
             // TODO: This line of code loads data into the 'superShopMSDBDataSet.PRODUCT' table. You can move, or remove it, as needed.
             // this.pRODUCTTableAdapter.Fill(this.superShopMSDBDataSet.PRODUCT);
+            searchinventory_Click(" ");
 
         }
 
@@ -112,6 +139,22 @@ namespace SuperShopMainV1._00
         }
 
         private void ProductCata_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            string valuToSearch = textBox4.Text.ToString();
+            searchinventory_Click(valuToSearch);
+        }
+
+        private void searchinventory_Click(string valuToSearch)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void AdminAddproductpanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

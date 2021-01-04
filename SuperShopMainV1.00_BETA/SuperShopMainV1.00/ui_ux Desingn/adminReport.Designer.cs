@@ -40,12 +40,12 @@
             this.datelabel = new System.Windows.Forms.Label();
             this.SalesReport = new System.Windows.Forms.DateTimePicker();
             this.dgvReport = new System.Windows.Forms.DataGridView();
-            this.Rportinventorybtn = new System.Windows.Forms.Button();
-            this.superShopMSDBDataSet2 = new SuperShopMainV1._00.SuperShopMSDBDataSet2();
-            this.superShopMSDBDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.REPORT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MONTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PROFIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rportinventorybtn = new System.Windows.Forms.Button();
+            this.superShopMSDBDataSet2 = new SuperShopMainV1._00.SuperShopMSDBDataSet2();
+            this.superShopMSDBDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clubdashboardpicbox)).BeginInit();
             this.ReportAdmin.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // AdminDashboardPanel
             // 
-            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.AdminDashboardPanel.Controls.Add(this.Reports);
             this.AdminDashboardPanel.Controls.Add(this.logoutbutton);
             this.AdminDashboardPanel.Controls.Add(this.RemonveProduct);
@@ -145,7 +145,7 @@
             // 
             this.ReportAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReportAdmin.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ReportAdmin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ReportAdmin.Controls.Add(this.datelabel);
             this.ReportAdmin.Controls.Add(this.SalesReport);
             this.ReportAdmin.Location = new System.Drawing.Point(203, 122);
@@ -191,6 +191,24 @@
             this.dgvReport.Size = new System.Drawing.Size(779, 313);
             this.dgvReport.TabIndex = 22;
             // 
+            // REPORT_ID
+            // 
+            this.REPORT_ID.DataPropertyName = "REPORT_ID";
+            this.REPORT_ID.HeaderText = "REPORT_ID";
+            this.REPORT_ID.Name = "REPORT_ID";
+            // 
+            // MONTH
+            // 
+            this.MONTH.DataPropertyName = "MONTH";
+            this.MONTH.HeaderText = "MONTH";
+            this.MONTH.Name = "MONTH";
+            // 
+            // PROFIT
+            // 
+            this.PROFIT.DataPropertyName = "PROFIT";
+            this.PROFIT.HeaderText = "PROFIT";
+            this.PROFIT.Name = "PROFIT";
+            // 
             // Rportinventorybtn
             // 
             this.Rportinventorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,24 +233,6 @@
             // 
             this.superShopMSDBDataSet2BindingSource.DataSource = this.superShopMSDBDataSet2;
             this.superShopMSDBDataSet2BindingSource.Position = 0;
-            // 
-            // REPORT_ID
-            // 
-            this.REPORT_ID.DataPropertyName = "REPORT_ID";
-            this.REPORT_ID.HeaderText = "REPORT_ID";
-            this.REPORT_ID.Name = "REPORT_ID";
-            // 
-            // MONTH
-            // 
-            this.MONTH.DataPropertyName = "MONTH";
-            this.MONTH.HeaderText = "MONTH";
-            this.MONTH.Name = "MONTH";
-            // 
-            // PROFIT
-            // 
-            this.PROFIT.DataPropertyName = "PROFIT";
-            this.PROFIT.HeaderText = "PROFIT";
-            this.PROFIT.Name = "PROFIT";
             // 
             // adminReport
             // 

@@ -32,16 +32,10 @@ namespace SuperShopMainV1._00
         {
 
         }
-        public void dop(SalesmanDashboar osd)
-        {
-            osd.inscnt();
 
-        }
         private void button1_Click(object sender, EventArgs e)
         {
-            SalesmanDashboar irr = new SalesmanDashboar();
-            dop(irr);
-            
+
 
         }
 

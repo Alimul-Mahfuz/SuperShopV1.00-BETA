@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+/*Contributor(Form): Alimul Mahfuz Tushar
+ * ID:19-39831-1
+ * Contributor(Code): Md Khayeruzzaman 
+   ID: 18-38715-3*/
 namespace SuperShopMainV1._00
 {
     public partial class DeleteProductsFromInventory : Form

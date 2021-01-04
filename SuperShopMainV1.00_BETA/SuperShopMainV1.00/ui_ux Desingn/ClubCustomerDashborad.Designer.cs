@@ -36,7 +36,6 @@
             this.SalesButton = new System.Windows.Forms.Button();
             this.clubdashboardpicbox = new System.Windows.Forms.PictureBox();
             this.ClubCustomerDashboarplanel1 = new System.Windows.Forms.Panel();
-            this.RemoveButtonclubcustomer = new System.Windows.Forms.Button();
             this.refreshclubmemberbtn = new System.Windows.Forms.Button();
             this.Address = new System.Windows.Forms.Label();
             this.clubcustomeraddress = new System.Windows.Forms.TextBox();
@@ -58,7 +57,7 @@
             // 
             // ClubDashboardPanel
             // 
-            this.ClubDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.ClubDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(42)))), ((int)(((byte)(16)))));
             this.ClubDashboardPanel.Controls.Add(this.MngBIll);
             this.ClubDashboardPanel.Controls.Add(this.logoutbutton);
             this.ClubDashboardPanel.Controls.Add(this.Addcutomerbutton);
@@ -82,6 +81,7 @@
             this.MngBIll.TabIndex = 4;
             this.MngBIll.Text = "Manage Bill";
             this.MngBIll.UseVisualStyleBackColor = true;
+            this.MngBIll.Click += new System.EventHandler(this.MngBIll_Click);
             // 
             // logoutbutton
             // 
@@ -121,7 +121,7 @@
             this.SalesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SalesButton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SalesButton.Location = new System.Drawing.Point(12, 21);
+            this.SalesButton.Location = new System.Drawing.Point(12, 32);
             this.SalesButton.Name = "SalesButton";
             this.SalesButton.Size = new System.Drawing.Size(150, 47);
             this.SalesButton.TabIndex = 0;
@@ -146,8 +146,7 @@
             // 
             this.ClubCustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClubCustomerDashboarplanel1.Controls.Add(this.RemoveButtonclubcustomer);
+            this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClubCustomerDashboarplanel1.Controls.Add(this.refreshclubmemberbtn);
             this.ClubCustomerDashboarplanel1.Controls.Add(this.Address);
             this.ClubCustomerDashboarplanel1.Controls.Add(this.clubcustomeraddress);
@@ -165,20 +164,6 @@
             this.ClubCustomerDashboarplanel1.Size = new System.Drawing.Size(657, 182);
             this.ClubCustomerDashboarplanel1.TabIndex = 3;
             this.ClubCustomerDashboarplanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.ClubCustomerDashboarplanel1_Paint);
-            // 
-            // RemoveButtonclubcustomer
-            // 
-            this.RemoveButtonclubcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveButtonclubcustomer.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.RemoveButtonclubcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RemoveButtonclubcustomer.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButtonclubcustomer.ForeColor = System.Drawing.Color.Black;
-            this.RemoveButtonclubcustomer.Location = new System.Drawing.Point(572, 124);
-            this.RemoveButtonclubcustomer.Name = "RemoveButtonclubcustomer";
-            this.RemoveButtonclubcustomer.Size = new System.Drawing.Size(75, 23);
-            this.RemoveButtonclubcustomer.TabIndex = 24;
-            this.RemoveButtonclubcustomer.Text = "Remove";
-            this.RemoveButtonclubcustomer.UseVisualStyleBackColor = false;
             // 
             // refreshclubmemberbtn
             // 
@@ -244,7 +229,7 @@
             this.addedbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addedbutton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addedbutton.ForeColor = System.Drawing.Color.Black;
-            this.addedbutton.Location = new System.Drawing.Point(484, 124);
+            this.addedbutton.Location = new System.Drawing.Point(526, 127);
             this.addedbutton.Name = "addedbutton";
             this.addedbutton.Size = new System.Drawing.Size(75, 23);
             this.addedbutton.TabIndex = 17;
@@ -322,7 +307,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clubcustomerdatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.clubcustomerdatagrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.clubcustomerdatagrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.clubcustomerdatagrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.clubcustomerdatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.clubcustomerdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clubcustomerdatagrid.GridColor = System.Drawing.SystemColors.ActiveBorder;
@@ -377,7 +362,6 @@
         private System.Windows.Forms.TextBox clubcustomeraddress;
         private System.Windows.Forms.DataGridView clubcustomerdatagrid;
         private System.Windows.Forms.Button refreshclubmemberbtn;
-        private System.Windows.Forms.Button RemoveButtonclubcustomer;
         private System.Windows.Forms.Button MngBIll;
     }
 }

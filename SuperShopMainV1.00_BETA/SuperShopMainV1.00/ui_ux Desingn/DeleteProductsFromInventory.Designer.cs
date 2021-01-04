@@ -55,7 +55,7 @@
             // 
             // AdminDashboardPanel
             // 
-            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.AdminDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(21)))), ((int)(((byte)(76)))));
             this.AdminDashboardPanel.Controls.Add(this.Reports);
             this.AdminDashboardPanel.Controls.Add(this.logoutbutton);
             this.AdminDashboardPanel.Controls.Add(this.RemonveProduct);
@@ -99,7 +99,7 @@
             // 
             // RemonveProduct
             // 
-            this.RemonveProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.RemonveProduct.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.RemonveProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.RemonveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemonveProduct.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +151,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvRemoveProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRemoveProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgvRemoveProduct.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvRemoveProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvRemoveProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRemoveProduct.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvRemoveProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -216,7 +216,7 @@
             // 
             this.ClubCustomerDashboarplanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClubCustomerDashboarplanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClubCustomerDashboarplanel1.Controls.Add(this.Removeinventorybtn);
             this.ClubCustomerDashboarplanel1.Controls.Add(this.ProductID);
             this.ClubCustomerDashboarplanel1.Controls.Add(this.Product_ID_Textbox);
@@ -228,9 +228,9 @@
             // Removeinventorybtn
             // 
             this.Removeinventorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Removeinventorybtn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.Removeinventorybtn.BackColor = System.Drawing.Color.Red;
             this.Removeinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Removeinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Removeinventorybtn.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Removeinventorybtn.ForeColor = System.Drawing.Color.Black;
             this.Removeinventorybtn.Location = new System.Drawing.Point(498, 117);
             this.Removeinventorybtn.Name = "Removeinventorybtn";
