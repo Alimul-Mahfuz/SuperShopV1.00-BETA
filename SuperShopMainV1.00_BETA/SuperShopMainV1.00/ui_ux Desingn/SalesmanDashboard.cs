@@ -25,7 +25,8 @@ namespace SuperShopMainV1._00
         {   
             InitializeComponent();
             SalesDashboardPanel.BackColor = Color.FromArgb(100, Color.Black);
-            searchicon.BackColor = Color.FromArgb(120, Color.WhiteSmoke);
+            searchicon.BackColor = Color.FromArgb(120, Color.SeaGreen);
+            salespanel4.BackColor = Color.FromArgb(50, Color.Black);
             Qtytextbox.Text = "1";
             grandtotalcount.Text = "0.00";
             datetimeviewer.Text = dateTime.ToString("dd-MM-yyyy");

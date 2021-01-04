@@ -27,8 +27,16 @@ namespace SuperShopMainV1._00
         public BillDetailsDashboard()
         {
             InitializeComponent();
+            billdetailsDashboardPanel.BackColor = Color.FromArgb(100,Color.Purple);
+            billdetailsiid.BackColor = Color.FromArgb(80, Color.DarkSeaGreen);
             binddatagrid();
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(Pens.Yellow, 0, 0, 150, 150);
+        }
+
+
         private void binddatagrid()
         {
 

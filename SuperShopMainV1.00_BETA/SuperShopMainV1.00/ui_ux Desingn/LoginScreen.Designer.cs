@@ -43,15 +43,15 @@
             // 
             // Login_PictureBox
             // 
-            this.Login_PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login_PictureBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Login_PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Login_PictureBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.Login_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Login_PictureBox.Image")));
-            this.Login_PictureBox.Location = new System.Drawing.Point(151, 12);
+            this.Login_PictureBox.Location = new System.Drawing.Point(192, 12);
             this.Login_PictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Login_PictureBox.Name = "Login_PictureBox";
-            this.Login_PictureBox.Size = new System.Drawing.Size(391, 124);
+            this.Login_PictureBox.Size = new System.Drawing.Size(323, 89);
+            this.Login_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Login_PictureBox.TabIndex = 0;
             this.Login_PictureBox.TabStop = false;
             // 
@@ -173,7 +173,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background11;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(672, 329);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.RoleSelect);

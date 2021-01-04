@@ -35,12 +35,13 @@
             this.loadpanelmain = new System.Windows.Forms.Panel();
             this.loadpanlesecond = new System.Windows.Forms.Panel();
             this.loadtimer = new System.Windows.Forms.Timer(this.components);
+            this.loadpanelmain.SuspendLayout();
             this.SuspendLayout();
             // 
             // loadscreenpanel
             // 
             this.loadscreenpanel.BackColor = System.Drawing.Color.Transparent;
-            this.loadscreenpanel.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.shoplogo1;
+            this.loadscreenpanel.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.shoplogo11;
             this.loadscreenpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.loadscreenpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.loadscreenpanel.Location = new System.Drawing.Point(0, 0);
@@ -54,9 +55,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.SeaGreen;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(373, 116);
+            this.label1.Location = new System.Drawing.Point(372, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 17);
             this.label1.TabIndex = 1;
@@ -65,8 +66,9 @@
             // loadpanelmain
             // 
             this.loadpanelmain.BackColor = System.Drawing.Color.Transparent;
-            this.loadpanelmain.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.loadpanelmain.Location = new System.Drawing.Point(0, 285);
+            this.loadpanelmain.Controls.Add(this.loadpanlesecond);
+            this.loadpanelmain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.loadpanelmain.Location = new System.Drawing.Point(0, 113);
             this.loadpanelmain.Name = "loadpanelmain";
             this.loadpanelmain.Size = new System.Drawing.Size(529, 10);
             this.loadpanelmain.TabIndex = 2;
@@ -74,10 +76,11 @@
             // loadpanlesecond
             // 
             this.loadpanlesecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.loadpanlesecond.Location = new System.Drawing.Point(0, 285);
+            this.loadpanlesecond.Location = new System.Drawing.Point(0, 0);
             this.loadpanlesecond.Name = "loadpanlesecond";
             this.loadpanlesecond.Size = new System.Drawing.Size(26, 10);
             this.loadpanlesecond.TabIndex = 3;
+            this.loadpanlesecond.Paint += new System.Windows.Forms.PaintEventHandler(this.loadpanlesecond_Paint);
             // 
             // loadtimer
             // 
@@ -89,10 +92,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
+            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources._1624860;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(529, 295);
-            this.Controls.Add(this.loadpanlesecond);
             this.Controls.Add(this.loadpanelmain);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loadscreenpanel);
@@ -104,6 +106,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoagingScreenFlashCard";
+            this.loadpanelmain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

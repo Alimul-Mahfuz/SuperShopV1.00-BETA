@@ -166,6 +166,7 @@
             // billdetailtlabel
             // 
             this.billdetailtlabel.AutoSize = true;
+            this.billdetailtlabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.billdetailtlabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billdetailtlabel.Location = new System.Drawing.Point(11, 26);
             this.billdetailtlabel.Name = "billdetailtlabel";
@@ -182,26 +183,26 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.No;
             this.dataGridView1.Location = new System.Drawing.Point(183, 245);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(657, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(354, 426);
             this.dataGridView1.TabIndex = 6;
             // 
             // BillDetailsDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.background1;
+            this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources.pexels_matheus_cenali_2733918;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(852, 697);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.billdetailsiid);
             this.Controls.Add(this.billdetailsadmindashboarlogo);
             this.Controls.Add(this.billdetailsDashboardPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(868, 736);
             this.Name = "BillDetailsDashboard";

@@ -234,6 +234,24 @@
   <ItemGroup>
     <None Include="Resources\1624860.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12573425431578889048-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecdbfbc4-0c25-4a83-9733-534c789e02c7_200x200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\107606753_115102980276436_1448279489695026473_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1087px-EmpressWalkLoblaws-Vivid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-matheus-cenali-2733918.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reduced.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

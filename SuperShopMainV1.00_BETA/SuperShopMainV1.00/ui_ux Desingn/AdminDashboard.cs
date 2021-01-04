@@ -158,5 +158,18 @@ namespace SuperShopMainV1._00
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            string query = "SELECT *FROM PRODUCT WHERE PRODUCT_NAME like '%" + textBox4.Text + "%'";
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb = new DataTable();
+            sda.Fill(dtb);
+            dataGridView1.DataSource = dtb;
+
+
+        }
     }
 }

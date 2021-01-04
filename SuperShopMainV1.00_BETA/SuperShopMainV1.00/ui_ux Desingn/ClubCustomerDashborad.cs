@@ -24,8 +24,15 @@ namespace SuperShopMainV1._00
         SqlConnection son = new SqlConnection(@"Data Source=TSR1998\SQLEXPRESS;Initial Catalog=SuperShopMSDB;Integrated Security=True;");
         public ClubCustomerDashborad()
         {
+            
             InitializeComponent();
+            ClubCustomerDashboarplanel1.BackColor = Color.FromArgb(90, Color.Orange);
+            ClubDashboardPanel.BackColor = Color.FromArgb(50, Color.OrangeRed);
             disp();
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(Pens.Yellow, 0, 0, 150, 150);
         }
         public void disp()
         {

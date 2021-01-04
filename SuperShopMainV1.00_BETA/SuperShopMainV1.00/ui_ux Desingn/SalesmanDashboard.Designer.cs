@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesmanDashboar));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SalesDashboardPanel = new System.Windows.Forms.Panel();
             this.MngBIll = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
@@ -57,12 +57,6 @@
             this.Qtytextbox = new System.Windows.Forms.TextBox();
             this.CustomrNameSalesDashboar = new System.Windows.Forms.Label();
             this.cnametextbox = new System.Windows.Forms.TextBox();
-            this.customersalesdatagrid = new System.Windows.Forms.DataGridView();
-            this.product_id_data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pricecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Totalcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proccedtopay = new System.Windows.Forms.Button();
             this.grandtotalcount = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
@@ -74,12 +68,18 @@
             this.paymethondselector = new System.Windows.Forms.ComboBox();
             this.CashRecievetextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.customersalesdatagrid = new System.Windows.Forms.DataGridView();
+            this.product_id_data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pricecol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Totalcol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalesDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardpicbox)).BeginInit();
             this.searchicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).BeginInit();
             this.salespanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).BeginInit();
             this.SuspendLayout();
             // 
             // SalesDashboardPanel
@@ -174,13 +174,11 @@
             this.searchicon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.searchicon.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.searchicon.Controls.Add(this.totaltextbox);
             this.searchicon.Controls.Add(this.custphonelabel);
             this.searchicon.Controls.Add(this.custphonetextbox);
             this.searchicon.Controls.Add(this.datatimelabel);
             this.searchicon.Controls.Add(this.pictureBox1);
             this.searchicon.Controls.Add(this.datetimeviewer);
-            this.searchicon.Controls.Add(this.labeltotal);
             this.searchicon.Controls.Add(this.salesdashproductid);
             this.searchicon.Controls.Add(this.productidtextbox);
             this.searchicon.Controls.Add(this.ProductNameSalesLabel);
@@ -200,18 +198,19 @@
             // 
             // totaltextbox
             // 
-            this.totaltextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.totaltextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.totaltextbox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totaltextbox.Location = new System.Drawing.Point(556, 83);
+            this.totaltextbox.Location = new System.Drawing.Point(133, 38);
             this.totaltextbox.Multiline = true;
             this.totaltextbox.Name = "totaltextbox";
-            this.totaltextbox.Size = new System.Drawing.Size(121, 32);
+            this.totaltextbox.Size = new System.Drawing.Size(135, 32);
             this.totaltextbox.TabIndex = 28;
             this.totaltextbox.WordWrap = false;
             // 
             // custphonelabel
             // 
             this.custphonelabel.AutoSize = true;
+            this.custphonelabel.BackColor = System.Drawing.SystemColors.Control;
             this.custphonelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.custphonelabel.Location = new System.Drawing.Point(8, 38);
             this.custphonelabel.Name = "custphonelabel";
@@ -230,6 +229,7 @@
             // 
             this.datatimelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.datatimelabel.AutoSize = true;
+            this.datatimelabel.BackColor = System.Drawing.SystemColors.Control;
             this.datatimelabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datatimelabel.Location = new System.Drawing.Point(449, 14);
             this.datatimelabel.Name = "datatimelabel";
@@ -239,11 +239,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources.magnifying_glass;
+            this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources._12573425431578889048_128;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(372, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 18);
+            this.pictureBox1.Size = new System.Drawing.Size(21, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
@@ -267,10 +267,11 @@
             // 
             // labeltotal
             // 
-            this.labeltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labeltotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labeltotal.AutoSize = true;
+            this.labeltotal.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.labeltotal.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltotal.Location = new System.Drawing.Point(449, 86);
+            this.labeltotal.Location = new System.Drawing.Point(6, 38);
             this.labeltotal.Name = "labeltotal";
             this.labeltotal.Size = new System.Drawing.Size(77, 24);
             this.labeltotal.TabIndex = 22;
@@ -279,6 +280,7 @@
             // salesdashproductid
             // 
             this.salesdashproductid.AutoSize = true;
+            this.salesdashproductid.BackColor = System.Drawing.SystemColors.Control;
             this.salesdashproductid.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesdashproductid.Location = new System.Drawing.Point(8, 64);
             this.salesdashproductid.Name = "salesdashproductid";
@@ -297,6 +299,7 @@
             // ProductNameSalesLabel
             // 
             this.ProductNameSalesLabel.AutoSize = true;
+            this.ProductNameSalesLabel.BackColor = System.Drawing.SystemColors.Control;
             this.ProductNameSalesLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductNameSalesLabel.Location = new System.Drawing.Point(8, 90);
             this.ProductNameSalesLabel.Name = "ProductNameSalesLabel";
@@ -359,6 +362,7 @@
             // 
             this.Membershipdropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Membershipdropdown.AutoSize = true;
+            this.Membershipdropdown.BackColor = System.Drawing.SystemColors.Control;
             this.Membershipdropdown.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Membershipdropdown.Location = new System.Drawing.Point(450, 43);
             this.Membershipdropdown.Name = "Membershipdropdown";
@@ -370,6 +374,7 @@
             // QtyLabel
             // 
             this.QtyLabel.AutoSize = true;
+            this.QtyLabel.BackColor = System.Drawing.SystemColors.Control;
             this.QtyLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QtyLabel.Location = new System.Drawing.Point(8, 114);
             this.QtyLabel.Name = "QtyLabel";
@@ -388,6 +393,7 @@
             // CustomrNameSalesDashboar
             // 
             this.CustomrNameSalesDashboar.AutoSize = true;
+            this.CustomrNameSalesDashboar.BackColor = System.Drawing.SystemColors.Control;
             this.CustomrNameSalesDashboar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomrNameSalesDashboar.Location = new System.Drawing.Point(8, 12);
             this.CustomrNameSalesDashboar.Name = "CustomrNameSalesDashboar";
@@ -401,75 +407,6 @@
             this.cnametextbox.Name = "cnametextbox";
             this.cnametextbox.Size = new System.Drawing.Size(246, 20);
             this.cnametextbox.TabIndex = 0;
-            // 
-            // customersalesdatagrid
-            // 
-            this.customersalesdatagrid.AllowUserToAddRows = false;
-            this.customersalesdatagrid.AllowUserToResizeColumns = false;
-            this.customersalesdatagrid.AllowUserToResizeRows = false;
-            this.customersalesdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.customersalesdatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.customersalesdatagrid.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.customersalesdatagrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.customersalesdatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.customersalesdatagrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.customersalesdatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.product_id_data,
-            this.ItemNameCol,
-            this.QuantityCol,
-            this.Pricecol,
-            this.Totalcol});
-            this.customersalesdatagrid.GridColor = System.Drawing.Color.LightCoral;
-            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 275);
-            this.customersalesdatagrid.Name = "customersalesdatagrid";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.customersalesdatagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.customersalesdatagrid.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.customersalesdatagrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.customersalesdatagrid.Size = new System.Drawing.Size(690, 235);
-            this.customersalesdatagrid.TabIndex = 3;
-            this.customersalesdatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersalesdatagrid_CellContentClick);
-            // 
-            // product_id_data
-            // 
-            this.product_id_data.HeaderText = "Product_ID";
-            this.product_id_data.MinimumWidth = 6;
-            this.product_id_data.Name = "product_id_data";
-            // 
-            // ItemNameCol
-            // 
-            this.ItemNameCol.HeaderText = "Item Name";
-            this.ItemNameCol.MinimumWidth = 6;
-            this.ItemNameCol.Name = "ItemNameCol";
-            this.ItemNameCol.ReadOnly = true;
-            // 
-            // QuantityCol
-            // 
-            this.QuantityCol.HeaderText = "Qty";
-            this.QuantityCol.MinimumWidth = 6;
-            this.QuantityCol.Name = "QuantityCol";
-            this.QuantityCol.ReadOnly = true;
-            // 
-            // Pricecol
-            // 
-            this.Pricecol.HeaderText = "Price Per Unite";
-            this.Pricecol.MinimumWidth = 6;
-            this.Pricecol.Name = "Pricecol";
-            this.Pricecol.ReadOnly = true;
-            // 
-            // Totalcol
-            // 
-            this.Totalcol.HeaderText = "Total";
-            this.Totalcol.MinimumWidth = 6;
-            this.Totalcol.Name = "Totalcol";
-            this.Totalcol.ReadOnly = true;
             // 
             // proccedtopay
             // 
@@ -512,11 +449,12 @@
             // proceedtopay
             // 
             this.proceedtopay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.proceedtopay.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.proceedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.proceedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceedtopay.BackColor = System.Drawing.Color.SeaGreen;
+            this.proceedtopay.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.proceedtopay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.proceedtopay.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedtopay.ForeColor = System.Drawing.Color.Black;
-            this.proceedtopay.Location = new System.Drawing.Point(705, 601);
+            this.proceedtopay.Location = new System.Drawing.Point(705, 593);
             this.proceedtopay.Name = "proceedtopay";
             this.proceedtopay.Size = new System.Drawing.Size(168, 39);
             this.proceedtopay.TabIndex = 24;
@@ -526,50 +464,56 @@
             // 
             // salespanel4
             // 
-            this.salespanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.salespanel4.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.salespanel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.salespanel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.salespanel4.Controls.Add(this.totaltextbox);
             this.salespanel4.Controls.Add(this.memidlblb);
             this.salespanel4.Controls.Add(this.memberidcheckbox);
             this.salespanel4.Controls.Add(this.caschreciveblbl);
             this.salespanel4.Controls.Add(this.paymethondselector);
             this.salespanel4.Controls.Add(this.CashRecievetextbox);
+            this.salespanel4.Controls.Add(this.labeltotal);
             this.salespanel4.Controls.Add(this.label5);
-            this.salespanel4.Location = new System.Drawing.Point(183, 516);
+            this.salespanel4.Location = new System.Drawing.Point(592, 275);
             this.salespanel4.Name = "salespanel4";
-            this.salespanel4.Size = new System.Drawing.Size(690, 79);
+            this.salespanel4.Size = new System.Drawing.Size(281, 312);
             this.salespanel4.TabIndex = 28;
             // 
             // memidlblb
             // 
+            this.memidlblb.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.memidlblb.AutoSize = true;
-            this.memidlblb.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memidlblb.Location = new System.Drawing.Point(11, 40);
+            this.memidlblb.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.memidlblb.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memidlblb.Location = new System.Drawing.Point(12, 129);
             this.memidlblb.Name = "memidlblb";
-            this.memidlblb.Size = new System.Drawing.Size(111, 15);
+            this.memidlblb.Size = new System.Drawing.Size(98, 14);
             this.memidlblb.TabIndex = 32;
             this.memidlblb.Text = "Enter Member ID:";
             // 
             // memberidcheckbox
             // 
-            this.memberidcheckbox.Location = new System.Drawing.Point(132, 40);
+            this.memberidcheckbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.memberidcheckbox.Location = new System.Drawing.Point(133, 123);
             this.memberidcheckbox.Name = "memberidcheckbox";
-            this.memberidcheckbox.Size = new System.Drawing.Size(274, 20);
+            this.memberidcheckbox.Size = new System.Drawing.Size(135, 20);
             this.memberidcheckbox.TabIndex = 31;
             // 
             // caschreciveblbl
             // 
+            this.caschreciveblbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.caschreciveblbl.AutoSize = true;
-            this.caschreciveblbl.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.caschreciveblbl.Location = new System.Drawing.Point(11, 7);
+            this.caschreciveblbl.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.caschreciveblbl.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.caschreciveblbl.Location = new System.Drawing.Point(12, 96);
             this.caschreciveblbl.Name = "caschreciveblbl";
-            this.caschreciveblbl.Size = new System.Drawing.Size(115, 15);
+            this.caschreciveblbl.Size = new System.Drawing.Size(103, 14);
             this.caschreciveblbl.TabIndex = 30;
             this.caschreciveblbl.Text = "Recieved Amount:";
             // 
             // paymethondselector
             // 
-            this.paymethondselector.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.paymethondselector.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.paymethondselector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.paymethondselector.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.paymethondselector.FormattingEnabled = true;
@@ -577,29 +521,100 @@
             "BKASH",
             "DBBL",
             "CASH"});
-            this.paymethondselector.Location = new System.Drawing.Point(560, 8);
+            this.paymethondselector.Location = new System.Drawing.Point(133, 155);
             this.paymethondselector.Name = "paymethondselector";
-            this.paymethondselector.Size = new System.Drawing.Size(121, 21);
+            this.paymethondselector.Size = new System.Drawing.Size(135, 21);
             this.paymethondselector.TabIndex = 12;
             // 
             // CashRecievetextbox
             // 
-            this.CashRecievetextbox.Location = new System.Drawing.Point(132, 5);
+            this.CashRecievetextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CashRecievetextbox.Location = new System.Drawing.Point(133, 94);
             this.CashRecievetextbox.Name = "CashRecievetextbox";
-            this.CashRecievetextbox.Size = new System.Drawing.Size(274, 20);
+            this.CashRecievetextbox.Size = new System.Drawing.Size(135, 20);
             this.CashRecievetextbox.TabIndex = 29;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(432, 10);
+            this.label5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 15);
+            this.label5.Size = new System.Drawing.Size(108, 14);
             this.label5.TabIndex = 11;
             this.label5.Text = "Payment Methond:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // customersalesdatagrid
+            // 
+            this.customersalesdatagrid.AllowUserToAddRows = false;
+            this.customersalesdatagrid.AllowUserToResizeColumns = false;
+            this.customersalesdatagrid.AllowUserToResizeRows = false;
+            this.customersalesdatagrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customersalesdatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customersalesdatagrid.BackgroundColor = System.Drawing.Color.LightBlue;
+            this.customersalesdatagrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.customersalesdatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.customersalesdatagrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.customersalesdatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.product_id_data,
+            this.ItemNameCol,
+            this.QuantityCol,
+            this.Pricecol,
+            this.Totalcol});
+            this.customersalesdatagrid.GridColor = System.Drawing.Color.LightCoral;
+            this.customersalesdatagrid.Location = new System.Drawing.Point(183, 275);
+            this.customersalesdatagrid.Name = "customersalesdatagrid";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customersalesdatagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.customersalesdatagrid.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.customersalesdatagrid.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.customersalesdatagrid.Size = new System.Drawing.Size(405, 312);
+            this.customersalesdatagrid.TabIndex = 29;
+            // 
+            // product_id_data
+            // 
+            this.product_id_data.HeaderText = "Product_ID";
+            this.product_id_data.MinimumWidth = 6;
+            this.product_id_data.Name = "product_id_data";
+            // 
+            // ItemNameCol
+            // 
+            this.ItemNameCol.HeaderText = "Item Name";
+            this.ItemNameCol.MinimumWidth = 6;
+            this.ItemNameCol.Name = "ItemNameCol";
+            this.ItemNameCol.ReadOnly = true;
+            // 
+            // QuantityCol
+            // 
+            this.QuantityCol.HeaderText = "Qty";
+            this.QuantityCol.MinimumWidth = 6;
+            this.QuantityCol.Name = "QuantityCol";
+            this.QuantityCol.ReadOnly = true;
+            // 
+            // Pricecol
+            // 
+            this.Pricecol.HeaderText = "Price Per Unite";
+            this.Pricecol.MinimumWidth = 6;
+            this.Pricecol.Name = "Pricecol";
+            this.Pricecol.ReadOnly = true;
+            // 
+            // Totalcol
+            // 
+            this.Totalcol.HeaderText = "Total";
+            this.Totalcol.MinimumWidth = 6;
+            this.Totalcol.Name = "Totalcol";
+            this.Totalcol.ReadOnly = true;
             // 
             // SalesmanDashboar
             // 
@@ -607,12 +622,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources._1624860;
             this.ClientSize = new System.Drawing.Size(885, 652);
+            this.Controls.Add(this.customersalesdatagrid);
             this.Controls.Add(this.salespanel4);
             this.Controls.Add(this.proceedtopay);
             this.Controls.Add(this.TotalLabel);
             this.Controls.Add(this.grandtotalcount);
             this.Controls.Add(this.proccedtopay);
-            this.Controls.Add(this.customersalesdatagrid);
             this.Controls.Add(this.searchicon);
             this.Controls.Add(this.dashboardpicbox);
             this.Controls.Add(this.SalesDashboardPanel);
@@ -627,9 +642,9 @@
             this.searchicon.ResumeLayout(false);
             this.searchicon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).EndInit();
             this.salespanel4.ResumeLayout(false);
             this.salespanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customersalesdatagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -651,7 +666,6 @@
         private System.Windows.Forms.Button addedbutton;
         private System.Windows.Forms.Label QtyLabel;
         private System.Windows.Forms.TextBox Qtytextbox;
-        public System.Windows.Forms.DataGridView customersalesdatagrid;
         private System.Windows.Forms.Button proccedtopay;
         private System.Windows.Forms.TextBox grandtotalcount;
         private System.Windows.Forms.Label TotalLabel;
@@ -661,11 +675,6 @@
         private System.Windows.Forms.TextBox ProductNametextBox;
         private System.Windows.Forms.Button MngBIll;
         private System.Windows.Forms.TextBox datetimeviewer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_id_data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemNameCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantityCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pricecol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Totalcol;
         private System.Windows.Forms.Label labeltotal;
         private System.Windows.Forms.Button proceedtopay;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -680,5 +689,11 @@
         private System.Windows.Forms.TextBox memberidcheckbox;
         private System.Windows.Forms.Label caschreciveblbl;
         private System.Windows.Forms.TextBox CashRecievetextbox;
+        public System.Windows.Forms.DataGridView customersalesdatagrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn product_id_data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemNameCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuantityCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pricecol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Totalcol;
     }
 }

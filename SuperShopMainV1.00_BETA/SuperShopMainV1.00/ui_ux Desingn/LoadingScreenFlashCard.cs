@@ -30,5 +30,10 @@ namespace SuperShopMainV1._00
             
             
         }
+
+        private void loadpanlesecond_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

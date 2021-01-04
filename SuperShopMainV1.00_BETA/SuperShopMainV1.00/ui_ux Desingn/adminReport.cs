@@ -25,6 +25,7 @@ namespace SuperShopMainV1._00
         public adminReport()
         {
             InitializeComponent();
+
             display();
         }
 

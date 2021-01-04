@@ -63,6 +63,36 @@ namespace SuperShopMainV1._00.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _107606753_115102980276436_1448279489695026473_o {
+            get {
+                object obj = ResourceManager.GetObject("107606753_115102980276436_1448279489695026473_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1087px_EmpressWalkLoblaws_Vivid {
+            get {
+                object obj = ResourceManager.GetObject("1087px-EmpressWalkLoblaws-Vivid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _12573425431578889048_128 {
+            get {
+                object obj = ResourceManager.GetObject("12573425431578889048-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1624860 {
             get {
                 object obj = ResourceManager.GetObject("1624860", resourceCulture);
@@ -93,9 +123,39 @@ namespace SuperShopMainV1._00.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ecdbfbc4_0c25_4a83_9733_534c789e02c7_200x200 {
+            get {
+                object obj = ResourceManager.GetObject("ecdbfbc4-0c25-4a83-9733-534c789e02c7_200x200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap magnifying_glass {
             get {
                 object obj = ResourceManager.GetObject("magnifying-glass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_matheus_cenali_2733918 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-matheus-cenali-2733918", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reduced {
+            get {
+                object obj = ResourceManager.GetObject("reduced", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

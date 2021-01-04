@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdminDashboardPanel = new System.Windows.Forms.Panel();
             this.Reportadd = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
@@ -48,13 +50,19 @@
             this.ProductCata = new System.Windows.Forms.Label();
             this.ProductName = new System.Windows.Forms.Label();
             this.CustomerNameTextboxSales = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.admindashsearchicon = new System.Windows.Forms.Panel();
             this.searchpidcombo = new System.Windows.Forms.ComboBox();
-            this.searchinventory = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.productid = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.superShopMSDBDataSet = new SuperShopMainV1._00.SuperShopMSDBDataSet();
+            this.pRODUCTTableAdapter = new SuperShopMainV1._00.SuperShopMSDBDataSetTableAdapters.PRODUCTTableAdapter();
+            this.superShopMSDBDataSet1 = new SuperShopMainV1._00.SuperShopMSDBDataSet1();
+            this.pRODUCTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pRODUCTTableAdapter1 = new SuperShopMainV1._00.SuperShopMSDBDataSet1TableAdapters.PRODUCTTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pRODUCTIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cATAGORYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,21 +70,16 @@
             this.sELLINGPRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iNITIALSTOCKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sOLDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.superShopMSDBDataSet = new SuperShopMainV1._00.SuperShopMSDBDataSet();
-            this.pRODUCTTableAdapter = new SuperShopMainV1._00.SuperShopMSDBDataSetTableAdapters.PRODUCTTableAdapter();
-            this.superShopMSDBDataSet1 = new SuperShopMainV1._00.SuperShopMSDBDataSet1();
-            this.pRODUCTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pRODUCTTableAdapter1 = new SuperShopMainV1._00.SuperShopMSDBDataSet1TableAdapters.PRODUCTTableAdapter();
             this.AdminDashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).BeginInit();
             this.AdminAddproductpanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.admindashsearchicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superShopMSDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superShopMSDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminDashboardPanel
@@ -327,20 +330,20 @@
             this.CustomerNameTextboxSales.Size = new System.Drawing.Size(274, 20);
             this.CustomerNameTextboxSales.TabIndex = 0;
             // 
-            // panel1
+            // admindashsearchicon
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.admindashsearchicon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.searchpidcombo);
-            this.panel1.Controls.Add(this.searchinventory);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.productid);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Location = new System.Drawing.Point(183, 290);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(657, 115);
-            this.panel1.TabIndex = 5;
+            this.admindashsearchicon.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.admindashsearchicon.Controls.Add(this.pictureBox1);
+            this.admindashsearchicon.Controls.Add(this.searchpidcombo);
+            this.admindashsearchicon.Controls.Add(this.label4);
+            this.admindashsearchicon.Controls.Add(this.productid);
+            this.admindashsearchicon.Controls.Add(this.textBox4);
+            this.admindashsearchicon.Location = new System.Drawing.Point(183, 290);
+            this.admindashsearchicon.Name = "admindashsearchicon";
+            this.admindashsearchicon.Size = new System.Drawing.Size(657, 115);
+            this.admindashsearchicon.TabIndex = 5;
             // 
             // searchpidcombo
             // 
@@ -358,23 +361,6 @@
             this.searchpidcombo.Name = "searchpidcombo";
             this.searchpidcombo.Size = new System.Drawing.Size(274, 21);
             this.searchpidcombo.TabIndex = 25;
-            // 
-            // searchinventory
-            // 
-            this.searchinventory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchinventory.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.searchinventory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.searchinventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.searchinventory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.searchinventory.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchinventory.ForeColor = System.Drawing.Color.Black;
-            this.searchinventory.Location = new System.Drawing.Point(504, 26);
-            this.searchinventory.Name = "searchinventory";
-            this.searchinventory.Size = new System.Drawing.Size(130, 48);
-            this.searchinventory.TabIndex = 17;
-            this.searchinventory.Text = "Search Inventory";
-            this.searchinventory.UseVisualStyleBackColor = false;
-            this.searchinventory.Click += new System.EventHandler(this.searchinventory_Click);
             // 
             // label4
             // 
@@ -413,6 +399,8 @@
             // dataGridView1
             // 
             this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
@@ -430,6 +418,14 @@
             this.iNITIALSTOCKDataGridViewTextBoxColumn,
             this.sOLDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.pRODUCTBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(183, 411);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -437,12 +433,61 @@
             this.dataGridView1.Size = new System.Drawing.Size(657, 272);
             this.dataGridView1.TabIndex = 6;
             // 
+            // pRODUCTBindingSource
+            // 
+            this.pRODUCTBindingSource.DataMember = "PRODUCT";
+            this.pRODUCTBindingSource.DataSource = this.superShopMSDBDataSet;
+            // 
+            // superShopMSDBDataSet
+            // 
+            this.superShopMSDBDataSet.DataSetName = "SuperShopMSDBDataSet";
+            this.superShopMSDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pRODUCTTableAdapter
+            // 
+            this.pRODUCTTableAdapter.ClearBeforeFill = true;
+            // 
+            // superShopMSDBDataSet1
+            // 
+            this.superShopMSDBDataSet1.DataSetName = "SuperShopMSDBDataSet1";
+            this.superShopMSDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pRODUCTBindingSource1
+            // 
+            this.pRODUCTBindingSource1.DataMember = "PRODUCT";
+            this.pRODUCTBindingSource1.DataSource = this.superShopMSDBDataSet1;
+            // 
+            // pRODUCTTableAdapter1
+            // 
+            this.pRODUCTTableAdapter1.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::SuperShopMainV1._00.Properties.Resources._12573425431578889048_128;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(584, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // pRODUCTIDDataGridViewTextBoxColumn
             // 
+            this.pRODUCTIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.pRODUCTIDDataGridViewTextBoxColumn.DataPropertyName = "PRODUCT_ID";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            this.pRODUCTIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.pRODUCTIDDataGridViewTextBoxColumn.Frozen = true;
             this.pRODUCTIDDataGridViewTextBoxColumn.HeaderText = "PRODUCT_ID";
             this.pRODUCTIDDataGridViewTextBoxColumn.Name = "pRODUCTIDDataGridViewTextBoxColumn";
             this.pRODUCTIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pRODUCTIDDataGridViewTextBoxColumn.Width = 88;
             // 
             // pRODUCTNAMEDataGridViewTextBoxColumn
             // 
@@ -486,34 +531,6 @@
             this.sOLDDataGridViewTextBoxColumn.Name = "sOLDDataGridViewTextBoxColumn";
             this.sOLDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // pRODUCTBindingSource
-            // 
-            this.pRODUCTBindingSource.DataMember = "PRODUCT";
-            this.pRODUCTBindingSource.DataSource = this.superShopMSDBDataSet;
-            // 
-            // superShopMSDBDataSet
-            // 
-            this.superShopMSDBDataSet.DataSetName = "SuperShopMSDBDataSet";
-            this.superShopMSDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRODUCTTableAdapter
-            // 
-            this.pRODUCTTableAdapter.ClearBeforeFill = true;
-            // 
-            // superShopMSDBDataSet1
-            // 
-            this.superShopMSDBDataSet1.DataSetName = "SuperShopMSDBDataSet1";
-            this.superShopMSDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRODUCTBindingSource1
-            // 
-            this.pRODUCTBindingSource1.DataMember = "PRODUCT";
-            this.pRODUCTBindingSource1.DataSource = this.superShopMSDBDataSet1;
-            // 
-            // pRODUCTTableAdapter1
-            // 
-            this.pRODUCTTableAdapter1.ClearBeforeFill = true;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,7 +538,7 @@
             this.BackgroundImage = global::SuperShopMainV1._00.Properties.Resources._1624860;
             this.ClientSize = new System.Drawing.Size(852, 697);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.admindashsearchicon);
             this.Controls.Add(this.AdminAddproductpanel);
             this.Controls.Add(this.admindashboarlogo);
             this.Controls.Add(this.AdminDashboardPanel);
@@ -536,13 +553,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.admindashboarlogo)).EndInit();
             this.AdminAddproductpanel.ResumeLayout(false);
             this.AdminAddproductpanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.admindashsearchicon.ResumeLayout(false);
+            this.admindashsearchicon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superShopMSDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superShopMSDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -567,9 +585,8 @@
         private System.Windows.Forms.Label reatilprice;
         private System.Windows.Forms.TextBox RetailPricebox;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel admindashsearchicon;
         private System.Windows.Forms.ComboBox searchpidcombo;
-        private System.Windows.Forms.Button searchinventory;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label productid;
         private System.Windows.Forms.TextBox textBox4;
@@ -577,6 +594,10 @@
         private SuperShopMSDBDataSet superShopMSDBDataSet;
         private System.Windows.Forms.BindingSource pRODUCTBindingSource;
         private SuperShopMSDBDataSetTableAdapters.PRODUCTTableAdapter pRODUCTTableAdapter;
+        private SuperShopMSDBDataSet1 superShopMSDBDataSet1;
+        private System.Windows.Forms.BindingSource pRODUCTBindingSource1;
+        private SuperShopMSDBDataSet1TableAdapters.PRODUCTTableAdapter pRODUCTTableAdapter1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cATAGORYDataGridViewTextBoxColumn;
@@ -584,8 +605,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sELLINGPRICEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iNITIALSTOCKDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sOLDDataGridViewTextBoxColumn;
-        private SuperShopMSDBDataSet1 superShopMSDBDataSet1;
-        private System.Windows.Forms.BindingSource pRODUCTBindingSource1;
-        private SuperShopMSDBDataSet1TableAdapters.PRODUCTTableAdapter pRODUCTTableAdapter1;
     }
 }
